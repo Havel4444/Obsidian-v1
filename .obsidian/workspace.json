@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db7087f94e6002ef",
+  "active": "4e77c8b7dc13f81b",
   "lastOpenFiles": [
+    "DEMO",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",

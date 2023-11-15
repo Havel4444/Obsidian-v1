@@ -1,6 +1,5 @@
 [[index]]
 
-
 ## INTRO A LINUX/RED 
 [[Configuracion de linux 1]]
 [[Fundamentos de linux 1]]

@@ -14,7 +14,7 @@ pwd
 ```
 which ls
 ```
-**Muestra la ubicacion del valor actural**
+**Muestra la ubicacion del valor actual**
 Que es la ruta completa del shell en uso.
 ```
 echo $SHELL

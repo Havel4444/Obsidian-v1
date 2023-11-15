@@ -20,6 +20,7 @@
 [[S4vitar clase 1 introduccion a linux]]
 [[S4vitar clase 2 introduccion a linux 2]]
 [[S4vitar clase 3 control de flojo, operadores y procesos en segundo plano]]
+
 [[S4vitar clase 4 descriptores de archivos]]
 
 

@@ -23,17 +23,34 @@ ls < archivo.txt
 
 ## DESCRIPTOR DE ARCHIVO
 
-**ASIGNACION:**
-	Los descriptores son los numero que salen antes de un comando de redireccionamiento, por ejemplo, `1,2,3`.
+Un #descriptor-de-archivo es un número que identifica de forma exclusiva un archivo abierto dentro de un programa informático.
+
+**CREACION Y ASIGNACION:**
+	Usando el comando #exec es posible crear un descriptor de archivo de #identificador-numerico '3' y con permisos de lectura(<) y escritura(>).
 ```
-# Descriptor de archivo con lectura(<) y escritura(>).
 exec 3<> file
 ```
 
+**ESCRITURA:**
+	Para poder escribir en un identificador numerico que en este caso es '3' primero se le tiene que agregar lo siguiente.
+```
+pwd >&3
+```
 
+**COPIA:**
+	El contienido del descriptor de archivos con idetificador numerico '3' puede ser copiado en un identificadores numericos '4'.
+```
+exec 4>&3
+```
 
+**CIERRE:**
+```
+# Cerrar directamente
+exec 3>&-
 
-
+# Cerrar en medio de una copia
+exec 4>&3-
+```
 
 
 

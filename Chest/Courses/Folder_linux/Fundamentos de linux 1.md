@@ -41,7 +41,7 @@ truncate -s 0 libro.txt
 ## INSTALACION y DESCOMPRECION
 
 **.deb:**
-	Instalar un archivo #deb desde la terminal
+	Instalar un archivo #deb desde la terminal.
 ```
 # Instalador
 sudo dpkg -i nombre-del-archivo.deb
@@ -51,7 +51,10 @@ sudo apt-get install -f
 ```
 
 **tar.xz:**
-	Descomprimir 
+	Descomprimir un archivo #tar desde la terminal.
+```
+tar -xJvf nombre-del-archivo.tar.xz
+```
 
 
 

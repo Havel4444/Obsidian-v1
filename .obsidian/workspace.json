@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index_git.md",
+                "file": "Configuracion .dotfiles.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index_git.md",
+                "file": "Configuracion .dotfiles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index_git.md",
+                "file": "Configuracion .dotfiles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index_git.md"
+                "file": "Configuracion .dotfiles.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
-    "Chest/Courses/index.md",
     "index_git.md",
+    "Configuracion .dotfiles.md",
+    "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1.md",
     "Chest/Courses/Folder_linux/index_linux.md",

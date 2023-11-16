@@ -1,0 +1,4 @@
+[[index]]
+[[index_git]]
+
+**

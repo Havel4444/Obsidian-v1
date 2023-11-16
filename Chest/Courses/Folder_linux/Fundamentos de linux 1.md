@@ -38,25 +38,37 @@ truncate -s 0 libro.txt
 2. 0: Tamaño a eliminar.
 
 
-## INSTALACION y DESCOMPRECION
 
+
+
+# DESCOMPRECION
+
+Comandos para instalar y #descomprimir. 
 **.deb:**
-	Instalar un archivo #deb desde la terminal.
 ```
 # Instalador
 sudo dpkg -i nombre-del-archivo.deb
+sudo dpkg -i
 
 # Error por falta de dependencias
 sudo apt-get install -f
 ```
 
 **tar.xz:**
-	Descomprimir un archivo #tar desde la terminal.
 ```
 tar -xJvf nombre-del-archivo.tar.xz
+tar -xJvf 
 ```
 
+**7z:**
+```
+# Instalador
+sudo apt-get install p7zip-full
 
+# Descompresor
+7z x archivo.7z
+7z x 
+```
 
 
 

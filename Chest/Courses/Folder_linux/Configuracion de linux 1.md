@@ -107,7 +107,25 @@ sudo apt-get install gsettings-desktop-schemas
 ```
 3. Cambiar el fondo.
 ```
-gsettings set org.mate.background picture-filename '/home/havel/Downloads/fondo.png'
+gsettings set org.mate.background picture-filename '/home/havel/Pictures/
+```
+
+**TEMA:**
+	Los #temas de en este caso Debian 11 con gestor de ventanas MATE y un GNOME2 puedes ser descargados de la siguiente pagina.
+```
+https://www.mate-look.org/browse?cat=135&ord=rating
+```
+**INSTALACION:**
+1. Descargar y descomprimir el archivo
+2. Copiar y pegar en la siguiente ruta.
+```
+# Ruta del tema
+cd /usr/share/themes/
+# Ruta del icono
+cd /usr/share/icons/
+
+# Comando para copiar y pegar en la ruta themes
+sudo cp -r ~/downloads/tema ./
 ```
 
 
@@ -230,9 +248,12 @@ Ruta:
 Instalar #oh-my-bash y juntarlo con #kitty-theme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
 
 **KITTY-THEMES:**
-	El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer.
+	El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer. Eliminar el archivo _theme.conf_ para cambiar a otro tema y ejecutar el siguiete comando con el tema elegido.
 ```
 https://github.com/dexpota/kitty-themes
+
+# Comando a ejecutar en la carpeta kitty
+ln -s ./kitty-themes/themes/TEMA.conf ~/.config/kitty/theme.conf
 ```
 **OH MY BASH:**
 	En el siguiente video explicara como instalar oh my bash, esto solo cambiara lo relacionado a la `FUENTE`. `GUARDAR LA CONFIGURACION .BASHRC` porque sera borrado luego de instalar esto.

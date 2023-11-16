@@ -129,12 +129,18 @@ sudo cp -r ~/downloads/tema ./
 ```
 
 **TEMA INICIO:**
-	#grub
+	Configuracion e instalacion de #grub.
 ```
 # Ubicacion 1
 /usr/share/grub/themes
 # Ubicacion 2
 /boot/grub/themes/
+
+# pagina de instalacion
+https://github.com/vinceliuice/grub2-themes
+
+sudo ./uninstall.sh
+sudo rm -rf grub2-themes
 ```
 
 

@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag: #descomprimir  ",
+                "query": "tag: #grub  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -149,14 +149,14 @@
   },
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1.md",
-    "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
-    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
+    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+    "Chest/Courses/Folder_linux/index_linux.md",
+    "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/index.md",
-    "index_git.md",
-    "Configuracion .dotfiles.md",
+    "Chest/Courses/Folder_linux/index_git.md",
+    "Chest/Courses/Folder_linux/Configuracion .dotfiles.md",
     "Chest/Courses/Folder_linux/Nestor clase 5 redirecciones stdin, stdout y stderr.md",
     "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
     "Chest/Courses/Folder_linux/S4vitar clase 3 control de flojo, operadores y procesos en segundo plano.md",

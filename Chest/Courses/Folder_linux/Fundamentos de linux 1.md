@@ -38,9 +38,20 @@ truncate -s 0 libro.txt
 2. 0: Tamaño a eliminar.
 
 
+## INSTALACION y DESCOMPRECION
 
+**.deb:**
+	Instalar un archivo #deb desde la terminal
+```
+# Instalador
+sudo dpkg -i nombre-del-archivo.deb
 
+# Error por falta de dependencias
+sudo apt-get install -f
+```
 
+**tar.xz:**
+	Descomprimir 
 
 
 

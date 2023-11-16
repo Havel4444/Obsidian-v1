@@ -128,6 +128,14 @@ cd /usr/share/icons/
 sudo cp -r ~/downloads/tema ./
 ```
 
+**TEMA INICIO:**
+	#grub
+```
+# Ubicacion 1
+/usr/share/grub/themes
+# Ubicacion 2
+/boot/grub/themes/
+```
 
 
 

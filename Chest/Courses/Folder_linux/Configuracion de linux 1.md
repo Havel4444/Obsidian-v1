@@ -95,12 +95,17 @@ source ~/.bashrc
 
 
 **BACKGROUND:**
-	El cambio de un fondo de pantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #MATE, asi que `primero se tiene que averiguar este mismo`.
-1. Instalar #gsettings.
+	El cambio de un #fondo-de-pantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #MATE, asi que `primero se tiene que averiguar este mismo`.
+
+1. Descarga desde web.
+```
+wget http://urlimagen.png
+```
+2. Instalar #gsettings.
 ```
 sudo apt-get install gsettings-desktop-schemas
 ```
-2. Cambiar el fondo.
+3. Cambiar el fondo.
 ```
 gsettings set org.mate.background picture-filename '/home/havel/Downloads/fondo.png'
 ```

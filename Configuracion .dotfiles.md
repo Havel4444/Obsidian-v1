@@ -14,6 +14,7 @@ stow .
 	Ejecutar los comando git en _.dotfiles_.
 ```
 git add .
-git c
+git commit -m 'f1'
+git push
 ```
 

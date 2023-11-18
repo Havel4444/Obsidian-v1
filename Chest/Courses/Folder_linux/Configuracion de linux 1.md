@@ -259,7 +259,7 @@ Ruta:
 
 ## THEME
 
-Instalar #oh-my-bash y juntarlo con #kitty-theme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
+Instalar #ohmybash y juntarlo con #kittytheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
 
 **KITTY-THEMES:**
 	El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer. Eliminar el archivo _theme.conf_ para cambiar a otro tema y ejecutar el siguiete comando con el tema elegido.
@@ -269,12 +269,18 @@ https://github.com/dexpota/kitty-themes
 # Comando a ejecutar en la carpeta kitty
 ln -s ./kitty-themes/themes/TEMA.conf ~/.config/kitty/theme.conf
 ```
+Tema elegido Earthsong.
+
+
 **OH MY BASH:**
 	En el siguiente video explicara como instalar oh my bash, esto solo cambiara lo relacionado a la `FUENTE`. `GUARDAR LA CONFIGURACION .BASHRC` porque sera borrado luego de instalar esto.
 ```
 https://www.youtube.com/watch?v=qi5Vzw5AU9M&ab_channel=ContandoBits
-```
 
+# Pagina de temas
+https://github.com/ohmybash/oh-my-bash/wiki/Themes
+```
+Tema elegido mairan.
 
 
 

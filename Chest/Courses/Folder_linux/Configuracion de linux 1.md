@@ -60,10 +60,17 @@ export PATH=~/z:$PATH
 # activacion de la funcion fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 ```
-Ruta:
-	Ubicado en ~/.bashrc.
 
-
+**TEMA PARA VIM:**
+1. Para cambiar los colores en Vim, hay varias formas de hacerlo. Una forma es editar el archivo de configuración de Vim, que se encuentra en ~/.vimrc. Si no existe, puede crear uno. Luego, agregue la siguiente línea al archivo:
+```
+syntax on
+```
+2. Esto habilitará la sintaxis de resaltado de Vim. Para cambiar el esquema de colores, puede agregar una línea como esta:
+```
+colorscheme desert
+```
+3. Esto cambiará el esquema de colores a “desert”. Hay muchos otros esquemas de colores disponibles, como “tango”, “murphy”, “ron”, etc. Puede encontrar más esquemas de colores en línea.
 
 
 ## INSTALL

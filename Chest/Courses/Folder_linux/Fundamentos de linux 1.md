@@ -17,12 +17,14 @@ ls | xargs du -h | sort -h
 ls | xargs du -h | sort -h |fzf --tac
 ```
 
-
 **COPIAR LO SELECCIONADO:**
 	xclip -selection clipboard : copia y guarda en el portapapeles la linea selecionada.
 ```
 less .bash_history | no_dup | fzf | xclip -selection clipboard
 ```
+
+**ARRIBA Y ABAJO SIN FLECHAS:**
+	Usando la combinacion de teclas 'ctrl+p' para arriba y 'ctrl+n' para abajo.
 
 
 
@@ -36,7 +38,6 @@ truncate -s 0 libro.txt
 ``` 
 1. -s: Elijir el tamaño.
 2. 0: Tamaño a eliminar.
-
 
 
 
@@ -69,12 +70,6 @@ sudo apt-get install p7zip-full
 7z x archivo.7z
 7z x 
 ```
-
-
-
-
-
-
 
 
 

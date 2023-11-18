@@ -361,13 +361,6 @@ sudo update-initramfs -u
 
 
 
-## TECLADO REMAP
-
-**MAPEO:**?
-
-
-
-
 ## ALIAS
 
 **BASHRC**
@@ -395,17 +388,23 @@ alias cphi='less .bash_history | nodu | fzf --tac | xclip -selection clipboard'
 
 
 
-
 ## END
 
 **FUNCION SHELL EN BASHRC:**
-	Si tu objetivo es redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
+	El uso del #alias-con-comando redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
 ```
-iner() {
+# En este ejemplo, reemplaza "comando_a_ejecutar" con el comando real que deseas ejecutar. Luego, cuando ejecutes iner, se ejecutará el comando especificado y cualquier mensaje de error se redirigirá al archivo "error.txt" en el escritorio.
+ALIAS() {
     comando_a_ejecutar "$@" 2> /home/havel/Desktop/error.txt
 }
+
+# Ejemplo 2
+cphi2() {
+	grep -v '^#' .bash_history "$@" > ~/.bash_history_filtered | less .bash_history_filtered | fzf --tac | xclip -selection clipboard
+}
 ```
-En este ejemplo, reemplaza "comando_a_ejecutar" con el comando real que deseas ejecutar. Luego, cuando ejecutes iner, se ejecutará el comando especificado y cualquier mensaje de error se redirigirá al archivo "error.txt" en el escritorio.
+
+
 
 
 # LINKS

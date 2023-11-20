@@ -1,31 +1,29 @@
 [[index]]
 [[index_linux]]
 
-## GITHUGB
+## GIT
+
+**COMANDOS:**
+Crear un #repositorio y configurar #git.
+1. git init: Dentro de la carpeta elegida, en el momento se creara una rama fantasma.
+2. git commit -m 'f1'.
+3. git branch -M main: Elegir como tronco a la rama fantasma. 
+4. git remote add origin git\@github.com :Havel4444/asd.git: Vincular github.com con la carpeta local.
+5. git push -u origin main: Enviar el contenido de la carpeta local a github.com\/repositorio
+
+6. git branch _Tronco_: En caso de querer crear un tronco principal.
+7. git branch -d o -D: Eliminar una rama.
+8. git log: Commits.
+9. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo.
+10. git checkout _rama01_: Cambiar de rama.
+
+
+
 
 # VIM
 
-**==VIMRC:==**
-```
-syntax on
-set tabstop=4
-filetype on
-set ruler
-
-command Cp :'<,'>w !xclip -selection clipboard
-
-set list
-set nu
-set relativenumber
-
-set noruler
-set nolist
-```
-Ruta:
-	Ubicado en ~/.vimrc.
-
-
-**==VIMRC-ROOT:==**
+**VIMRC ROOT:**
+	Archivo padre de _.vimrc_, Ubicado en /usr/share/vim/vimrc.
 ```
 syntax on
 set tabstop=4
@@ -33,46 +31,8 @@ filetype on
 set ruler
 set list
 ```
-Ruta:
-	Ubicacion base del la configuracion de _vimrc_. Eliminar _set nu_ y _set list_. Este archivo solo podra ser modificado en modo ROOT.
-	//usr/share/vim/vimrc y //root/.vimrc
 
 
-**==BASHRC:==**
-```
-# alias
-alias nodu="awk '!x[\$0]++'"
-alias es='trans -b :es'
-alias en='trans -b :en'
-alias open='xdg-open'
-alias cphi='less .bash_history | nodu | fzf --tac | xclip -selection clipboard'
-alias er='vim ~/error.txt'
-alias sa='vim ~/salida.txt'
-alias update='sudo apt-get update'
-alias upgrade='sudo apt-get upgrade'
-alias ping='ping 8.8.8.8'
-
-# zoxide para arrancar el sistema
-#. "$(dirname "$BASH_SOURCE")/init.sh"
-
-# activaion de la funcion zi
-. ~/z/z.sh
-export PATH=~/z:$PATH
-
-# activacion de la funcion fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-```
-
-**TEMA PARA VIM:**
-1. Para cambiar los colores en Vim, hay varias formas de hacerlo. Una forma es editar el archivo de configuración de Vim, que se encuentra en ~/.vimrc. Si no existe, puede crear uno. Luego, agregue la siguiente línea al archivo:
-```
-syntax on
-```
-2. Esto habilitará la sintaxis de resaltado de Vim. Para cambiar el esquema de colores, puede agregar una línea como esta:
-```
-colorscheme desert
-```
-3. Esto cambiará el esquema de colores a “desert”. Hay muchos otros esquemas de colores disponibles, como “tango”, “murphy”, “ron”, etc. Puede encontrar más esquemas de colores en línea.
 
 
 ## INSTALL
@@ -81,7 +41,6 @@ colorscheme desert
 ```
 sudo apt install translate-shell -y
 ```
-
 
 ==**ZOXIDE**==
 1. instalar git.
@@ -101,7 +60,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 source ~/.bashrc
 ```
-
 
 **BACKGROUND:**
 	El cambio de un #fondo-de-pantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #MATE, asi que `primero se tiene que averiguar este mismo`.
@@ -152,12 +110,6 @@ sudo ./uninstall.sh
 sudo rm -rf grub2-themes
 ```
 
-
-
-
-**KITTY.CONF PADRE:**
-Ruta:
-	/usr/share/doc/kitty/kitty.conf
 
 
 
@@ -278,27 +230,6 @@ sudo update-initramfs -u
 ```
 touch .bashrc
 ```
-**ALIAS**
-	Un #alias es una cadena de caracteres que se define y que se utiliza para ejecutar un comando determinado.	
-```
-# no duplicar
-alias no_dup="awk '!x[\$0]++'"
-
-# traductor
-alias es='trans -b :es'
-alias en='trans -b :en'
-
-# abrir programas y carpetas
-alias open='xdg-open'
-
-# copiar el historias
-alias cphi='less .bash_history | nodu | fzf --tac | xclip -selection clipboard'
-```
-
-
-
-
-## END
 
 **FUNCION SHELL EN BASHRC:**
 	El uso del #alias-con-comando redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:

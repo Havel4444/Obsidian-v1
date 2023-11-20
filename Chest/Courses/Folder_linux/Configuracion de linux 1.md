@@ -260,10 +260,6 @@ Ruta:
 
 
 
-
-
-
-
 ## THEME
 
 Instalar #ohmybash y juntarlo con #kittytheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.

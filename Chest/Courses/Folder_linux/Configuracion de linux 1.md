@@ -159,6 +159,8 @@ sudo rm -rf grub2-themes
 # Ruta predeterminada de la configuracion de kitty
 include /usr/share/doc/kitty/examples/kitty.conf
 
+# kk
+
 # Ruta de themes de kitty
 include ./theme.conf
 
@@ -179,11 +181,16 @@ map ctrl+w close_window
 
 
 # Border
-active_border_color #086A87
+active_border_color #FE8019
 # Distancia del margen
-window_margin_width 1.5
+window_margin_width 2.7
 # Ancho de bordes
-window_border_width 1.2pt
+window_border_width 1.8pt
+# Margen
+window_padding_width 0
+single_window_margin_width 0
+#window_margin_width 0
+#single_window_padding_width 0
 
 
 
@@ -256,7 +263,6 @@ Ruta:
 **KITTY.CONF PADRE:**
 Ruta:
 	/usr/share/doc/kitty/kitty.conf
-
 
 
 

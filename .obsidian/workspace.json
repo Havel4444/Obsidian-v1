@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S4vitar clase 7 lectura e interpretacin de permisos.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S4vitar clase 7 lectura e interpretacin de permisos.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S4vitar clase 7 lectura e interpretacin de permisos.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S4vitar clase 7 lectura e interpretacin de permisos.md"
+                "file": "Chest/Courses/Folder_linux/index_linux.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/index_linux.md",
     "S4vitar clase 7 lectura e interpretacin de permisos.md",
+    "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/S4vitar clase 3 control de flojo, operadores y procesos en segundo plano.md",

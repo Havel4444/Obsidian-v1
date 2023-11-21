@@ -23,6 +23,11 @@
 [[S4vitar clase 4 descriptores de archivos]]
 [[S4vitar clase 7 lectura e interpretacin de permisos]]
 
+
+
+
+
+
 ## INTRO A REDES C/
 
 

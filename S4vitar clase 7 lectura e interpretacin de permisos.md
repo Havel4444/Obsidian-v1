@@ -1,7 +1,7 @@
 [[index]]
 [[index_linux]]
 
-## PERMISOS
+## LECTURA Y PERMISOS
 
 **CATEGORIA:**
 	Cada carpeta o archivo en un directorio ira acompañado de una primera letra que lo identifica.
@@ -17,4 +17,23 @@
 2. w: escritura.
 3. x: ejecucion.
 
-Todos los archivos o carpetas son creados por un individuo di
+Todos los archivos o carpetas pueden ser creados por un individuo diferente, por ejemplo:
+```
+# archivo y carpeta creados en modo root
+drwxr-xr-x root root ...
+-rw-r--r-- root root ...
+# archivo y carpeta creados en modo normal
+drwxr-xr-x havel havel ...
+-rw-r--r-- havel havel ...
+```
+
+
+
+
+
+
+
+
+
+
+

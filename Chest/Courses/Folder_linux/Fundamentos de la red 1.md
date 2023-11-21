@@ -1,3 +1,4 @@
+[[index]]
 [[index_linux]]
 
 # RED

@@ -25,3 +25,21 @@ ifconfig
 ```
 curl ifconfig.me
 ```
+
+
+**DISPOSITIVOS CONECTADOS EN LA RED:**
+	El comando #ArpScan sirve par ver las ips y direcciones mac que estan conectadas a la red.
+```
+sudo arp-scan localnet
+```
+
+
+
+
+
+
+
+
+
+
+

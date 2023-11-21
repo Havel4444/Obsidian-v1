@@ -21,7 +21,7 @@ Si esto no funciona, también puedes intentar desactivar la opción de bloqueo d
 ## GIT
 
 **COMANDOS:**
-Crear un #repositorio y configurar #git.
+Crear un #Repositorio y configurar #Git.
 1. git init: Dentro de la carpeta elegida, en el momento se creara una rama fantasma.
 2. git commit -m 'f1'.
 3. git branch -M main: Elegir como tronco a la rama fantasma. 
@@ -54,6 +54,8 @@ set list
 
 ## INSTALL
 
+Programas a #Instalar.
+
 **TRANSLATE**
 ```
 sudo apt install translate-shell -y
@@ -64,11 +66,11 @@ sudo apt install translate-shell -y
 ```
 sudo apt install curl git
 ```
-2. Descargar la #zoxide.
+2. Descargar la #Zoxide.
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsouza/zoxide/master/install.sh | bash
 ```
-3. Instalar #fzf y #z, se configuran automaticamente en .bashrc
+3. Instalar #Fzf y #Z, se configuran automaticamente en .bashrc
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -79,13 +81,13 @@ source ~/.bashrc
 ```
 
 **BACKGROUND:**
-	El cambio de un #fondo-de-pantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #MATE, asi que `primero se tiene que averiguar este mismo`.
+	El cambio de un #FondoDePantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #Mate, asi que `primero se tiene que averiguar este mismo`.
 
 1. Descarga desde web.
 ```
 wget http://urlimagen.png
 ```
-2. Instalar #gsettings.
+2. Instalar #Gsettings.
 ```
 sudo apt-get install gsettings-desktop-schemas
 ```
@@ -95,7 +97,7 @@ gsettings set org.mate.background picture-filename '/home/havel/Pictures/
 ```
 
 **TEMA:**
-	Los #temas de en este caso Debian 11 con gestor de ventanas MATE y un GNOME2 puedes ser descargados de la siguiente pagina.
+	Los #Temas de en este caso Debian 11 con gestor de ventanas MATE y un GNOME2 puedes ser descargados de la siguiente pagina.
 ```
 https://www.mate-look.org/browse?cat=135&ord=rating
 ```
@@ -113,7 +115,7 @@ sudo cp -r ~/downloads/tema ./
 ```
 
 **TEMA INICIO:**
-	Configuracion e instalacion de #grub.
+	Configuracion e instalacion de #Grub.
 ```
 # Ubicacion 1
 /usr/share/grub/themes
@@ -127,12 +129,17 @@ sudo ./uninstall.sh
 sudo rm -rf grub2-themes
 ```
 
+**REDSHIFT:**
+```
+sudo apt install redshift
+```
+
 
 
 
 ## THEME
 
-Instalar #ohmybash y juntarlo con #kittytheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
+Instalar #OhMyBash y juntarlo con #KyttyTheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
 
 **KITTY-THEMES:**
 	El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer. Eliminar el archivo _theme.conf_ para cambiar a otro tema y ejecutar el siguiete comando con el tema elegido.
@@ -157,9 +164,10 @@ Tema elegido mairan.
 
 
 
+
 ## TECLADO KEYBOARD SHORTCUTS
 
-Configuracion mediante #keyboard-shortcuts.
+Configuracion mediante #KeyboardShortcuts.
 
 **VENTANA:**
 	Cambio del movimiento de ventana `MOD4+LEFT` y `MOD4+RIGHT`. 
@@ -203,7 +211,7 @@ Volume play = Shift+Ctrl+Y
 ## ETHERNET
 
 **ERROR DE CONEXION**
-	La conexion de internet me diante clable al router en parrot trae, en algunos cosos, un error en la configuracion de #controladores-de-red, para solucionarlos en `PARROT SECURITY OS` con `DEBIAN 11` estan estos siguientes pasos:
+	La conexion de internet me diante clable al router en parrot trae, en algunos cosos, un error en la configuracion de #ControladoreDeRed, para solucionarlos en `PARROT SECURITY OS` con `DEBIAN 11` estan estos siguientes pasos:
 1. Verificar si el controlador esta cargado.
 ```
 # Modo automatico
@@ -249,7 +257,7 @@ touch .bashrc
 ```
 
 **FUNCION SHELL EN BASHRC:**
-	El uso del #alias-con-comando redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
+	El uso del #AliasConComandos redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
 ```
 # En este ejemplo, reemplaza "comando_a_ejecutar" con el comando real que deseas ejecutar. Luego, cuando ejecutes iner, se ejecutará el comando especificado y cualquier mensaje de error se redirigirá al archivo "error.txt" en el escritorio.
 ALIAS() {

@@ -1,6 +1,23 @@
 [[index]]
 [[index_linux]]
 
+## DEBIAN
+
+**COMANDOS:**
+	Descativar la funcion de bloqueo de pantalla para la combinacion de taclas al movimiento en una terminal.
+```
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+```
+Si esto no funciona, también puedes intentar desactivar la opción de bloqueo de pantalla a través de la configuración del sistema.
+1. Haz clic en el menú de aplicaciones en la esquina superior izquierda de la pantalla.
+2. Busca y abre la aplicación “Configuración”.
+3. Haz clic en “Privacidad” en la barra lateral izquierda.
+4. Desplázate hacia abajo hasta “Bloqueo de pantalla” y haz clic en él.
+5. Desactiva la opción “Bloquear” para desactivar la función de bloqueo de pantalla.
+
+
+
+
 ## GIT
 
 **COMANDOS:**

@@ -20,9 +20,20 @@ chgrp havel archivo
 
 ## USUARIO
 
-
-
-
+**Ubicacion:**
+	El archivo que contiene a todos los usuarios
+```
+/etc/passwd
+```
+&&
+	Cada campo esta separado por un ':' y cada uno contiene:
+1. Nombre de usuario.
+2. Contraseña.
+3. ID del usuario.
+4. ID del grupo principal.
+5. Informacion del usuario.
+6. Ubicacion.
+7. Shell utilizado.
 
 
 

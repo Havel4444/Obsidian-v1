@@ -35,7 +35,19 @@ chgrp havel archivo
 6. Ubicacion.
 7. Shell utilizado.
 
+**CREACION, ELIMINACION Y VISUALIZACION:**
+	Los siguientes comando tambien crearan y eliminaran los directorios simbolicos.
+	Por alguna razon si lo creo con una shell bash el sistema produce errores como el siguiente -> bash: /dev/stderr: Permission denied.
+```
+# crear
+useradd ramon -s /bin/zsh -d /home/ramon
 
+# eliminar
+userdel -r ramon
+
+# visualizar usuarios
+cut -d: -f1 /etc/passwd
+```
 
 
 

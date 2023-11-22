@@ -35,7 +35,18 @@ sudo arp-scan localnet
 ```
 
 
+## RED WLAN
 
+**QUE ES?**
+
+```
+
+desctivar
+pactl unload-module module-simple-protocol-tcp
+
+activar 
+pactl load-module module-simple-protocol-tcp rate=44100 format=s16le channels=2 source=auto.slave.monitor record=true port=8000
+```
 
 
 

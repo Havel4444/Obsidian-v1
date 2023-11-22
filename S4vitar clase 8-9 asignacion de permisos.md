@@ -49,7 +49,18 @@ userdel -r ramon
 cut -d: -f1 /etc/passwd
 ```
 
+**GRUPOS:**
+	Los grupos pueden asignarse con el siguiente comando:
+```
+# para grupos
+chgrup havel archivo
 
+# usuario
+chown havel archivo
+
+# usuario y grupo
+chown havel:havel archivo
+```
 
 
 

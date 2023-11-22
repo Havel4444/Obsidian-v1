@@ -23,7 +23,6 @@
 [[S4vitar clase 4 descriptores de archivos]]
 [[S4vitar clase 7 lectura e interpretacin de permisos]]
 [[S4vitar clase 8-9 asignacion de permisos]]
-[[S4vitar clase 9 asignacion de permisos 2/2]]
 
 
 

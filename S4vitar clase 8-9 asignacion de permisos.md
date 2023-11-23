@@ -16,7 +16,17 @@ chmod u+w,g+w,o-r
 chgrp havel archivo
 ``` 
 
+**CONFIGURACION:**
+	En el caso de la carpeta juan, si este mismo no esta añadido en usuarios o grupos no podra tener acceso a su configuracion por ejemplo los alias.
+```
+# Dentre del grupo 'clientes' esta juan agregado.
+drwxr-xr-x 31 havel havel      4096 nov 23 16:20 havel
+drwxrwx---  2 root  clientes   4096 nov 23 16:18 juan
 
+# En este caso el usuario juan no podra acceder a su configuracion porque no tiene permisos de usuario ni de grupo en la carpeta 'juan'
+drwxr-xr-x 31 havel havel      4096 nov 23 16:20 havel
+drwxrwx---  2 root  havel   4096 nov 23 16:18 juan
+```
 
 
 ## USUARIO

@@ -18,12 +18,13 @@ chgrp havel archivo
 
 
 
+
 ## USUARIO
 
 **Ubicacion:**
 	El archivo que contiene a todos los usuarios
 ```
-/etc/passwd
+cat /etc/passwd
 ```
 &&
 	Cada campo esta separado por un ':' y cada uno contiene:
@@ -49,7 +50,17 @@ userdel -r ramon
 cut -d: -f1 /etc/passwd
 ```
 
-**GRUPOS:**
+
+
+
+## GRUPO
+
+**UBICACION:**
+```
+cat /etc/group 
+```
+
+**PERMISOS:**
 	Los grupos pueden asignarse con el siguiente comando:
 ```
 # para grupos
@@ -61,6 +72,40 @@ chown havel archivo
 # usuario y grupo
 chown havel:havel archivo
 ```
+
+**CREACION:**
+	Codigo de creacion de un grupo contenedor.
+```
+groupadd manada
+```
+**AGREGACION:**
+	A los grupos 'contenedores' como la misma palabra lo dice es les puede añadir usuarios.
+```
+usermod -a -G manada havel
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

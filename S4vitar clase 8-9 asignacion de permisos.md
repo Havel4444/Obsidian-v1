@@ -22,7 +22,7 @@ chgrp havel archivo
 ## USUARIO
 
 **Ubicacion:**
-	El archivo que contiene a todos los usuarios
+	El archivo que contiene a cada #Usuario.
 ```
 cat /etc/passwd
 ```
@@ -56,6 +56,7 @@ cut -d: -f1 /etc/passwd
 ## GRUPO
 
 **UBICACION:**
+	El archivo que contiene a cada #Grupo.
 ```
 cat /etc/group 
 ```

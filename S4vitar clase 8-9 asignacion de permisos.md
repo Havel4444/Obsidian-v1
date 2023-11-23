@@ -48,6 +48,7 @@ cat /etc/passwd
 
 **CREACION, ELIMINACION Y VISUALIZACION:**
 	Los siguientes comando tambien crearan y eliminaran los directorios simbolicos.
+	Luego de ser creados es `OBLIGATORIO` vincular al usuario a su carpeta de configuracion '/home/usuario' para una 
 	Por alguna razon si lo creo con una shell bash el sistema produce errores como el siguiente -> bash: /dev/stderr: Permission denied.
 ```
 # crear

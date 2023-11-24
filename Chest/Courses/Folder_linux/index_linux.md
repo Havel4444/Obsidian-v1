@@ -21,9 +21,10 @@
 
 [[S4vitar clase 3 control de flojo, operadores y procesos en segundo plano]]
 [[S4vitar clase 4 descriptores de archivos]]
+
 [[S4vitar clase 7 lectura e interpretacin de permisos]]
 [[S4vitar clase 8-9 asignacion de permisos]]
-
+[[S4vitar clase 10 notacion octal de permisos]]
 
 
 

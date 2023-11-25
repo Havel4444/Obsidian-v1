@@ -21,7 +21,7 @@ chmod 750 archivo
 ## PERMISO ESPECIAL: STICKY BIT
 
 **DEFINICION:**
-	El permiso #StickyBit restringe la eliminacion y el renombramiento de los archivo y directorios pero `SOLO A GRUPOS Y A OTROS`.
+	El permiso #StickyBit deniega los permisos '777 y 666' a archivo y directorios de cualquier usuario pero `SOLO A GRUPOS Y A OTROS`.
 **ASIGNACION:**
 	Puede ser asignado con el siguiente comando:
 ```
@@ -58,22 +58,3 @@ https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
 https://keepcoding.io/blog/que-es-el-sticky-bit-y-como-configurarlo/
 https://www.fpgenred.es/GNU-Linux/el_bit_sticky.html
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

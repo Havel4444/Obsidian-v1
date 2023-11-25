@@ -1,9 +1,9 @@
 [[index]]
 [[index_linux]]
 
-## PERMISO OCATAL
+## NOTACION OCATAL
 
-**CLAVE:**
+**VALOR:**
 	Cada permiso 'r,w,x' tiene un valor numero #octal.
 1. r: 4
 2. w: 2
@@ -17,6 +17,10 @@ chmod 750 archivo
 ```
 
 
+
+## PERMISO ESPECIAL: STICKY BIT
+
+**
 
 
 
@@ -38,8 +42,12 @@ chmod 750 archivo
 ## LINK
 
 ```
-# permisos
+# Notacion octal
 https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
+
+# Permisos especial: sticky bit
+https://keepcoding.io/blog/que-es-el-sticky-bit-y-como-configurarlo/
+https://www.fpgenred.es/GNU-Linux/el_bit_sticky.html
 ```
 
 

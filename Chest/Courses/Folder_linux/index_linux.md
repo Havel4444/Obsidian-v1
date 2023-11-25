@@ -24,7 +24,7 @@
 
 [[S4vitar clase 7 lectura e interpretacin de permisos]]
 [[S4vitar clase 8-9 asignacion de permisos]]
-[[S4vitar clase 10 notacion octal de permisos]]
+[[S4vitar clase 10, 11, 12 y 13 permisos 2]]
 
 
 

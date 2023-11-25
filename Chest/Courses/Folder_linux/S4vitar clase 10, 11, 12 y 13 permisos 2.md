@@ -20,8 +20,17 @@ chmod 750 archivo
 
 ## PERMISO ESPECIAL: STICKY BIT
 
-**
+**DEFINICION:**
+	El permiso #StickyBit restringe la eliminacion y el renombramiento de los archivo y directorios pero `SOLO A GRUPOS Y A OTROS`.
+**ASIGNACION:**
+	Puede ser asignado con el siguiente comando:
+```
+# Modo normal
+chmod +t archivo/directorio
 
+# Modo octal
+chmod 1777 archivo/directorio
+```
 
 
 

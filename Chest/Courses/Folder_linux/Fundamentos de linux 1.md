@@ -30,9 +30,15 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 	El comando xargs puede ser agregado como conjugacion de ciertos comandos, por ejemplo:
 1. Eliminar archivos filtrados por find:
 ```
+# Este comando eliminará todos los archivos con extensión ".txt" 
+# en el directorio actual y sus subdirectorios.
 find . -name "*.txt" | xargs rm
 ```
-2. 
+2.Ejecutar un comando en varios archivos: 
+```
+# Este comando buscará el patrón en todos los archivos listados por ls.
+ls | xargs grep "patrón"
+```
 
 
 

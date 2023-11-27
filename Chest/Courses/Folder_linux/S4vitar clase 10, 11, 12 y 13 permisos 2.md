@@ -51,6 +51,7 @@ chattr -i -V archivo/directorio
 	"c" o "C": Indica que el atributo "no-clobber" está activado. Este atributo también controla la capacidad de agregar datos al archivo, pero de manera más restrictiva que el atributo "append-only". Si el atributo "c" está establecido, solo los usuarios con capacidad de escritura en el directorio pueden agregar datos al archivo. Si el atributo "C" está establecido, incluso el propietario del archivo no puede agregar datos.
 
 
+## PERMISO ESPECIAL: SUID Y SGID
 
 
 

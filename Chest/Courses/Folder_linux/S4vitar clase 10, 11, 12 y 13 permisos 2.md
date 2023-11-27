@@ -45,9 +45,6 @@ chattr +i -V archivo/directorio
 # Quitar
 chattr -i -V archivo/directorio
 ```
-&&
-	
-
 
 **PERMISOS:**
 	"e": Indica que el atributo "append-only" está activado. Cuando este atributo está establecido en un archivo, solo se le permite agregar datos al final del archivo. No se pueden modificar ni eliminar datos existentes.
@@ -74,4 +71,14 @@ https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
 # Permisos especial: sticky bit
 https://keepcoding.io/blog/que-es-el-sticky-bit-y-como-configurarlo/
 https://www.fpgenred.es/GNU-Linux/el_bit_sticky.html
+
+# Permisos especiales: chattr
+https://rm-rf.es/chattr-y-lsattr-visualizar-y-modificar-atributos-en-sistemas-de-ficheros-linux/#:~:text=El%20primer%20comando%2C%20lsattr%20permite,chmod%2C%20chown%2Csetfacl%E2%80%A6)
+https://programmerclick.com/article/5604675172/
 ```
+
+
+
+
+
+

@@ -4,7 +4,7 @@
 ## NOTACION OCATAL
 
 **VALOR:**
-	Cada permiso 'r,w,x' tiene un valor numero #octal.
+	Cada permiso 'r,w,x' tiene un valor numero #Octal.
 1. r: 4
 2. w: 2
 3. x: 1
@@ -54,12 +54,26 @@ chattr -i -V archivo/directorio
 ## PERMISO ESPECIAL: SUID Y SGID
 
 **DEFINICION:**
-	
+	Los permisos #SUID y #SGID activan la funcion root de forma pasiva.
+**COMANDO:**
+```
+# Para usuario con y sin numeracion octal
+chmod 4755(4000) directorio
+chmod 4644(4000) archivo
 
+# Para grupo con y sin numeracion octal
+chmod 2755(2000) directorio
+chmod 2644(2000) archivo
+```
 
-
-
-
+**EJEMPLO DE USO:**
+	En el siguiente ejemplo se vera el paso a paso de como acceder al usiario root de otro linux mediante un _suid_/_sgid_.
+	Estando en modo no root.
+1. Buscar archivos/directorios con estas funciones activadas y luego filtralas con un redireccionamiento.
+```
+find / -type f -perm -4000 2>/dev/null
+```
+2. Elegir una de la lista, en caso de no tener se puede agrar esta funcion especial 
 
 
 

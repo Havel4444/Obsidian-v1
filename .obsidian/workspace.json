@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 10, 11, 12 y 13 permisos 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 10, 11, 12 y 13 permisos 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 10, 11, 12 y 13 permisos 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md"
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 10, 11, 12 y 13 permisos 2.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10, 11, 12 y 13 permisos 2.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8-9 asignacion de permisos.md",
     "Chest/Courses/index.md",
@@ -168,7 +169,6 @@
     "Chest/Courses/Folder_linux/S4vitar clase 3 control de flojo, operadores y procesos en segundo plano.md",
     "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/Folder_linux/Nestor clase 5 redirecciones stdin, stdout y stderr.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 2 introduccion a linux 2.md",
     "Chest/Courses/Folder_linux/S4vitar clase 1 introduccion a linux.md",
     "DEMO",
     "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",

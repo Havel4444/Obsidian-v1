@@ -26,6 +26,14 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 **ARRIBA Y ABAJO SIN FLECHAS:**
 	Usando la combinacion de teclas 'ctrl+p' para arriba y 'ctrl+n' para abajo.
 
+**==XARGS==:**
+	El comando xargs puede ser agregado como conjugacion de ciertos comandos, por ejemplo:
+1. Eliminar archivos filtrados por find:
+```
+find . -name "*.txt" | xargs rm
+```
+2. 
+
 
 
 

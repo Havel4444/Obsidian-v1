@@ -55,6 +55,7 @@ cat /etc/passwd
 useradd ramon -s /bin/zsh -d /home/ramon
 
 # eliminar
+# En el caso q
 userdel -r ramon
 
 # visualizar usuarios

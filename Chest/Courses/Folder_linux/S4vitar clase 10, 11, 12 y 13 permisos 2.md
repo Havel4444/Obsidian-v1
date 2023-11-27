@@ -71,9 +71,19 @@ chmod 2644(2000) archivo
 	Estando en modo no root.
 1. Buscar archivos/directorios con estas funciones activadas y luego filtralas con un redireccionamiento.
 ```
+# Usuario
 find / -type f -perm -4000 2>/dev/null
+
+# Grupo
 ```
-2. Elegir una de la lista, en caso de no tener se puede agrar esta funcion especial 
+2. Elegir una de la lista, en caso de no tener se puede agregar esta funcion especial.
+```
+# Usuario
+chmod u+s archivo/directorio
+
+# Grupo
+chmod g+s archiv
+```
 
 
 

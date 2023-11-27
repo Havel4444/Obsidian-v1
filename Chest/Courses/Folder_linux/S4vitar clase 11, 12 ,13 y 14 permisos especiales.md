@@ -1,23 +1,6 @@
 [[index]]
 [[index_linux]]
 
-## NOTACION OCATAL
-
-**VALOR:**
-	Cada permiso 'r,w,x' tiene un valor numero #Octal.
-1. r: 4
-2. w: 2
-3. x: 1
-&&
-	La enumeracion octal te permite agregar permisos de manera mas rapida y limpia. Por ejemplo.
-```
-# Agregar todos los permisos al usuario, permisos de lectura y ejecucion al
-# grupo y sin permisos para otro.
-chmod 750 archivo
-```
-
-
-
 ## PERMISO ESPECIAL: STICKY BIT
 
 **DEFINICION:**
@@ -33,7 +16,9 @@ chmod 1777 archivo/directorio
 ```
 
 
-## CONTROL DE ATRIBUTOS DE FICHERO
+
+
+## CONTROL DE ATRIBUTOS DE FICHERO: ATTR
 
 **COMANDOS:**
 	El #Lsattr visualiza los atributos de fichero.
@@ -49,6 +34,8 @@ chattr -i -V archivo/directorio
 **PERMISOS:**
 	"e": Indica que el atributo "append-only" está activado. Cuando este atributo está establecido en un archivo, solo se le permite agregar datos al final del archivo. No se pueden modificar ni eliminar datos existentes.
 	"c" o "C": Indica que el atributo "no-clobber" está activado. Este atributo también controla la capacidad de agregar datos al archivo, pero de manera más restrictiva que el atributo "append-only". Si el atributo "c" está establecido, solo los usuarios con capacidad de escritura en el directorio pueden agregar datos al archivo. Si el atributo "C" está establecido, incluso el propietario del archivo no puede agregar datos.
+
+
 
 
 ## PERMISO ESPECIAL: SUID Y SGID
@@ -75,15 +62,28 @@ chmod 2644(2000) archivo
 find / -type f -perm -4000 2>/dev/null
 
 # Grupo
+find / -type f -perm -2000 2>/dev/null
 ```
-2. Elegir una de la lista, en caso de no tener se puede agregar esta funcion especial.
+2. Elegir una de la lista, en caso de no tener se puede agregar esta funcion especial. `ACCION EN MODO ROOT`.
 ```
 # Usuario
 chmod u+s archivo/directorio
 
 # Grupo
-chmod g+s archiv
+chmod g+s archivo/directorio
 ```
+3. Tomaremos de ejemplo al archivo _python3.9_
+```
+$ chmod u+s /usr/bin/python3.9
+$ python3.9 # Ejecutamos el archivo SUID
+$ import os # Instalamos os(siempre)
+$ os.setuid(0) # Entremos en modo ROOT
+$ os.system('bash') # Elegimos una SHEEL
+```
+
+
+## 
+
 
 
 
@@ -102,12 +102,8 @@ https://rm-rf.es/chattr-y-lsattr-visualizar-y-modificar-atributos-en-sistemas-de
 https://programmerclick.com/article/5604675172/
 
 # Permisos especiales: SUID Y SGID
-
+https://deephacking.tech/permisos-sgid-suid-y-sticky-bit-linux/#:~:text=Permiso%20SGID,-El%20permiso%20SGID&text=Si%20se%20establece%20en%20un,perteneciente%2C%20el%20grupo%20del%20directorio.
+https://www.ochobitshacenunbyte.com/2019/06/17/permisos-especiales-en-linux-sticky-bit-suid-y-sgid/
+https://www.ibiblio.org/pub/linux/docs/LuCaS/Manuales-LuCAS/SEGUNIX/unixsec-2.1-html/node56.html
 
 ```
-
-
-
-
-
-

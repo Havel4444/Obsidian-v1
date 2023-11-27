@@ -9,6 +9,18 @@
 # agregar permisos en todos los grupos.
 chmod u+w,g+w,o-r
 ```
+**==NUM NOTACION ACTAL==:**
+	Cada permiso 'r,w,x' tiene un valor numero #Octal.
+1. r: 4
+2. w: 2
+3. x: 1
+&&
+	La enumeracion octal te permite agregar permisos de manera mas rapida y limpia. Por ejemplo.
+```
+# Agregar todos los permisos al usuario, permisos de lectura y ejecucion al
+# grupo y sin permisos para otro.
+chmod 750 archivo
+```
 
 **AÑADIR GRUPOS:**
 	Dentro de lo permitido donde estan los grupos y otros pueden agregarse con el siguiente comando:
@@ -97,30 +109,6 @@ groupadd manada
 ```
 usermod -a -G manada havel
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

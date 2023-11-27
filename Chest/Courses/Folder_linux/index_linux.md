@@ -18,15 +18,15 @@
 ## INTRO A LINUX C/S4VITAR
 [[S4vitar clase 1 introduccion a linux]]
 [[S4vitar clase 2 introduccion a linux 2]]
+[[S4vitar clase 3 introduccion a linux 3]]
 
-[[S4vitar clase 3 control de flojo, operadores y procesos en segundo plano]]
 [[S4vitar clase 4 descriptores de archivos]]
 
 [[S4vitar clase 7 lectura e interpretacin de permisos]]
-[[S4vitar clase 8-9 asignacion de permisos]]
-[[S4vitar clase 10, 11, 12 y 13 permisos 2]]
+[[S4vitar clase 8, 9 y 10 asignacion y creacion de permisos]]
+[[S4vitar clase 11, 12 ,13 y 14 permisos especiales]]
 
-
+[[S4vitar clase 15]]
 
 
 

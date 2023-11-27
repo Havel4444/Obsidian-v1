@@ -51,11 +51,12 @@ cat /etc/passwd
 	Luego de ser creados es `OBLIGATORIO` vincular al usuario a su carpeta de configuracion '/home/usuario' para una 
 	Por alguna razon si lo creo con una shell bash el sistema produce errores como el siguiente -> bash: /dev/stderr: Permission denied.
 ```
-# crear
+# Crear
 useradd ramon -s /bin/zsh -d /home/ramon
 
-# eliminar
-# En el caso q
+# Eliminar
+# En el caso de ser eliminado y porteriormente agregado como 'usuario'/'grupo'
+# el nombre sera remplazado por su numero identificador respectivamente.
 userdel -r ramon
 
 # visualizar usuarios

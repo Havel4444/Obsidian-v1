@@ -26,7 +26,7 @@
 [[S4vitar clase 8, 9 y 10 asignacion y creacion de permisos]]
 [[S4vitar clase 11, 12 ,13 y 14 permisos especiales]]
 
-[[S4vitar clase 15]]
+[[S4vitar clase 15 sistema]]
 
 
 

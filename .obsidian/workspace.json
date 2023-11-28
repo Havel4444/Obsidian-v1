@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 15.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 15.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 15.md",
+                "file": "Chest/Courses/Folder_linux/index_linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 15.md"
+                "file": "Chest/Courses/Folder_linux/index_linux.md"
               }
             }
           }
@@ -149,11 +149,11 @@
   },
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
+    "Chest/Courses/Folder_linux/S4vitar clase 15 sistema.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8, 9 y 10 asignacion y creacion de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 3 introduccion a linux 3.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 15.md",
     "Chest/Courses/Folder_linux/S4vitar clase 7 lectura e interpretacin de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1.md",

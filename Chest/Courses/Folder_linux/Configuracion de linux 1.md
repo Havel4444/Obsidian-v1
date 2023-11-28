@@ -273,6 +273,38 @@ cphi2() {
 
 
 
+# DESCOMPRECION
+
+Comandos para instalar y #descomprimir. 
+**.deb:**
+```
+# Instalador
+sudo dpkg -i nombre-del-archivo.deb
+sudo dpkg -i
+
+# Error por falta de dependencias
+sudo apt-get install -f
+```
+
+**tar.xz:**
+```
+tar -xJvf nombre-del-archivo.tar.xz
+tar -xJvf 
+```
+
+**7z:**
+```
+# Instalador
+sudo apt-get install p7zip-full
+
+# Descompresor
+7z x archivo.7z
+7z x 
+```
+
+
+
+
 # LINKS
 Comandos basicos de linux:
 https://www.fing.edu.uy/inco/cursos/sistoper/recursosLaboratorio/tutorial0.pdf

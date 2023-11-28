@@ -117,6 +117,9 @@ usermod -a -G manada havel
 ## LINK
 
 ```
+# Notacion octal
+https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
+
 # permisos
 https://www.hostinger.es/tutoriales/cambiar-permisos-y-propietarios-linux-linea-de-comandos/
 https://www.softzone.es/linux/tutoriales/permisos-archivos-directorios-linux/

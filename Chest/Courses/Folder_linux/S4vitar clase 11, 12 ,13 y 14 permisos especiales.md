@@ -82,7 +82,29 @@ $ os.system('bash') # Elegimos una SHEEL
 ```
 
 
-## 
+
+
+## PRIVILEGIO ESPECIAL: CAPABILITIES
+
+**DEFINICION:**
+	Los permisos #Setcap y #Getcap agregan/eliminan y visualizan de forma mega pasiva al usuario root.
+**COMANDOS:**
+1. Agregar.
+```
+setcap cap_setuid+ep /usr/bin/python3.9
+```
+2. Eliminar.
+```
+setcap -r /usr/bin/python3.9
+```
+4. Visualizar.
+```
+getcap -r / 2>/dev/null
+```
+6. Visualizar instantaneamente.
+```
+getcap !$
+```
 
 
 
@@ -90,9 +112,6 @@ $ os.system('bash') # Elegimos una SHEEL
 ## LINK
 
 ```
-# Notacion octal
-https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
-
 # Permisos especial: sticky bit
 https://keepcoding.io/blog/que-es-el-sticky-bit-y-como-configurarlo/
 https://www.fpgenred.es/GNU-Linux/el_bit_sticky.html
@@ -106,4 +125,6 @@ https://deephacking.tech/permisos-sgid-suid-y-sticky-bit-linux/#:~:text=Permiso%
 https://www.ochobitshacenunbyte.com/2019/06/17/permisos-especiales-en-linux-sticky-bit-suid-y-sgid/
 https://www.ibiblio.org/pub/linux/docs/LuCaS/Manuales-LuCAS/SEGUNIX/unixsec-2.1-html/node56.html
 
+# Privilegios especiales: capabilities
+http://www.etl.it.uc3m.es/Linux_Capabilities
 ```

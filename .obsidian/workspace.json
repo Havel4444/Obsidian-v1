@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "S4vitar clase 16 sistema.md",
+                "file": "S4vitar clase 16 find.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fundame",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "S4vitar clase 16 sistema.md",
+                "file": "S4vitar clase 16 find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "S4vitar clase 16 sistema.md",
+                "file": "S4vitar clase 16 find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "S4vitar clase 16 sistema.md"
+                "file": "S4vitar clase 16 find.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "1fc0e22683594914",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/index_linux.md",
     "Fundamentos de linux 1 comandos.md",
-    "S4vitar clase 16 sistema.md",
+    "S4vitar clase 16 find.md",
+    "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos y practica.md",

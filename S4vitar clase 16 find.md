@@ -3,6 +3,8 @@
 
 ## FIND
 
+#find 
+
 **BUSQUEDA POR GRUPO/USUARIO:**
 	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```
@@ -28,7 +30,20 @@ find / -user havel -executable -type f 2>/dev/null
 ---------------------------------------------------------------------------------
 # Practica: Busqueda por usuario/g, tipo y visualizarlo con permisos
 find / -user havel -writable -type f 2>/dev/null | xargs ls -l
+# Practica2: agregando fzf
+find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ```
+
+**BUSQUEDA POR SIMILITUD:**
+	Busqueda por el nombre incompleto.
+```
+find / -name kitt\* 2>/dev/null
+
+---------------------------------------------------------------------------------
+# Practica: Busqueda por el nombre de algo, mas fzf
+find / -name kitt\* 2>/dev/null | fzf
+```
+
 
 
 ## XARGS
@@ -38,44 +53,3 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l
 ```
 find / -type f | xargs ls -l
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

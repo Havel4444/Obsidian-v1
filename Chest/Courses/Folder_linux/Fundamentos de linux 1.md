@@ -34,12 +34,15 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 # en el directorio actual y sus subdirectorios.
 find . -name "*.txt" | xargs rm
 ```
-2.Ejecutar un comando en varios archivos: 
+2. Ejecutar un comando en varios archivos: 
 ```
 # Este comando buscará el patrón en todos los archivos listados por ls.
 ls | xargs grep "patrón"
 ```
-
+3. Listar por permisos 
+```
+find / -type f | xargs ls -l
+```
 
 
 

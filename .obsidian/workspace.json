@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nestor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -162,9 +162,11 @@
   },
   "active": "1fc0e22683594914",
   "lastOpenFiles": [
-    "Fundamentos de linux 1 comandos.md",
-    "S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/index_linux.md",
+    "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
+    "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
+    "S4vitar clase 16 find.md",
+    "Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos y practica.md",
@@ -185,10 +187,8 @@
     "DEMO/DEMO FILE.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "S4vitar clase 8 asignacion de permisos 1",
-    "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/Folder_linux/Nestor clase 5 redirecciones stdin, stdout y stderr.md",
     "Chest/Courses/Folder_linux/S4vitar clase 1 introduccion a linux.md",
-    "DEMO",
-    "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md"
+    "DEMO"
   ]
 }

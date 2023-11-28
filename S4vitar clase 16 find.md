@@ -5,7 +5,7 @@
 
 #find 
 
-**BUSQUEDA POR GRUPO/USUARIO:**
+**GRUPO/USUARIO:**
 	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```
 # Grupo
@@ -15,7 +15,7 @@ find / -group havel type f 2>/dev/null
 find / -user havel type d 2>/dev/null
 ```
 
-**BUSQUEDA POR GRUPO/USUARIO CON PERMISOS:**
+**GRUPO/USUARIO CON PERMISOS:**
 	Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
 ```
 # Lectura
@@ -34,16 +34,17 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l
 find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ```
 
-**BUSQUEDA POR SIMILITUD:**
+**CONTENCION:**
 	Busqueda por el nombre incompleto.
 ```
-find / -name kitt\* 2>/dev/null
+find / -name *kitt* 2>/dev/null
 
 ---------------------------------------------------------------------------------
 # Practica: Busqueda por el nombre de algo, mas fzf
-find / -name kitt\* 2>/dev/null | fzf
+find / -name *kitt* 2>/dev/null | fzf
 ```
 
+**VERSION:**
 
 
 ## XARGS

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fundamentos de linux 1 comandos.md",
+                "file": "S4vitar clase 16 sistema.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fundamentos de linux 1 comandos.md",
+                "file": "S4vitar clase 16 sistema.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fundamentos de linux 1 comandos.md",
+                "file": "S4vitar clase 16 sistema.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fundamentos de linux 1 comandos.md"
+                "file": "S4vitar clase 16 sistema.md"
               }
             }
           }
@@ -163,8 +163,9 @@
   "active": "1fc0e22683594914",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
-    "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Fundamentos de linux 1 comandos.md",
+    "S4vitar clase 16 sistema.md",
+    "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos y practica.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
@@ -188,7 +189,6 @@
     "Chest/Courses/Folder_linux/Nestor clase 5 redirecciones stdin, stdout y stderr.md",
     "Chest/Courses/Folder_linux/S4vitar clase 1 introduccion a linux.md",
     "DEMO",
-    "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
-    "Chest/Courses/Folder_linux/Nestor clase 2 crear, copiar, mover y eliminar archivos y carpetas.md"
+    "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md"
   ]
 }

@@ -28,20 +28,10 @@
 
 [[S4vitar clase 15 sistema]]
 
+[[S4vitar clase 16 sistema]]
+
+
 
 
 ## INTRO A REDES C/
-
-
-
-
-
-
-
-
-
-
-
-
-
 

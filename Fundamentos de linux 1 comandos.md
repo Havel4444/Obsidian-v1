@@ -3,12 +3,17 @@
 
 ## FIND
 
-**BUSQUEDA POR GRUPO:**
+**BUSQUEDA POR GRUPO/USUARIO:**
 	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```
+# Grupo
 find / -group havel type f 2>/dev/null
+
+# Usuario
+find / -user havel type d 2>/dev/null
 ```
 
+**BUSQUEDA POR 
 
 
 

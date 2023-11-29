@@ -1,7 +1,7 @@
 [[index]]
 [[index_linux]]
 
-## FIND
+## GROUP Y USER
 
 #find 
 
@@ -34,23 +34,56 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l
 find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ```
 
+## PERMISO
+
+**STICKY BIT:**
+**ATTR:**
+**SUID Y SGID:**
+
+## ASTERISCO
+
 **CONTENCION:**
 	Busqueda por el nombre incompleto.
 ```
-find / -name *kitt* 2>/dev/null
+find / -name *kitt* -type d
 
 ---------------------------------------------------------------------------------
 # Practica: Busqueda por el nombre de algo, mas fzf
 find / -name *kitt* 2>/dev/null | fzf
 ```
 
-**VERSION:**
+## SIGNO DE PREGUNTA
 
+**VERSION:**
+```
+find / -name python??? -type f 
+```
 
 ## XARGS
 
 **BUSQUEDA CON PERMISOS:**
-3. Listar por permisos 
 ```
-find / -type f | xargs ls -l
+find / -name *asd* -type f | xargs ls -l
 ```
+
+
+## AWK
+
+**ELIMINAR ESPACIOS INECESARIOS:**
+```
+awk '{$1=$1}1'
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

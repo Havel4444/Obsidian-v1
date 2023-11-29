@@ -9,10 +9,14 @@
 	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```
 # Grupo
-find / -group havel type f 2>/dev/null
+find / -group havel type f 
 
 # Usuario
-find / -user havel type d 2>/dev/null
+find / -user havel type d 
+
+---------------------------------------------------------------------------------
+# Practica1: Archivos root que empiecen con 'python3.9' mas sus permisos.
+find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
 **GRUPO/USUARIO CON PERMISOS:**
@@ -48,7 +52,7 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 find / -name *kitt* -type d
 
 ---------------------------------------------------------------------------------
-# Practica: Busqueda por el nombre de algo, mas fzf
+# Practica: Nombre de algo mas fzf
 find / -name *kitt* 2>/dev/null | fzf
 ```
 
@@ -57,6 +61,8 @@ find / -name *kitt* 2>/dev/null | fzf
 **VERSION:**
 ```
 find / -name python??? -type f 
+---------------------------------------------------------------------------------
+find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
 ## XARGS
@@ -64,6 +70,8 @@ find / -name python??? -type f
 **BUSQUEDA CON PERMISOS:**
 ```
 find / -name *asd* -type f | xargs ls -l
+---------------------------------------------------------------------------------
+find / -name python* -type f 2>/dev/null | xargs ls -l
 ```
 
 
@@ -72,6 +80,8 @@ find / -name *asd* -type f | xargs ls -l
 **ELIMINAR ESPACIOS INECESARIOS:**
 ```
 awk '{$1=$1}1'
+---------------------------------------------------------------------------------
+find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
 

@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nestor",
+                "query": "attr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -162,15 +162,15 @@
   },
   "active": "1fc0e22683594914",
   "lastOpenFiles": [
+    "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
+    "S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
-    "S4vitar clase 16 find.md",
     "Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos y practica.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 15 sistema.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8, 9 y 10 asignacion y creacion de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 3 introduccion a linux 3.md",

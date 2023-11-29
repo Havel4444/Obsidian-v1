@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
+                "file": "S4vitar clase 16 find.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
+                "file": "S4vitar clase 16 find.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
+                "file": "S4vitar clase 16 find.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md"
+                "file": "S4vitar clase 16 find.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "1fc0e22683594914",
   "lastOpenFiles": [
-    "S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
+    "S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",

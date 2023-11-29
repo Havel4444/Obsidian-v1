@@ -49,8 +49,14 @@ find / -perm -1000
 find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
-**ATTR:**
 **SUID Y SGID:**
+```
+find / -perm -4000
+
+---------------------------------------------------------------------------------
+Practica1:
+find / -user havel -perm -4000 2>/dev/null | xargs ls -l
+```
 
 ## ASTERISCO
 
@@ -73,13 +79,26 @@ find / -name python??? -type f
 find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
+## EXEC
+
+
+
+
+________________________________________________________________________
+
+
 ## XARGS
+
+**DEFINICION:**
+	El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
 **BUSQUEDA CON PERMISOS:**
 ```
 find / -name *asd* -type f | xargs ls -l
 ---------------------------------------------------------------------------------
 find / -name python* -type f 2>/dev/null | xargs ls -l
+Practica2: Elimina todos los archivos que terminen en '.txt'
+find / -name *.txt -type d | xargs rm
 ```
 
 

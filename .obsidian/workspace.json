@@ -25,14 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "797c51d05c39dd5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5aa52ad82de4135c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8325b54ce72edf15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -61,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "funda",
+                "query": "#git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -98,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md",
+                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md",
+                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md"
+                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md"
               }
             }
           }
@@ -159,19 +195,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1fc0e22683594914",
+  "active": "8325b54ce72edf15",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+    "Untitled 2.md",
+    "Untitled.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
+    "Chest/Courses/Folder_linux/index_linux.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 15 directorios.md",
     "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
-    "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/Nestor clase 3 explorando el contenido de nuestros archivos.md",
     "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
-    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 15 sistema.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8, 9 y 10 asignacion y creacion de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 3 introduccion a linux 3.md",
     "Chest/Courses/Folder_linux/S4vitar clase 7 lectura e interpretacin de permisos.md",
@@ -180,14 +219,11 @@
     "Chest/Courses/Folder_linux/index_git.md",
     "Chest/Courses/Folder_linux/Configuracion .dotfiles.md",
     "Chest/Courses/Default.md",
-    "Untitled.md",
     "DEMO/NUEVO.md",
     "S4vitar clase 8 asignacion de permisos 1/2.md",
     "DEMO/DEMO FILE.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "S4vitar clase 8 asignacion de permisos 1",
-    "Chest/Courses/Folder_linux/Nestor clase 5 redirecciones stdin, stdout y stderr.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 1 introduccion a linux.md",
     "DEMO"
   ]
 }

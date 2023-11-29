@@ -3,6 +3,7 @@
 ## INTRO A LINUX/RED 
 [[Configuracion de linux 1]]
 [[Fundamentos de linux 1 comandos]]
+[[Fundamentos de linux 2 sistema]]
 [[Fundamentos de la red 1]]
 
 
@@ -26,7 +27,7 @@
 [[S4vitar clase 8, 9 y 10 asignacion y creacion de permisos]]
 [[S4vitar clase 11, 12 ,13 y 14 permisos especiales]]
 
-[[S4vitar clase 15 sistema]]
+[[S4vitar clase 15 directorios]]
 
 [[S4vitar clase 16 find]]
 

@@ -97,8 +97,10 @@ ________________________________________________________________________
 find / -name *asd* -type f | xargs ls -l
 ---------------------------------------------------------------------------------
 find / -name python* -type f 2>/dev/null | xargs ls -l
-Practica2: Elimina todos los archivos que terminen en '.txt'
+# Practica2: Elimina todos los archivos que terminen en '.txt'
 find / -name *.txt -type d | xargs rm
+# Practica3: Permisos
+find /
 ```
 
 

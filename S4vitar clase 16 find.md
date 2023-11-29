@@ -41,6 +41,14 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ## PERMISO
 
 **STICKY BIT:**
+```
+find / -perm -1000
+
+---------------------------------------------------------------------------------
+# Practica1: A/D con permisos +t 
+find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
+```
+
 **ATTR:**
 **SUID Y SGID:**
 
@@ -85,6 +93,7 @@ find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
 
+## GREP
 
 
 

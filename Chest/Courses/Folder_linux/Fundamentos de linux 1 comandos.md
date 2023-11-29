@@ -1,22 +1,6 @@
 [[index]]
 [[index_linux]]
 
-## FIND
-
-**BUSQUEDA POR GRUPO/USUARIO:**
-	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
-```
-# Grupo
-find / -group havel type f 2>/dev/null
-
-# Usuario
-find / -user havel type d 2>/dev/null
-```
-
-**BUSQUEDA POR 
-
-
-
 # XARGS
 
 **VISUALIZAR EL PESO DE LOS ARCHIVOS:**
@@ -74,3 +58,4 @@ truncate -s 0 libro.txt
 ``` 
 1. -s: Elijir el tamaño.
 2. 0: Tamaño a eliminar.
+

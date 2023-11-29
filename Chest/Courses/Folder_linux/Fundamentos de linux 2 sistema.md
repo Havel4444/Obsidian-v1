@@ -43,16 +43,3 @@ sudo apt-get install p7zip-full
 7z x 
 ```
 
-## EJEMPLO
-
-**BUSQUEDA CON FIND:**
-	El comando `find` se usa principalmente para visualizar/buscar todos los archivos y directorios.
-```
-find ~/ -name '*kitty*' | fzf 
-```
-1. find : Muestra los archivos y directorios.
-2. ~/ : Ubicacion elegida opcional.
-3. -name : Busqueda por nombre.
-4. '\*kitty*' : Todo que contenga 'kitty'.
-5. | : Separador de comandos.
-6. fzf : Interfaz interactiva.

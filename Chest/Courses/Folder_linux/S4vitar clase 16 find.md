@@ -104,24 +104,15 @@ find / -name *.txt -type d | xargs rm
 
 ## AWK
 
+**DEFINCION:**
+	Es ideal para trabajar con columnas de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
+
 **ELIMINAR ESPACIOS INECESARIOS:**
 ```
 awk '{$1=$1}1'
+awk '{print $2}'
 ---------------------------------------------------------------------------------
 find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
+# Practica2: Muestra la segunda columna del archivo de texto
+find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 ```
-
-
-## GREP
-
-
-
-
-
-
-
-
-
-
-
-

@@ -303,6 +303,12 @@ sudo apt-get install p7zip-full
 ```
 
 
+## YOUTUBE
+surfingkeys
+api.unmap('j');
+api.unmap('k');
+api.unmap('l');
+api.unmap('i');
 
 
 # LINKS

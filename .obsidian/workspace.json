@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#instala",
+                "query": "# attr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/index_linux.md"
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md"
               }
             }
           }
@@ -196,14 +196,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07d445fc82c7fc3b",
+  "active": "8325b54ce72edf15",
   "lastOpenFiles": [
+    "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
+    "Chest/Courses/Folder_linux/index_linux.md",
     "Untitled 1.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Untitled 2.md",
     "Untitled.md",
     "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
-    "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 15 directorios.md",
     "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
@@ -223,7 +224,6 @@
     "DEMO/NUEVO.md",
     "S4vitar clase 8 asignacion de permisos 1/2.md",
     "DEMO/DEMO FILE.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "S4vitar clase 8 asignacion de permisos 1",
     "DEMO"
   ]

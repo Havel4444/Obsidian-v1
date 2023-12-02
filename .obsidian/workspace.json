@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "# find",
+                "query": "awk",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md"
+                "file": "Chest/Courses/Folder_linux/Nestor clase 4 las wildcards.md"
               }
             }
           }
@@ -164,10 +164,10 @@
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
+    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "Untitled 1.md",
-    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Untitled 2.md",
     "Untitled.md",
     "Chest/Courses/Folder_linux/S4vitar clase 15 directorios.md",

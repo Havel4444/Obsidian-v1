@@ -57,6 +57,16 @@ find / -perm -4000
 Practica1:
 find / -user havel -perm -4000 2>/dev/null | xargs ls -l
 ```
+**DOBLE PERMISO:"**
+	Los paréntesis se utilizan para agrupar las expresiones -perm -4000 y -perm -2000 y el operador lógico -o indica que se deben buscar archivos que tengan permisos SUID, SGID o 20002.
+```
+find / -type f \( -perm -4000 -o -perm -2000 \) 2>/dev/null | xargs ls -l
+```
+&&
+	El backslash (\) se utiliza para escapar caracteres especiales en Bash. Por ejemplo, si desea buscar archivos que tengan un espacio en el nombre, puede utilizar el backslash para escapar el espacio:
+```
+find / -name "file\ name.txt"
+```
 
 ## ASTERISCO
 

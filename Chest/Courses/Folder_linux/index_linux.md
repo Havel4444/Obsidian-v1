@@ -2,6 +2,9 @@
 
 ## INTRO A LINUX/RED 
 [[Configuracion de linux 1]]
+[[Atajo ctrl + j]]
+
+
 [[Fundamentos de linux 1 comandos]]
 [[Fundamentos de linux 2 sistema]]
 [[Fundamentos de la red 1]]

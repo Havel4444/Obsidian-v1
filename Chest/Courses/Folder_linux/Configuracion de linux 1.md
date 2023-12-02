@@ -304,17 +304,99 @@ sudo apt-get install p7zip-full
 
 
 ## YOUTUBE
-surfingkeys
+
+**SURFINGKEYS:**
+```bash
 api.unmap('j');
 api.unmap('k');
 api.unmap('l');
 api.unmap('i');
+api.unmap('t');
+api.unmap('f');
+api.unmap('h');
+api.unmap('1');
+api.unmap('2');
+api.unmap('3');
+api.unmap('4');
+api.unmap('5');
+api.unmap('6');
+api.unmap('7');
+api.unmap('8');
+api.unmap('9');
+api.unmap('0');
+```
+
+
+
+## CTRL + J
+
+**DEFINICION:**
+	Combinacion de teclas para ejecutar enter, en todo el sistema.
+
+**PASO A PASO:**
+
+1. Puedes usar `xdotool` directamente en lugar de `xbindkeys` para manejar la combinación de teclas "Ctrl + J". Primero, asegurémonos de que `xdotool` esté instalado:
+```bash
+sudo apt-get install xdotool
+```
+2. Luego, crea un script Bash, por ejemplo, `simulate_ctrl_j_enter.sh`:
+```bash
+#!/bin/bash
+
+# Espera un breve momento para liberar las teclas si se presionaron rápidamente
+sleep 0.2
+
+# Utiliza xdotool para simular la pulsación de "Enter"
+xdotool key Return
+```
+3. Guarda el script y dale permisos de ejecución:
+```bash
+chmod +x simulate_ctrl_j_enter.sh
+```
+4. Ahora, configura tu sistema para que ejecute este script cuando presiones "Ctrl + J". Puedes hacer esto utilizando `xbindkeys`. Crea un archivo de configuración, por ejemplo, `~/.xbindkeysrc`:
+```bash
+nano ~/.xbindkeysrc
+```
+5. Agrega la siguiente línea:
+```bash
+"ruta_completa_del_script/simulate_ctrl_j_enter.sh"
+  Control + j
+```
+6. Reemplaza "ruta_completa_del_script" con la ubicación real del script que acabas de crear. Guarda el archivo y reinicia `xbindkeys`:
+```bash
+killall xbindkeys
+xbindkeys
+```
+7. Ahora, cuando presiones "Ctrl + J", debería ejecutarse el script y simular la pulsación de "Enter". Asegúrate de que no haya otras configuraciones de teclas conflictivas en tu sistema.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # LINKS
 Comandos basicos de linux:
 https://www.fing.edu.uy/inco/cursos/sistoper/recursosLaboratorio/tutorial0.pdf
-
-
-
-
-

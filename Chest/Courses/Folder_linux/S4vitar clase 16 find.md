@@ -7,7 +7,7 @@
 
 **GRUPO/USUARIO:**
 	Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
-```
+```bash
 # Grupo
 find / -group havel type f 
 
@@ -21,7 +21,7 @@ find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 
 **GRUPO/USUARIO CON PERMISOS:**
 	Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
-```
+```bash
 # Lectura
 find / -user havel -readable -type f 2>/dev/null
 
@@ -41,7 +41,7 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ## PERMISO
 
 **STICKY BIT:**
-```
+```bash
 find / -perm -1000
 
 ---------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
 **SUID Y SGID:**
-```
+```bash
 find / -perm -4000
 
 ---------------------------------------------------------------------------------
@@ -59,12 +59,12 @@ find / -user havel -perm -4000 2>/dev/null | xargs ls -l
 ```
 **DOBLE PERMISO:"**
 	Los paréntesis se utilizan para agrupar las expresiones -perm -4000 y -perm -2000 y el operador lógico -o indica que se deben buscar archivos que tengan permisos SUID, SGID o 20002.
-```
+```bash
 find / -type f \( -perm -4000 -o -perm -2000 \) 2>/dev/null | xargs ls -l
 ```
 &&
 	El backslash (\) se utiliza para escapar caracteres especiales en Bash. Por ejemplo, si desea buscar archivos que tengan un espacio en el nombre, puede utilizar el backslash para escapar el espacio:
-```
+```bash
 find / -name "file\ name.txt"
 ```
 
@@ -72,7 +72,7 @@ find / -name "file\ name.txt"
 
 **CONTENCION:**
 	Busqueda por el nombre incompleto.
-```
+```bash
 find / -name *kitt* -type d
 
 ---------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ find / -name *kitt* 2>/dev/null | fzf
 ## SIGNO DE PREGUNTA
 
 **VERSION:**
-```
+```bash
 find / -name python??? -type f 
 ---------------------------------------------------------------------------------
 find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
@@ -103,7 +103,7 @@ ________________________________________________________________________
 	El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
 **BUSQUEDA CON PERMISOS:**
-```
+```bash
 find / -name *asd* -type f | xargs ls -l
 ---------------------------------------------------------------------------------
 find / -name python* -type f 2>/dev/null | xargs ls -l
@@ -122,7 +122,7 @@ find /
 	Es ideal para trabajar con ``COLUMNA`` de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
 
 **ELIMINAR ESPACIOS INECESARIOS:**
-```
+```bash
 awk '{$1=$1}1'
 awk '{print $2}'
 ---------------------------------------------------------------------------------

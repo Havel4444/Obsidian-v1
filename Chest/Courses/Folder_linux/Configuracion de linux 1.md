@@ -310,7 +310,6 @@ api.unmap('k');
 api.unmap('l');
 api.unmap('i');
 
-
 # LINKS
 Comandos basicos de linux:
 https://www.fing.edu.uy/inco/cursos/sistoper/recursosLaboratorio/tutorial0.pdf

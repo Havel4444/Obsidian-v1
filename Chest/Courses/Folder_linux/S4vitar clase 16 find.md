@@ -113,6 +113,8 @@ find / -name *.txt -type d | xargs rm
 find /
 ```
 
+**ERRORES:**
+	No puede estar acompañado del comando 'cut'.
 
 ## AWK
 

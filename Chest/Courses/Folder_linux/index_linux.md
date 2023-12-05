@@ -32,6 +32,7 @@
 
 [[S4vitar clase 16 find]]
 [[S4vitar clase 17 primer sprip en bash]]
+[[S4vitar clase 0 conexion ssh]]
 
 
 

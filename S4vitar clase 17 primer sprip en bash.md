@@ -100,3 +100,12 @@ if [ "$variable" == "variable" ]; then
 &&
 	En este caso específico, `-gt` se utiliza para evaluar si el valor de `$numero` es mayor que 10. Si es así, la condición se considera verdadera y se ejecutará el bloque de código dentro del `if`; de lo contrario, se ejecutará el bloque dentro del `else`. Estos operadores son comunes en las expresiones condicionales de scripts bash y otros lenguajes de programación.
 
+
+## VARIABLE
+
+
+
+
+
+
+

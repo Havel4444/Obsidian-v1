@@ -103,6 +103,12 @@ if [ "$variable" == "variable" ]; then
 
 ## VARIABLE
 
+DEFINICION:
+	Una #Variable es un valor que puede ser asignado por _export_, que en su mayoria son directorios/archivos y cadenas de texto.
+	Este mismo desapare en una nueva terminal y para su permanencia debe ser colocado en _.bashrc_.
+```
+export RUTA=~/Desktop
+``` 
 
 
 

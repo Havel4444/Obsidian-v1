@@ -398,25 +398,6 @@ xbindkeys
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # LINKS
 Comandos basicos de linux:
 https://www.fing.edu.uy/inco/cursos/sistoper/recursosLaboratorio/tutorial0.pdf

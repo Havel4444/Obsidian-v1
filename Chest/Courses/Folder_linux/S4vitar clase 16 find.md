@@ -137,27 +137,34 @@ find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 DEFINICION:
 #Grep es un comando en sistemas Unix y Linux que se utiliza para buscar patrones de texto en archivos o en la salida de otros comandos.
 
-**CARACTERES ESPECIALES:**
-0. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos (`_`). Es equivalente a la clase de caracteres `[a-zA-Z0-9_]`.
+**CARACTER ESPECIAL -r:**
+1. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos.
     ```bash
     grep -r '\w' archivo.txt
     ```
-1. **`\d`:** Representa cualquier dígito (equivalente a `[0-9]`). Este comando buscará líneas que contengan al menos un dígito.
+2. **`\W`:** Representa cualquier carácter de simbolo.
+    ```bash
+    grep -r '\W' archivo.txt
+    ```
+3. **`\d`:** Representa cualquier dígito (equivalente a `[0-9]`). Este comando buscará líneas que contengan al menos un dígito.
     ```bash
     grep -r '\d' archivo.txt
     ```
-2. **`\D`:** Representa cualquier carácter que no sea un dígito (equivalente a `[^0-9]`). Este comando buscará líneas que contengan al menos un carácter que no sea un dígito.
+3. **`\D`:** Representa cualquier carácter que no sea un dígito (equivalente a `[^0-9]`). Este comando buscará líneas que contengan al menos un carácter que no sea un dígito.
     ```bash
     grep -r '\D' archivo.txt
     ```
-3. **`\s`:** Representa cualquier carácter de espacio en blanco (espacios, tabulaciones, saltos de línea). Este comando buscará líneas que contengan al menos un carácter de espacio en blanco.
+4. **`\s`:** Representa cualquier carácter de espacio en blanco (espacios, tabulaciones, saltos de línea). Este comando buscará líneas que contengan al menos un carácter de espacio en blanco.
     ```bash
     grep -r '\s' archivo.txt
     ```
-4. **`\S`:** Representa cualquier carácter que no sea un espacio en blanco. Este comando buscará líneas que contengan al menos un carácter que no sea un espacio en blanco.
+5. **`\S`:** Representa cualquier carácter que no sea un espacio en blanco. Este comando buscará líneas que contengan al menos un carácter que no sea un espacio en blanco.
     ```bash
     grep -r '\S' archivo.txt
     ```
+
+
+
 
 
 ## CUT
@@ -175,7 +182,7 @@ Carlos,Ruiz,28
 ```
 2. Para extraer solo la columna de "Apellido", puedes usar `cut` de la siguiente manera:
 ```bash
-cut -d',' -f2 datos.csv
+cut -d ',' -f2 datos.csv
 ```
 - `-d','`: Especifica que el delimitador es la coma.
 - `-f2`: Indica que quieres extraer el segundo campo.

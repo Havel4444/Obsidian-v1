@@ -54,6 +54,15 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 
 ## ARCHIVO
 
+DEFINICION:
+	Comandos solo posibles en un #Archivo.
+
+ARCHIVOS OCULTOS:
+	El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
+```bash
+touch .hidden
+```
+
 **ELIMIAR EL CONTENIDO .TXT:**
 	El comando #truncate elimina el contenia texto de un archivo .txt.
 ```bash
@@ -61,12 +70,6 @@ truncate -s 0 libro.txt
 ``` 
 1. -s: Elijir el tamaño.
 2. 0: Tamaño a eliminar.
-
-ARCHIVOS OCULTOS:
-	El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
-```bash
-touch .hidden
-```
 
 ARCHIVOS CON ESPACIO:
 	Para crear un #de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
@@ -82,13 +85,24 @@ cat ./-
 ```
 
 
+**CARACTER ESPECIAL -v:**
+**CARACTER ESPECIAL -i:**
+**CARACTER ESPECIAL -e:**
+**CARACTER ESPECIAL -l:**
 
+1. **`-v`:** Representa cualquier carácter que no sea un espacio en blanco. Este comando buscará líneas que contengan al menos un carácter que no sea un espacio en blanco.
+    ```bash
+    grep -r '\S' archivo.txt
+    ```
 
 
 
 
 
 ## DIRECTORIO
+
+DEFINICION:
+	Comandos solo posibles en un #Directorio.
 
 
 

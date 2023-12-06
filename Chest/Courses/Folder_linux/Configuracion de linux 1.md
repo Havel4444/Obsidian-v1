@@ -371,6 +371,37 @@ xbindkeys
 7. Ahora, cuando presiones "Ctrl + J", debería ejecutarse el script y simular la pulsación de "Enter". Asegúrate de que no haya otras configuraciones de teclas conflictivas en tu sistema.
 
 
+## CTRL + J V2
+
+1. Creamos un script adicional llamado `setup_xdotool_behave.sh`:
+```bash
+#!/bin/bash
+
+# Configura xdotool behave para que ejecute el script cuando se presione "Ctrl + J"
+xdotool behave_screen_edge key ctrl+j exec /ruta/completa/del/script/simulate_ctrl_j_enter.sh
+```
+2. Crea un nuevo script llamado `simulate_ctrl_j_enter.sh` con el siguiente contenido:
+```bash
+#!/bin/bash
+
+# Obtén el identificador de la ventana activa
+window_id=$(xdotool getactivewindow)
+
+# Utiliza xdotool para simular la pulsación de "Ctrl + J" y luego "Enter"
+xdotool key --clearmodifiers --window $window_id ctrl+j Return
+```
+3. Dale permisos de ejecución a ambos scripts:
+```bash
+chmod +x simulate_ctrl_j_enter.sh
+chmod +x setup_xdotool_behave.sh
+```
+4. Luego, ejecuta esto directamente en la terminal para configurar la acción:
+```bash
+xdotool behave $(xdotool getactivewindow) key ctrl+j exec /ruta/completa/del/script/simulate_ctrl_j_enter.sh
+```
+5. Este enfoque utiliza `xdotool getactivewindow` para obtener el identificador de la ventana activa y luego simula la pulsación de "Ctrl + J" seguido por "Enter". Espero que esto resuelva el problema de repetición no deseada.
+
+
 
 ## INTERFAS GRUB
 

@@ -36,11 +36,13 @@ find / -type f | xargs ls -l
 ```
 
 
+
+
 ## XCLIP
 
 **COPIAR LO SELECCIONADO:**
 	xclip -selection clipboard : copia y guarda en el portapapeles la linea selecionada.
-```
+```bash
 less .bash_history | no_dup | fzf | xclip -selection clipboard
 ```
 
@@ -49,13 +51,40 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 
 
 
+
 ## ARCHIVO
 
 **ELIMIAR EL CONTENIDO .TXT:**
 	El comando #truncate elimina el contenia texto de un archivo .txt.
-```
+```bash
 truncate -s 0 libro.txt
 ``` 
 1. -s: Elijir el tamaño.
 2. 0: Tamaño a eliminar.
+
+ARCHIVOS OCULTOS:
+	El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
+```bash
+touch .hidden
+```
+
+
+
+
+
+
+## DIRECTORIO
+
+
+
+
+
+
+
+
+
+
+
+
+
 

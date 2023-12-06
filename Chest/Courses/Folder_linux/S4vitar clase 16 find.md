@@ -134,10 +134,40 @@ find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 
 ## GREP
 
-**DEFINICION:**
+DEFINICION:
 	Filtrador de texto.
 
+**CARACTERES ESPECIALES:**
+0. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos (`_`). Es equivalente a la clase de caracteres `[a-zA-Z0-9_]`.
+    ```bash
+    grep -r '\w' archivo.txt
+    ```
+1. **`\d`:** Representa cualquier dígito (equivalente a `[0-9]`). Este comando buscará líneas que contengan al menos un dígito.
+    ```bash
+    grep -r '\d' archivo.txt
+    ```
+2. **`\D`:** Representa cualquier carácter que no sea un dígito (equivalente a `[^0-9]`). Este comando buscará líneas que contengan al menos un carácter que no sea un dígito.
+    ```bash
+    grep -r '\D' archivo.txt
+    ```
+3. **`\s`:** Representa cualquier carácter de espacio en blanco (espacios, tabulaciones, saltos de línea). Este comando buscará líneas que contengan al menos un carácter de espacio en blanco.
+    ```bash
+    grep -r '\s' archivo.txt
+    ```
+4. **`\S`:** Representa cualquier carácter que no sea un espacio en blanco. Este comando buscará líneas que contengan al menos un carácter que no sea un espacio en blanco.
+    ```bash
+    grep -r '\S' archivo.txt
+    ```
+
+
 ## CUT
+
+
+
+
+
+
+
 
 
 ## TR

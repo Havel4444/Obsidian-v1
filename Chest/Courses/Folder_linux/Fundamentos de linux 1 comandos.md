@@ -55,16 +55,19 @@ less .bash_history | no_dup | fzf | xclip -selection clipboard
 ## ARCHIVO
 
 DEFINICION:
-	Comandos solo posibles en un #Archivo.
+- Comandos solo posibles en un #Archivo.
+
+
+#### **MANIPULACION**
 
 ARCHIVOS OCULTOS:
-	El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
+- El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
 ```bash
 touch .hidden
 ```
 
-**ELIMIAR EL CONTENIDO .TXT:**
-	El comando #truncate elimina el contenia texto de un archivo .txt.
+ELIMIAR EL CONTENIDO .TXT:
+- El comando #truncate elimina el contenia texto de un archivo .txt.
 ```bash
 truncate -s 0 libro.txt
 ``` 
@@ -72,28 +75,89 @@ truncate -s 0 libro.txt
 2. 0: Tamaño a eliminar.
 
 ARCHIVOS CON ESPACIO:
-	Para crear un #de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
+- Para crear un #de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
 ```bash
 touch 'nombre del archivo con espacios'
 cat 'nombre del archivo con espacios'
 ```
 
 ARCHIVOS CON SIGNOS:
-1. -: Estos archivos pueden ser abiertos como un ejecutable.
+- -: Estos archivos pueden ser abiertos como un ejecutable.
 ```bash
 cat ./-
 ```
 
 
-**CARACTER ESPECIAL -v:**
-**CARACTER ESPECIAL -i:**
+#### **CARACTERES ESPECIALES**
+
+CARACTER -r:
+- La opción `-r` en `grep` se utiliza para realizar búsquedas de manera recursiva en directorios y subdirectorios.
+- Si deseas buscar todas las líneas que contienen la palabra "ejemplo" en todos los archivos bajo el directorio `directorio`, puedes usar `-r`:
+```bash
+grep -r "ejemplo" directorio/
+```
+
+CARACTER -v:
+- La opción `-v` en `grep` se utiliza para invertir la búsqueda y mostrar solo las líneas que no coinciden con el patrón especificado.
+- Supongamos que tienes un archivo llamado `datos.txt` con el siguiente contenido.
+```plaintext
+Juan
+María
+Pedro
+Carlos
+```
+- Si deseas mostrar solo las líneas que no contienen la palabra "María", puedes usar `-v`:
+```bash
+grep -v "María" datos.txt
+```
+- La salida mostrará las líneas que no contienen la palabra "María".
+```plaintext
+Juan
+Pedro
+Carlos
+```
+
+CARACTER -i:
+- La opción `-i` en `grep` se utiliza para realizar búsquedas de manera insensible a mayúsculas y minúsculas.
+- Por ejemplo, si deseas buscar la palabra "mundo" de manera insensible a mayúsculas y minúsculas, puedes usar `-i`:
+```bash
+grep -i "mundo" texto.txt
+```
+- Resultado.
+```plaintext
+Hola Mundo
+HOLA MUNDO
+```
+
+
 **CARACTER ESPECIAL -e:**
 **CARACTER ESPECIAL -l:**
 
-1. **`-v`:** Representa cualquier carácter que no sea un espacio en blanco. Este comando buscará líneas que contengan al menos un carácter que no sea un espacio en blanco.
-    ```bash
-    grep -r '\S' archivo.txt
-    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

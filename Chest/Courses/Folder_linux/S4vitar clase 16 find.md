@@ -99,7 +99,7 @@ ________________________________________________________________________
 
 ## XARGS
 
-**DEFINICION:**
+DEFINICION:
 	El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
 **BUSQUEDA CON PERMISOS:**
@@ -113,13 +113,13 @@ find / -name *.txt -type d | xargs rm
 find /
 ```
 
-**ERRORES:**
+ERRORES:
 	No puede estar acompañado del comando 'cut'.
 
 ## AWK
 
-**DEFINCION:**
-	Es ideal para trabajar con ``COLUMNA`` de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
+DEFINCION:
+	#Awk es ideal para trabajar con ``COLUMNA`` de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
 
 **ELIMINAR ESPACIOS INECESARIOS:**
 ```bash
@@ -135,7 +135,7 @@ find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 ## GREP
 
 DEFINICION:
-	Filtrador de texto.
+#Grep es un comando en sistemas Unix y Linux que se utiliza para buscar patrones de texto en archivos o en la salida de otros comandos.
 
 **CARACTERES ESPECIALES:**
 0. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos (`_`). Es equivalente a la clase de caracteres `[a-zA-Z0-9_]`.
@@ -162,12 +162,51 @@ DEFINICION:
 
 ## CUT
 
+DEFINICION:
+	#Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
 
+**EJEMPLO 1:**
+1. Supongamos que tienes un archivo CSV (valores separados por comas) llamado `datos.csv` con el siguiente contenido:
+```plaintext
+Nombre,Apellido,Edad
+Juan,Pérez,25
+María,Gómez,30
+Carlos,Ruiz,28
+```
+2. Para extraer solo la columna de "Apellido", puedes usar `cut` de la siguiente manera:
+```bash
+cut -d',' -f2 datos.csv
+```
+- `-d','`: Especifica que el delimitador es la coma.
+- `-f2`: Indica que quieres extraer el segundo campo.
+3. La salida será:
+```plaintext
+Apellido
+Pérez
+Gómez
+Ruiz
+```
 
-
-
-
-
+**EJEMPLO 2:**
+1. Supongamos que tienes un archivo de texto llamado `texto.txt` con el siguiente contenido:
+```plaintext
+abcdefgh
+ijklmnop
+qrstuvwx
+yz
+```
+2. Para extraer solo los primeros tres caracteres de cada línea, puedes usar:
+```bash
+cut -c1-3 texto.txt
+```
+- `-c1-3`: Indica que quieres extraer los caracteres de la columna 1 a la 3.
+3. La salida será:
+```plaintext
+abc
+ijk
+qrs
+yz
+```
 
 
 ## TR

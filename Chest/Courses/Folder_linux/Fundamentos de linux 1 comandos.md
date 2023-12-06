@@ -75,6 +75,16 @@ touch 'nombre del archivo con espacios'
 cat 'nombre del archivo con espacios'
 ```
 
+ARCHIVOS CON SIGNOS:
+1. -: Estos archivos pueden ser abiertos como un ejecutable.
+```bash
+cat ./-
+```
+
+
+
+
+
 
 
 

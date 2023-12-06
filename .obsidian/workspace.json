@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "awk",
+                "query": "#grep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,11 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db7087f94e6002ef",
+  "active": "07d445fc82c7fc3b",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
-    "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
+    "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
     "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
@@ -162,7 +164,6 @@
     "Atajo ctrl + j.md",
     "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 16 find.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 4 descriptores de archivos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 7 lectura e interpretacin de permisos.md",

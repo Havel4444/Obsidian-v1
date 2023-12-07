@@ -174,8 +174,32 @@ Nombre: María
 Apellido: Gómez
 ```
 
+OTROS CARACTERES:
+1. **`-n`:** Muestra el número de línea junto con el resultado de la búsqueda.
+    ```bash
+    grep -n "patrón" archivo.txt
+    ```
+2. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
+    ```bash
+    grep -c "patrón" archivo.txt
+    ```
+3. **`-e`:** Permite especificar múltiples patrones de búsqueda.
+    ```bash
+    grep -e "patrón1" -e "patrón2" archivo.txt
+    ```
+4. **`-E`:** Habilita el uso de expresiones regulares extendidas (ERE).
+    ```bash
+    grep -E "patrón1|patrón2" archivo.txt
+    ```
+5. **`-w`:** Busca solo palabras completas, no subcadenas.
+    ```bash
+    grep -w "palabra" archivo.txt
+    ```
+
+
 #### **SORT**
 - Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
+
 
 #### **UNIQ**
 - Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
@@ -191,6 +215,49 @@ MOSTRAR LINEAS NO DUPLICADAS:
 ```bash
 cat archivo.txt | sort | uniq -u
 ```
+
+
+#### **AWK**
+- `awk` es un potente y versátil lenguaje de procesamiento de texto en línea de comandos. Se utiliza para buscar, filtrar y procesar datos en archivos de texto y puede aplicar patrones y acciones específicas a cada línea.
+
+EJEMPLOS:
+1. Imprimir la segunda columna de un archivo CSV:
+   ```bash
+   cat archivo.csv | awk -F ',' '{print $2}'
+   ```
+2. Seleccionar la linea:
+```bash
+   cat archivo.csv | grep -n 'valor' | awk -F ',' '$1 == 28 {print $2}'
+```
+
+OTROS EJEMPLOS:
+4. Sumar los valores de una columna:
+   ```bash
+   cat numeros.txt | awk '{suma += $1} END {print suma}'
+   ```
+3. Filtrar líneas por longitud:
+   Este comando imprime solo las líneas que tienen más de 50 caracteres.
+   ```bash
+   cat archivo.txt | awk 'length($0) > 50 {print}'
+   ```
+4. Reemplazar una cadena en una columna específica:
+   Este comando reemplaza todas las instancias de "viejo" por "nuevo" en la segunda columna y luego imprime todas las columnas.
+   ```bash
+   cat datos.csv | awk -F ',' '{gsub("viejo", "nuevo", $2); print}'
+   ```
+5. Encontrar la línea más larga:
+   ```bash
+   cat archivo.txt | awk '{if (length($0) > max) {max = length($0); linea = $0}} END {print "Línea más larga:", linea}'
+   ```
+
+
+
+
+
+
+
+
+
 
 
 

@@ -138,7 +138,7 @@ ________________________________________________________________________
 ## XARGS
 - El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
-**BUSQUEDA CON PERMISOS:**
+BUSQUEDA CON PERMISOS:
 ```bash
 	find / -name *asd* -type f | xargs ls -l
 ---------------------------------------------------------------------------------
@@ -148,6 +148,15 @@ ________________________________________________________________________
 	# Practica3: Permisos
 	find /
 ```
+
+CAT:
+- Usando el comando `xargs` es posible abrir un archivo de texto pero antes se debe de usar `grep` para nombrarlo.
+```bash
+find . -type f | grep 'nombre\del\archivo'| xargs cat
+```
+
+
+
 
 ERRORES:
 - No puede estar acompañado del comando 'cut'.
@@ -196,11 +205,14 @@ CARACTER ESPECIAL -r:
     grep -r '\S' archivo.txt
     ```
 
+IGNORAR:
+- Con el comando `-v` puedes resaltar o ignorar archivos o directorios y si se requiere hacerlo con mas de 1 unidad es posible con `-E`.
+```
+find . -type f | grep -vE "archivo|directorio" 
+```
 
 
-
-
-## CUT
+#### **CUT**
 - #Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
 
 **EJEMPLO 1:**

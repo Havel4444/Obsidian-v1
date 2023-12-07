@@ -87,6 +87,13 @@ ARCHIVOS CON SIGNOS:
 cat ./-
 ```
 
+BASE64:
+- Un archivo `base64` puede se codificado por este mismo comando y descodificado:
+```bash
+	base64 archivo
+	cat archivo | base64 --descode
+```
+
 
 #### **GREP + CARACTERES ESPECIALES**
 

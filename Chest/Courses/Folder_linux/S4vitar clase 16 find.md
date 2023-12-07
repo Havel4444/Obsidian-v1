@@ -27,12 +27,18 @@ PERMISOS DE USUARIO Y GRUPO:
 ```bash
 	# Lectura
 	find / -user havel -readable
-	
+	# Alterno
+	find / -user havel -not -readable
+
 	# Escritura
 	find / -user havel -writable 
+	# Alterno
+	find / -user havel -not -writable 
 	
 	# Ejecucion
 	find / -user havel -executable 
+	# Alterno
+	find / -user havel -not -executable 
 	
 ---------------------------------------------------------------------------------
 	# Practica: Busqueda por usuario/g, tipo y visualizarlo con permisos

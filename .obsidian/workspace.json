@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#archivo",
+                "query": "#archi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,

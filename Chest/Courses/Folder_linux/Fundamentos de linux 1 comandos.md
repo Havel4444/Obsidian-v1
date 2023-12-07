@@ -174,24 +174,23 @@ Nombre: María
 Apellido: Gómez
 ```
 
+#### **SORT**
+- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
 
 #### **UNIQ**
 - Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### **SORT**
-- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
+LINEAS DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -d
+```
+CONTAR LINEAS DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -c
+```
+MOSTRAR LINEAS NO DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -u
+```
 
 
 

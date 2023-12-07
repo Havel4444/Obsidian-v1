@@ -258,7 +258,13 @@ OTROS EJEMPLOS:
    ```
 
 
-
+#### **TR**
+- El ROT13 (Rotate by 13 places) es un cifrado de sustitución simple que rota (desplaza) cada letra del alfabeto en 13 lugares. Es un cifrado de tipo Caesar, y se utiliza comúnmente como una forma de ocultar o "encriptar" texto de una manera simple.
+```bash
+	# Descodificar y codificar
+	cat archivo | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+	echo 'texto' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+```
 
 
 

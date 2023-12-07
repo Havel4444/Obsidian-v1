@@ -121,7 +121,7 @@ CARACTER -i:
 - La opción `-i` en `grep` se utiliza para realizar búsquedas de manera insensible a mayúsculas y minúsculas.
 - Por ejemplo, si deseas buscar la palabra "mundo" de manera insensible a mayúsculas y minúsculas, puedes usar `-i`:
 ```bash
-grep -i "mundo" texto.txt
+grep -i "mundo" *.txt
 ```
 - Resultado.
 ```plaintext
@@ -129,25 +129,50 @@ Hola Mundo
 HOLA MUNDO
 ```
 
+CARACTER -l:
+- La opción `-l` en `grep` se utiliza para mostrar solo los nombres de los archivos que contienen al menos una línea que coincide con el patrón de búsqueda.
+- Por ejemplo, supongamos que tienes dos archivos, `archivo1.txt` y `archivo2.txt`, ambos con contenido similar:
+```plaintext
+archivo1.txt:
+Hola, esto es un ejemplo.
 
-**CARACTER ESPECIAL -e:**
-**CARACTER ESPECIAL -l:**
+archivo2.txt:
+Este es otro ejemplo.
+```
+- Si deseas buscar la palabra "ejemplo" en ambos archivos y solo obtener los nombres de los archivos que contienen la palabra, puedes usar `-l`:
+```bash
+grep -l "ejemplo" *.txt
+```
+- La salida mostrará los nombres de los archivos que contienen la palabra "ejemplo".
+```plaintext
+archivo1.txt
+archivo2.txt
+```
 
+CARACTER -e:
+- La opción `-e` en `grep` permite especificar múltiples patrones de búsqueda en una sola invocación de `grep`.
+- Por ejemplo, Supongamos que tienes un archivo llamado `datos.txt` con el siguiente contenido:
+```plaintext
+Nombre: Juan
+Apellido: Pérez
+Edad: 25
 
+Nombre: María
+Apellido: Gómez
+Edad: 30
+```
+- Si deseas buscar líneas que contienen "Nombre" o "Apellido", puedes usar `-e`:
+```bash
+grep -e "Nombre" -e "Apellido" datos.txt
+```
+- La salida mostrará las líneas que contienen "Nombre" o "Apellido".
+```plaintext
+Nombre: Juan
+Apellido: Pérez
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Nombre: María
+Apellido: Gómez
+```
 
 
 
@@ -167,17 +192,3 @@ HOLA MUNDO
 
 DEFINICION:
 	Comandos solo posibles en un #Directorio.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

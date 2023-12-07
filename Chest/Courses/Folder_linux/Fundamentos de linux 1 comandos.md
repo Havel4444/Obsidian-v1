@@ -88,7 +88,7 @@ cat ./-
 ```
 
 
-#### **CARACTERES ESPECIALES**
+#### **GREP + CARACTERES ESPECIALES**
 
 CARACTER -r:
 - La opción `-r` en `grep` se utiliza para realizar búsquedas de manera recursiva en directorios y subdirectorios.
@@ -173,6 +173,27 @@ Apellido: Pérez
 Nombre: María
 Apellido: Gómez
 ```
+
+
+#### **UNIQ**
+- Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### **SORT**
+- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
+
+
 
 
 

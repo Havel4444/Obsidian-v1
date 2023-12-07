@@ -75,7 +75,7 @@ truncate -s 0 libro.txt
 2. 0: Tamaño a eliminar.
 
 ARCHIVOS CON ESPACIO:
-- Para crear un #de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
+- Para crear un de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
 ```bash
 touch 'nombre del archivo con espacios'
 cat 'nombre del archivo con espacios'

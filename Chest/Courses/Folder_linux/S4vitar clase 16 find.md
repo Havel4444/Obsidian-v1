@@ -13,10 +13,10 @@ USUARIO Y GRUPO:
 - Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```bash
 	# Grupo
-	find / -group havel type f 
+	find / -group havel 
 	
 	# Usuario
-	find / -user havel type d 
+	find / -user havel 
 
 ---------------------------------------------------------------------------------
 	# Practica1: Archivos root que empiecen con 'python3.9' mas sus permisos.
@@ -26,13 +26,13 @@ PERMISOS DE USUARIO Y GRUPO:
 - Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
 ```bash
 	# Lectura
-	find / -user havel -readable -type f 2>/dev/null
+	find / -user havel -readable
 	
 	# Escritura
-	find / -user havel -writable -type d 2>/dev/null 
+	find / -user havel -writable 
 	
 	# Ejecucion
-	find / -user havel -executable -type f 2>/dev/null
+	find / -user havel -executable 
 	
 ---------------------------------------------------------------------------------
 	# Practica: Busqueda por usuario/g, tipo y visualizarlo con permisos
@@ -101,11 +101,21 @@ VERSION:
 
 
 
-#### SIZE
-
-DEFINICION:
+#### **SIZE**
 - El comando #Size busca a/d por su peso y otros parametros.
- 
+  En el comando `find`, la opción `-size` se utiliza para buscar archivos según su tamaño. Aquí tienes algunos ejemplos simples de cómo usar `-size`:
+1. **Buscar archivos más grandes que un tamaño específico:**
+   ```bash
+   find / -type f -size +1M
+   ```
+2. **Buscar archivos más pequeños que un tamaño específico:**
+   ```bash
+   find / -type f -size -100k
+   ```
+3. **Buscar archivos de un tamaño específico:**
+   ```bash
+   find / -type f -size 500c
+   ```
 
 
 
@@ -152,7 +162,7 @@ ELIMINAR ESPACIOS INECESARIOS:
 
 
 #### **GREP**
-#Grep es un comando en sistemas Unix y Linux que se utiliza para buscar patrones de texto en archivos o en la salida de otros comandos.
+Grep es un comando en sistemas Unix y Linux que se utiliza para buscar patrones de texto en archivos o en la salida de otros comandos.
 
 CARACTER ESPECIAL -r:
 1. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos.

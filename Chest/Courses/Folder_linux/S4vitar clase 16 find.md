@@ -66,7 +66,9 @@ SUID Y SGID:
 
 FIND + RECURSIVO:
 - El comando `/`
-
+```bash
+find / -perm /444
+```
 
 
 #### **ASTERISCO**

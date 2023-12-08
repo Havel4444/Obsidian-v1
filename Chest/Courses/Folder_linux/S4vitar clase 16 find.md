@@ -125,13 +125,6 @@ VERSION:
 
 
 
-
-
-
-
-
-
-
 ________________________________________________________________________
 
 
@@ -154,9 +147,6 @@ CAT:
 ```bash
 find . -type f | grep 'nombre\del\archivo'| xargs cat
 ```
-
-
-
 
 ERRORES:
 - No puede estar acompañado del comando 'cut'.
@@ -323,10 +313,6 @@ CAMBIO DE PALABRAS:
 ```bash
 	echo "palabra y la palabra" | sed 's/palabra/letra/g'
 ```
-
-
-
-
 
 
 

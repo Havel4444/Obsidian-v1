@@ -274,12 +274,6 @@ OTROS EJEMPLOS:
 
 
 
-
-
-
-
-
-
 ## DIRECTORIO
 
 DEFINICION:

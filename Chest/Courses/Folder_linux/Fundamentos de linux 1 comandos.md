@@ -115,7 +115,7 @@ Carlos
 ```
 - Si deseas mostrar solo las líneas que no contienen la palabra "María", puedes usar `-v`:
 ```bash
-grep -v "María" datos.txt
+	grep -v "María" datos.txt
 ```
 - La salida mostrará las líneas que no contienen la palabra "María".
 ```plaintext
@@ -267,6 +267,8 @@ OTROS EJEMPLOS:
 ```
 
 
+#### **FILE**
+- **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
 
 
 

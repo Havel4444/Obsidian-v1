@@ -212,6 +212,54 @@ find . -type f | grep -vE "archivo|directorio"
 ```
 
 
+Claro, aquí tienes algunos ejemplos simples de diferentes usos de `grep`:
+
+1. **Búsqueda de una palabra en un archivo:**
+   ```bash
+   grep "patron" archivo.txt
+   ```
+   Esto buscará la palabra "patron" en el archivo `archivo.txt`.
+
+2. **Búsqueda recursiva en directorios:**
+   ```bash
+   grep -r "patron" directorio/
+   ```
+   Esto realizará una búsqueda recursiva de la palabra "patron" en todos los archivos dentro del directorio y sus subdirectorios.
+
+3. **Mostrar líneas que no coinciden con el patrón:**
+   ```bash
+   # Buscar lineas que no contegan 'patron'
+   grep -v "patron" archivo.txt
+
+   # Buscar lineas que no contegan espacios
+   grep -v " " archivo.txt
+   # Alternativa
+   xargs
+   ```
+4. **Contar el número de líneas que coinciden:**
+   ```bash
+   grep -c "patron" archivo.txt
+   ```
+5. Mostrar el número de línea junto con el contenido:
+   ```bash
+   grep -n "patron" archivo.txt
+   ```
+6. Búsqueda sin distinguir mayúsculas y minúsculas:
+   ```bash
+   grep -i "patron" archivo.txt
+   ```
+7. Buscar líneas que empiecen con el patrón:
+   Esto buscará líneas en `archivo.txt` que comiencen con la palabra "patron".
+   ```bash
+   grep "^patron" archivo.txt
+   ```
+8. Búsqueda de varias palabras (OR):
+   ```bash
+   grep -e "patron1" -e "patron2" archivo.txt
+   ```
+
+
+
 #### **CUT**
 - #Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
 
@@ -259,4 +307,25 @@ yz
 ```
 
 
-## TR
+#### **FILE**
+- **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

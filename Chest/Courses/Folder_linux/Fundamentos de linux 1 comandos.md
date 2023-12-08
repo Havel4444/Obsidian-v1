@@ -91,7 +91,7 @@ BASE64:
 - Un archivo `base64` puede se codificado por este mismo comando y descodificado:
 ```bash
 	base64 archivo
-	cat archivo | base64 --descode
+	cat archivo | base64 --decode
 ```
 
 
@@ -260,6 +260,7 @@ OTROS EJEMPLOS:
 
 #### **TR**
 - El ROT13 (Rotate by 13 places) es un cifrado de sustitución simple que rota (desplaza) cada letra del alfabeto en 13 lugares. Es un cifrado de tipo Caesar, y se utiliza comúnmente como una forma de ocultar o "encriptar" texto de una manera simple.
+- Existen paginas para hacer eset
 ```bash
 	# Descodificar y codificar
 	cat archivo | tr 'A-Za-z' 'N-ZA-Mn-za-m'

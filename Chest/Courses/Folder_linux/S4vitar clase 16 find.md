@@ -212,20 +212,12 @@ find . -type f | grep -vE "archivo|directorio"
 ```
 
 
-Claro, aquí tienes algunos ejemplos simples de diferentes usos de `grep`:
-
-1. **Búsqueda de una palabra en un archivo:**
-   ```bash
-   grep "patron" archivo.txt
-   ```
-   Esto buscará la palabra "patron" en el archivo `archivo.txt`.
+#### **GREP 2**
 
 2. **Búsqueda recursiva en directorios:**
    ```bash
    grep -r "patron" directorio/
    ```
-   Esto realizará una búsqueda recursiva de la palabra "patron" en todos los archivos dentro del directorio y sus subdirectorios.
-
 3. **Mostrar líneas que no coinciden con el patrón:**
    ```bash
    # Buscar lineas que no contegan 'patron'
@@ -311,6 +303,26 @@ yz
 - **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
 
 
+#### **TR**
+- **`tr`:** El comando `tr` en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
+
+SALTO DE LINEA:
+```bash
+	cat archivo | tr ' ' '\n' | head -n 4
+```
+
+
+#### **SED**
+- **`sed`:** El comando `sed` (editor de secuencias) en sistemas Unix y Linux se utiliza para realizar transformaciones de texto en un flujo de entrada o un archivo. Es comúnmente utilizado para buscar, reemplazar, insertar o eliminar texto en un archivo o flujo de datos.
+
+CAMBIO DE PALABRA:
+```bash
+	echo "palabra" | sed 's/palabra/letra/'
+```
+CAMBIO DE PALABRAS:
+```bash
+	echo "palabra y la palabra" | sed 's/palabra/letra/g'
+```
 
 
 
@@ -319,13 +331,17 @@ yz
 
 
 
+## LINK
+```bash
+# Comando find
+https://www.ionos.es/digitalguide/servidores/configuracion/comando-linux-find/
 
+# Comando awk
+https://www.shortcutfoo.com/app/dojos/awk/cheatsheet
+extension://kgnghhfkloifoabeaobjkgagcecbnppg/pages/pdf_viewer.html?r=https://bl831.als.lbl.gov/~gmeigs/scripting_help/awk_cheat_sheet.pdf
 
-
-
-
-
-
-
-
-
+# Comando sort
+https://www.ibidemgroup.com/edu/tutorial-sort-linux-unix/
+# Comando uniq
+https://victorhckinthefreeworld.com/2021/10/21/el-comando-uniq-de-gnu/
+```

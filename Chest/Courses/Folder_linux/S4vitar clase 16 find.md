@@ -313,7 +313,7 @@ CAMBIO DE PALABRAS:
 ```bash
 	echo "palabra y la palabra" | sed 's/palabra/letra/g'
 ```
-
+	
 
 
 

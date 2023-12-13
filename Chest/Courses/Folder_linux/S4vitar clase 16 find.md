@@ -204,11 +204,11 @@ find . -type f | grep -vE "archivo|directorio"
 
 #### **GREP 2**
 
-2. **Búsqueda recursiva en directorios:**
+2. Búsqueda recursiva en directorios:
    ```bash
    grep -r "patron" directorio/
    ```
-3. **Mostrar líneas que no coinciden con el patrón:**
+3. Mostrar líneas que no coinciden con el patrón:
    ```bash
    # Buscar lineas que no contegan 'patron'
    grep -v "patron" archivo.txt
@@ -218,7 +218,7 @@ find . -type f | grep -vE "archivo|directorio"
    # Alternativa
    xargs
    ```
-4. **Contar el número de líneas que coinciden:**
+4. Contar el número de líneas que coinciden:
    ```bash
    grep -c "patron" archivo.txt
    ```

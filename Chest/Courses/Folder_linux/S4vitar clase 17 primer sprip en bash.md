@@ -14,20 +14,6 @@ export RUTA=~/Desktop
 ``` 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### **IF, ELIF, ELSE Y FI**
 - Los equivalentes a los comando python.
 

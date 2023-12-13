@@ -18,7 +18,6 @@ USUARIO Y GRUPO:
 	# Usuario
 	find / -user havel 
 
----------------------------------------------------------------------------------
 	# Practica1: Archivos root que empiecen con 'python3.9' mas sus permisos.
 	find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
@@ -41,7 +40,6 @@ PERMISOS DE USUARIO Y GRUPO:
 	# Alterno
 	find / -user havel -not -executable 
 	
----------------------------------------------------------------------------------
 	# Practica: Busqueda por usuario/g, tipo y visualizarlo con permisos
 	find / -user havel -writable -type f 2>/dev/null | xargs ls -l
 	# Practica2: agregando fzf
@@ -54,7 +52,7 @@ PERMISOS DE USUARIO Y GRUPO:
 STICKY BIT:
 ```bash
 	find / -perm -1000
----------------------------------------------------------------------------------
+	
 	# Practica1: A/D con permisos +t 
 	find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
 ```
@@ -62,7 +60,7 @@ STICKY BIT:
 SUID Y SGID:
 ```bash
 	find / -perm -4000
----------------------------------------------------------------------------------
+	
 	# Practica1:
 	find / -user havel -perm -4000 2>/dev/null | xargs ls -l
 ```
@@ -86,7 +84,7 @@ CONTENCION:
 - Busqueda por el nombre incompleto.
 ```bash
 	find / -name *kitt* -type d
----------------------------------------------------------------------------------
+	
 	# Practica: Nombre de algo mas fzf
 	find / -name *kitt* 2>/dev/null | fzf
 ```
@@ -96,7 +94,8 @@ CONTENCION:
 VERSION:
 ```bash
 	find / -name python??? -type f 
----------------------------------------------------------------------------------
+	
+	# Practica:
 	find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
@@ -131,7 +130,8 @@ ________________________________________________________________________
 PERMISOS:
 ```bash
 	find / -name *asd* -type f | xargs ls -l
----------------------------------------------------------------------------------
+	
+	# Practica1:
 	find / -name python* -type f 2>/dev/null | xargs ls -l
 	# Practica2: Elimina todos los archivos que terminen en '.txt'
 	find / -name *.txt -type d | xargs rm
@@ -156,7 +156,8 @@ ELIMINAR ESPACIOS INECESARIOS:
 ```bash
 	awk '{$1=$1}1'
 	awk '{print $2}'
----------------------------------------------------------------------------------
+	
+	# Practica1:
 	find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
 	# Practica2: Muestra la segunda columna del archivo de texto
 	find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
@@ -239,6 +240,10 @@ find . -type f | grep -vE "archivo|directorio"
     ```bash
     grep -e "patrón1" -e "patrón2" archivo.txt
     ```
+8. **`-v`**: Permite ignorar archivos o directorios y si se requiere hacerlo con mas de 1 unidad es posible con `-E`.
+```bash
+	find . -type f | grep -vE "archivo|directorio" 
+```
 
 
 #### **SORT**
@@ -324,6 +329,7 @@ MODIFICACION DE ARCHIVO:
 	valor="$1"
 	sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
 ```
+
 
 
 

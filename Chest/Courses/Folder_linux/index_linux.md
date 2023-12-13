@@ -30,11 +30,10 @@
 
 [[S4vitar clase 15 directorios]]
 
-[[Fundamentos de linux 1 comandos]]
-[[S4vitar clase 16 find]]
+[[S4vitar clase 16 find and cat]]
 [[S4vitar clase 17 primer sprip en bash]]
-[[S4vitar clase 0 conexion ssh]]
 
+[[S4vitar clase 0 conexion ssh]]
 [[S4vitar clase 0 descompresor recursivo automático de archivos en Bash]]
 
 

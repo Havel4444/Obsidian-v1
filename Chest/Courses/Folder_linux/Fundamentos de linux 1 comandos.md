@@ -77,7 +77,6 @@ truncate -s 0 libro.txt
 ARCHIVOS CON ESPACIO:
 - Para crear un de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
 ```bash
-touch 'nombre del archivo con espacios'
 cat 'nombre del archivo con espacios'
 ```
 
@@ -88,184 +87,42 @@ cat ./-
 ```
 
 BASE64:
-- Un archivo `base64` puede se codificado por este mismo comando y descodificado:
+- Un archivo `base64` puede ser codificado por este mismo comando y descodificado:
 ```bash
-	base64 archivo
-	cat archivo | base64 --decode
+	cat archivo | base64 -d
 ```
 
 
 #### **GREP + CARACTERES ESPECIALES**
 
-CARACTER -r:
-- La opción `-r` en `grep` se utiliza para realizar búsquedas de manera recursiva en directorios y subdirectorios.
-- Si deseas buscar todas las líneas que contienen la palabra "ejemplo" en todos los archivos bajo el directorio `directorio`, puedes usar `-r`:
-```bash
-grep -r "ejemplo" directorio/
-```
-
-CARACTER -v:
-- La opción `-v` en `grep` se utiliza para invertir la búsqueda y mostrar solo las líneas que no coinciden con el patrón especificado.
-- Supongamos que tienes un archivo llamado `datos.txt` con el siguiente contenido.
-```plaintext
-Juan
-María
-Pedro
-Carlos
-```
-- Si deseas mostrar solo las líneas que no contienen la palabra "María", puedes usar `-v`:
-```bash
-	grep -v "María" datos.txt
-```
-- La salida mostrará las líneas que no contienen la palabra "María".
-```plaintext
-Juan
-Pedro
-Carlos
-```
-
-CARACTER -i:
-- La opción `-i` en `grep` se utiliza para realizar búsquedas de manera insensible a mayúsculas y minúsculas.
-- Por ejemplo, si deseas buscar la palabra "mundo" de manera insensible a mayúsculas y minúsculas, puedes usar `-i`:
-```bash
-grep -i "mundo" *.txt
-```
-- Resultado.
-```plaintext
-Hola Mundo
-HOLA MUNDO
-```
-
-CARACTER -l:
-- La opción `-l` en `grep` se utiliza para mostrar solo los nombres de los archivos que contienen al menos una línea que coincide con el patrón de búsqueda.
-- Por ejemplo, supongamos que tienes dos archivos, `archivo1.txt` y `archivo2.txt`, ambos con contenido similar:
-```plaintext
-archivo1.txt:
-Hola, esto es un ejemplo.
-
-archivo2.txt:
-Este es otro ejemplo.
-```
-- Si deseas buscar la palabra "ejemplo" en ambos archivos y solo obtener los nombres de los archivos que contienen la palabra, puedes usar `-l`:
-```bash
-grep -l "ejemplo" *.txt
-```
-- La salida mostrará los nombres de los archivos que contienen la palabra "ejemplo".
-```plaintext
-archivo1.txt
-archivo2.txt
-```
-
-CARACTER -e:
-- La opción `-e` en `grep` permite especificar múltiples patrones de búsqueda en una sola invocación de `grep`.
-- Por ejemplo, Supongamos que tienes un archivo llamado `datos.txt` con el siguiente contenido:
-```plaintext
-Nombre: Juan
-Apellido: Pérez
-Edad: 25
-
-Nombre: María
-Apellido: Gómez
-Edad: 30
-```
-- Si deseas buscar líneas que contienen "Nombre" o "Apellido", puedes usar `-e`:
-```bash
-grep -e "Nombre" -e "Apellido" datos.txt
-```
-- La salida mostrará las líneas que contienen "Nombre" o "Apellido".
-```plaintext
-Nombre: Juan
-Apellido: Pérez
-
-Nombre: María
-Apellido: Gómez
-```
-
-OTROS CARACTERES:
-1. **`-n`:** Muestra el número de línea junto con el resultado de la búsqueda.
-    ```bash
-    grep -n "patrón" archivo.txt
-    ```
-2. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
-    ```bash
-    grep -c "patrón" archivo.txt
-    ```
-3. **`-e`:** Permite especificar múltiples patrones de búsqueda.
-    ```bash
-    grep -e "patrón1" -e "patrón2" archivo.txt
-    ```
-4. **`-E`:** Habilita el uso de expresiones regulares extendidas (ERE).
-    ```bash
-    grep -E "patrón1|patrón2" archivo.txt
-    ```
-5. **`-w`:** Busca solo palabras completas, no subcadenas.
+1. **`-w`:** Busca solo palabras completas, no subcadenas.
     ```bash
     grep -w "palabra" archivo.txt
     ```
-
-
-#### **SORT**
-- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
-
-
-#### **UNIQ**
-- Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
-LINEAS DUPLICADAS:
-```bash
-cat archivo.txt | sort | uniq -d
-```
-CONTAR LINEAS DUPLICADAS:
-```bash
-cat archivo.txt | sort | uniq -c
-```
-MOSTRAR LINEAS NO DUPLICADAS:
-```bash
-cat archivo.txt | sort | uniq -u
-```
-
-
-#### **AWK**
-- `awk` es un potente y versátil lenguaje de procesamiento de texto en línea de comandos. Se utiliza para buscar, filtrar y procesar datos en archivos de texto y puede aplicar patrones y acciones específicas a cada línea.
-
-EJEMPLOS:
-1. Imprimir la segunda columna de un archivo CSV:
-   ```bash
-   cat archivo.csv | awk -F ',' '{print $2}'
-   ```
-2. Seleccionar la linea:
-```bash
-   cat archivo.csv | grep -n 'valor' | awk -F ',' '$1 == 28 {print $2}'
-```
-
-OTROS EJEMPLOS:
-4. Sumar los valores de una columna:
-   ```bash
-   cat numeros.txt | awk '{suma += $1} END {print suma}'
-   ```
-3. Filtrar líneas por longitud:
-   Este comando imprime solo las líneas que tienen más de 50 caracteres.
-   ```bash
-   cat archivo.txt | awk 'length($0) > 50 {print}'
-   ```
-4. Reemplazar una cadena en una columna específica:
-   Este comando reemplaza todas las instancias de "viejo" por "nuevo" en la segunda columna y luego imprime todas las columnas.
-   ```bash
-   cat datos.csv | awk -F ',' '{gsub("viejo", "nuevo", $2); print}'
-   ```
-5. Encontrar la línea más larga:
-   ```bash
-   cat archivo.txt | awk '{if (length($0) > max) {max = length($0); linea = $0}} END {print "Línea más larga:", linea}'
-   ```
-
-
-#### **TR**
-- El ROT13 (Rotate by 13 places) es un cifrado de sustitución simple que rota (desplaza) cada letra del alfabeto en 13 lugares. Es un cifrado de tipo Caesar, y se utiliza comúnmente como una forma de ocultar o "encriptar" texto de una manera simple.
-- Existen paginas para hacer este proceso mas facil y rapido, se buscan con el nombre de "ROT12...".
-```bash
-	# Descodificar y codificar
-	cat archivo | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-	echo 'texto' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-```
+2. **`-i`:** Busca palabras ingnorando mayusculas y minusculas.
+    ```bash
+    grep -i "palabra" archivo.txt
+    ```
+3. **`-r`:** Busca en la carpeta y sub-carpetas.
+    ```bash
+    grep -r "palabra" archivo.txt
+    ```
+4. **`-l`:** Muestra los archivos que contienen la palabra clave.
+    ```bash
+    grep -l 'palabra' archivo.txt 
+    ```
+5. **`-n`:** Muestra el número de línea junto con el resultado de la búsqueda.
+    ```bash
+    grep -n "patrón" archivo.txt
+    ```
+6. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
+    ```bash
+    grep -c "patrón" archivo.txt
+    ```
+7. **`-e`:** Permite especificar múltiples patrones de búsqueda.
+    ```bash
+    grep -e "patrón1" -e "patrón2" archivo.txt
+    ```
 
 
 #### **FILE**

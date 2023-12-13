@@ -22,6 +22,7 @@ USUARIO Y GRUPO:
 	# Practica1: Archivos root que empiecen con 'python3.9' mas sus permisos.
 	find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
+
 PERMISOS DE USUARIO Y GRUPO:
 - Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
 ```bash
@@ -100,11 +101,7 @@ VERSION:
 ```
 
 
-
-
 #### EXEC
-
-
 
 
 #### **SIZE**
@@ -131,7 +128,7 @@ ________________________________________________________________________
 ## XARGS
 - El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
-BUSQUEDA CON PERMISOS:
+PERMISOS:
 ```bash
 	find / -name *asd* -type f | xargs ls -l
 ---------------------------------------------------------------------------------
@@ -165,9 +162,19 @@ ELIMINAR ESPACIOS INECESARIOS:
 	find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 ```
 
+SELECCION:
+1. Imprimir la segunda columna de un archivo CSV:
+   ```bash
+   cat archivo.csv | awk -F ',' '{print $2}'
+   ```
+2. Seleccionar la linea:
+```bash
+   cat archivo.csv | grep -n 'valor' | awk -F ',' '$1 == 28 {print $2}'
+```
 
-#### **GREP**
-Grep es un comando en sistemas Unix y Linux que se utiliza para buscar patrones de texto en archivos o en la salida de otros comandos.
+
+
+#### **GREP RECURSIVO** 
 
 CARACTER ESPECIAL -r:
 1. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos.
@@ -202,50 +209,63 @@ find . -type f | grep -vE "archivo|directorio"
 ```
 
 
-#### **GREP 2**
+#### **GREP COMUN**
 
-2. Búsqueda recursiva en directorios:
-   ```bash
-   grep -r "patron" directorio/
-   ```
-3. Mostrar líneas que no coinciden con el patrón:
-   ```bash
-   # Buscar lineas que no contegan 'patron'
-   grep -v "patron" archivo.txt
+1. **`-w`:** Busca solo palabras completas, no subcadenas.
+    ```bash
+    grep -w "palabra" archivo.txt
+    ```
+2. **`-i`:** Busca palabras ingnorando mayusculas y minusculas.
+    ```bash
+    grep -i "palabra" archivo.txt
+    ```
+3. **`-r`:** Busca en la carpeta y sub-carpetas.
+    ```bash
+    grep -r "palabra" archivo.txt
+    ```
+4. **`-l`:** Muestra los archivos que contienen la palabra clave.
+    ```bash
+    grep -l 'palabra' archivo.txt 
+    ```
+5. **`-n`:** Muestra el número de línea junto con el resultado de la búsqueda.
+    ```bash
+    grep -n "patrón" archivo.txt
+    ```
+6. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
+    ```bash
+    grep -c "patrón" archivo.txt
+    ```
+7. **`-e`:** Permite especificar múltiples patrones de búsqueda.
+    ```bash
+    grep -e "patrón1" -e "patrón2" archivo.txt
+    ```
 
-   # Buscar lineas que no contegan espacios
-   grep -v " " archivo.txt
-   # Alternativa
-   xargs
-   ```
-4. Contar el número de líneas que coinciden:
-   ```bash
-   grep -c "patron" archivo.txt
-   ```
-5. Mostrar el número de línea junto con el contenido:
-   ```bash
-   grep -n "patron" archivo.txt
-   ```
-6. Búsqueda sin distinguir mayúsculas y minúsculas:
-   ```bash
-   grep -i "patron" archivo.txt
-   ```
-7. Buscar líneas que empiecen con el patrón:
-   Esto buscará líneas en `archivo.txt` que comiencen con la palabra "patron".
-   ```bash
-   grep "^patron" archivo.txt
-   ```
-8. Búsqueda de varias palabras (OR):
-   ```bash
-   grep -e "patron1" -e "patron2" archivo.txt
-   ```
+
+#### **SORT**
+- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
+
+
+#### **UNIQ**
+- Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
+LINEAS DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -d
+```
+CONTAR LINEAS DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -c
+```
+MOSTRAR LINEAS NO DUPLICADAS:
+```bash
+cat archivo.txt | sort | uniq -u
+```
 
 
 
 #### **CUT**
 - #Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
 
-**EJEMPLO 1:**
+EJEMPLO:
 1. Supongamos que tienes un archivo CSV (valores separados por comas) llamado `datos.csv` con el siguiente contenido:
 ```plaintext
 Nombre,Apellido,Edad
@@ -267,31 +287,6 @@ Gómez
 Ruiz
 ```
 
-**EJEMPLO 2:**
-1. Supongamos que tienes un archivo de texto llamado `texto.txt` con el siguiente contenido:
-```plaintext
-abcdefgh
-ijklmnop
-qrstuvwx
-yz
-```
-2. Para extraer solo los primeros tres caracteres de cada línea, puedes usar:
-```bash
-cut -c1-3 texto.txt
-```
-- `-c1-3`: Indica que quieres extraer los caracteres de la columna 1 a la 3.
-3. La salida será:
-```plaintext
-abc
-ijk
-qrs
-yz
-```
-
-
-#### **FILE**
-- **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
-
 
 #### **TR**
 - **`tr`:** El comando `tr` en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
@@ -299,6 +294,15 @@ yz
 SALTO DE LINEA:
 ```bash
 	cat archivo | tr ' ' '\n' | head -n 4
+```
+
+CIFRADO:
+- El ROT13 (Rotate by 13 places) es un cifrado de sustitución simple que rota (desplaza) cada letra del alfabeto en 13 lugares. Es un cifrado de tipo Caesar, y se utiliza comúnmente como una forma de ocultar o "encriptar" texto de una manera simple.
+- Existen paginas para hacer este proceso mas facil y rapido, se buscan con el nombre de "ROT12...".
+```bash
+	# Descodificar y codificar
+	cat archivo | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+	echo 'texto' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
 
 
@@ -309,11 +313,17 @@ CAMBIO DE PALABRA:
 ```bash
 	echo "palabra" | sed 's/palabra/letra/'
 ```
+
 CAMBIO DE PALABRAS:
 ```bash
 	echo "palabra y la palabra" | sed 's/palabra/letra/g'
 ```
-	
+
+MODIFICACION DE ARCHIVO:
+```bash
+	valor="$1"
+	sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
+```
 
 
 

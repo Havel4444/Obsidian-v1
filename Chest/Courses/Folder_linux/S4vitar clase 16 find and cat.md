@@ -232,18 +232,18 @@ find . -type f | grep -vE "archivo|directorio"
     ```bash
     grep -n "patrón" archivo.txt
     ```
-6. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
-    ```bash
-    grep -c "patrón" archivo.txt
-    ```
+6. **`-v`**: Permite ignorar archivos o directorios y si se requiere hacerlo con mas de 1 unidad es posible con `-E`.
+```bash
+	find . -type f | grep -vE "archivo|directorio" 
+```
 7. **`-e`:** Permite especificar múltiples patrones de búsqueda.
     ```bash
     grep -e "patrón1" -e "patrón2" archivo.txt
     ```
-8. **`-v`**: Permite ignorar archivos o directorios y si se requiere hacerlo con mas de 1 unidad es posible con `-E`.
-```bash
-	find . -type f | grep -vE "archivo|directorio" 
-```
+8. **`-c`:** Muestra solo el recuento de líneas que coinciden con el patrón.
+    ```bash
+    grep -c "patrón" archivo.txt
+    ```
 
 
 #### **SORT**

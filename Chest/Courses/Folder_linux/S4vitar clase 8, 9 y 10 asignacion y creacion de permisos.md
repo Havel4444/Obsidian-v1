@@ -62,17 +62,20 @@ cat /etc/passwd
 	Los siguientes comando tambien crearan y eliminaran los directorios simbolicos.
 	Luego de ser creados es `OBLIGATORIO` vincular al usuario a su carpeta de configuracion '/home/usuario' para una 
 	Por alguna razon si lo creo con una shell bash el sistema produce errores como el siguiente -> bash: /dev/stderr: Permission denied.
-```
-# Crear
-useradd ramon -s /bin/zsh -d /home/ramon
+```bash
+	# Crear
+	useradd ramon -s /bin/zsh -d /home/ramon
+	
+	# Eliminar
+	# En el caso de ser eliminado y porteriormente agregado 
+	# como 'usuario'/'grupo'
+	# el nombre sera remplazado por su numero identificador respectivamente.
+	userdel -r ramon
 
-# Eliminar
-# En el caso de ser eliminado y porteriormente agregado como 'usuario'/'grupo'
-# el nombre sera remplazado por su numero identificador respectivamente.
-userdel -r ramon
-
-# visualizar usuarios
-cut -d: -f1 /etc/passwd
+	# visualizar usuarios
+	cut -d: -f1 /etc/passwd
+	# Visualizar el contenido del usuario 
+	cat /etc/password | grep 'usuario'
 ```
 
 
@@ -82,13 +85,13 @@ cut -d: -f1 /etc/passwd
 
 **UBICACION:**
 	El archivo que contiene a cada #Grupo.
-```
+```bash
 cat /etc/group 
 ```
 
 **PERMISOS:**
 	Los grupos pueden asignarse con el siguiente comando:
-```
+```bash
 # para grupos
 chgrup havel archivo
 
@@ -101,12 +104,12 @@ chown havel:havel archivo
 
 **CREACION:**
 	Codigo de creacion de un grupo contenedor.
-```
+```bash
 groupadd manada
 ```
 **AGREGACION:**
 	A los grupos 'contenedores' como la misma palabra lo dice es les puede añadir usuarios.
-```
+```bash
 usermod -a -G manada havel
 ```
 
@@ -116,7 +119,7 @@ usermod -a -G manada havel
 
 ## LINK
 
-```
+```bash
 # Notacion octal
 https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
 

@@ -93,7 +93,7 @@ $ os.system('bash') # Elegimos una SHEEL
 ```bash
 setcap cap_setuid+ep /usr/bin/python3.9
 ```
-2. Eliminar.
+2. Desactivar.
 ```bash
 setcap -r /usr/bin/python3.9
 ```

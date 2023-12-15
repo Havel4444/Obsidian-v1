@@ -86,7 +86,10 @@ cat /etc/passwd
 **UBICACION:**
 	El archivo que contiene a cada #Grupo.
 ```bash
-cat /etc/group 
+	# visualizar usuarios
+	cut -d: -f1 /etc/group
+	# Visualizar el contenido del usuario 
+	cat /etc/password | grep 'usuario'
 ```
 
 **PERMISOS:**

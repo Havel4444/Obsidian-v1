@@ -172,6 +172,13 @@ SELECCION:
 ```bash
    cat archivo.csv | grep -n 'valor' | awk -F ',' '$1 == 28 {print $2}'
 ```
+3. Seleccionar la ultima columna:
+```bash
+awk -F '/' '{print $NF}' archivo.txt
+```
+
+
+
 
 
 

@@ -178,10 +178,6 @@ awk -F '/' '{print $NF}' archivo.txt
 ```
 
 
-
-
-
-
 #### **GREP RECURSIVO** 
 
 CARACTER ESPECIAL -r:
@@ -271,6 +267,22 @@ MOSTRAR LINEAS NO DUPLICADAS:
 ```bash
 cat archivo.txt | sort | uniq -u
 ```
+
+
+#### **XXD**
+- El comando #Xxd en linux se utiliza para crear una vista hexadecimal de los datos.
+1. Crear una vista hexadecimal de un archivo.
+```bash
+	xdd archivo
+```
+1. Convertir una vista hexadecimal en su estado original.
+```bash
+	xdd -r archivo
+```
+
+
+
+
 
 
 

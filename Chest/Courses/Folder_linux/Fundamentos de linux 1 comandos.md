@@ -81,7 +81,13 @@ BASE64:
 ## DIRECTORIO
 - Comandos solo posibles en un #Directorio.
 
-#### 
+#### **7z**
+- Comando universal para descomprimir.
+
+
+
+
+
 
 
 

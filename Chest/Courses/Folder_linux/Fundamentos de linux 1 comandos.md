@@ -80,3 +80,17 @@ BASE64:
 
 ## DIRECTORIO
 - Comandos solo posibles en un #Directorio.
+
+#### 
+
+
+
+
+
+
+
+
+
+
+
+

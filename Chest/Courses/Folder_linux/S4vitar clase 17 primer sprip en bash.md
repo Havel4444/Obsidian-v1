@@ -104,3 +104,22 @@ EJEMPLO:
 ```bash
 echo -e "\n(COMANDO)\n"
 ```
+
+
+#### **DESCOMPRESOR**
+- Codigo pra descomprimir un archivo repetidamente comprimido.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

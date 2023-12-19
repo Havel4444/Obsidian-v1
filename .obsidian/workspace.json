@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md"
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md"
               }
             }
           }
@@ -150,8 +150,9 @@
   "active": "db7087f94e6002ef",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
+    "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11, 12 ,13 y 14 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8, 9 y 10 asignacion y creacion de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 7 lectura e interpretacin de permisos.md",
@@ -160,7 +161,6 @@
     "S4vitar clase 0 descompresor recursivo automático de archivos en Bash.md",
     "Untitled.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
-    "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/Configuracion .dotfiles.md",
     "Untitled 3.md",

@@ -247,6 +247,13 @@ find . -type f | grep -vE "archivo|directorio"
     ```bash
     grep -c "patrón" archivo.txt
     ```
+9. **`-A, -B and -C`**: Seleciona y muestra las lineas superiores e inferiores como tambien ambas. 
+```bash
+	grep "patron" archivo.txt -A/-B/-C
+```
+
+
+
 
 
 #### **SORT**

@@ -409,7 +409,7 @@ xdotool behave $(xdotool getactivewindow) key ctrl+j exec /ruta/completa/del/scr
 	Para solucionar esto y poder ver todas las distrubiciones, puedes intentar habilitar `os-prober` y ejecutar nuevamente `update-grub`. Aquí están los pasos que puedes seguir:
 1. Abre el archivo de configuración de GRUB en un editor de texto. Puedes usar `nano` u otro editor de tu elección:
    ```bash
-   sudo nano /etc/default/grub
+   sudo vim /etc/default/grub
    ```
 2. Busca la línea que comienza con `GRUB_DISABLE_OS_PROBER` y asegúrate de que esté establecida en `false`. Si la línea no existe, agrégala al archivo y establece su valor en `false`.
    ```bash

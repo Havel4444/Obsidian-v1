@@ -97,6 +97,13 @@ CARACTERES EN NUMERO:
 6. `-ge`: Mayor o igual a (greater than or equal to)
 
 
+STRING:
+- El comando `if` puede ser usado con asteriscos para buscar catacteres pero solo cuando este acompañado de doble corchete. 
+```bash
+	if [[ "$valor" == *palabra* ]]; then
+```
+
+
 #### **SALTO DE LINEA**
 - El #SaltoDeLinea es un comando a compañado de un _-e_ para acomodar un espacio arriba y bajo del comando.
 
@@ -108,7 +115,33 @@ echo -e "\n(COMANDO)\n"
 
 #### **DESCOMPRESOR**
 - Codigo pra descomprimir un archivo repetidamente comprimido.
+```bash
+#!/bin/bash
+# Archivo a descomprimir.
+file_A="$1"
 
+# Bucle descompresor.
+while [ -e "$file_A" ] 
+do
+	
+	# Codigo descompresor
+	file_B="$(7z l "$file_A" | grep -wi 'name' -A 2 | tail -n 1 | awk '{print $NF}')"
+	7z x "$file_A" &>/dev/null
+	echo "Archivo descomprimido: $file_B"
+
+	# Comando if para salir del bucle.
+	category="$(file "$file_B")"
+	if [[ "$category" == *ASCII* ]]; then 
+		echo -e "\nArchivo ASCII: $file_B\n"
+		cat "$file_B"
+		exit
+	fi
+	
+	# Valor principal de bucle.
+	file_A="$file_B" 
+
+done
+```
 
 
 

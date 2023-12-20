@@ -270,20 +270,18 @@ cat archivo.txt | sort | uniq -u
 
 
 #### **XXD**
-- El comando #Xxd en linux se utiliza para crear una vista hexadecimal de los datos.
+- El comando #Xxd en linux se utiliza para crear una vista hexadecimal de los datos. 
 1. Crear una vista hexadecimal de un archivo.
 ```bash
 	xdd archivo
 ```
-1. Convertir una vista hexadecimal en su estado original.
+1. Convertir una vista hexadecimal en su estado original. Este mimo debe de ser redirigido a un archivo diferente mediante _<>_. 
 ```bash
+	# Revertir
 	xdd -r archivo
+	# Redirigil
+	xdd -r archivo > archivo_vacio 
 ```
-
-
-
-
-
 
 
 #### **CUT**

@@ -34,7 +34,6 @@
 [[S4vitar clase 17 primer sprip en bash]]
 
 [[S4vitar clase 0 conexion ssh]]
-[[S4vitar clase 0 descompresor recursivo automático de archivos en Bash]]
 
 
 

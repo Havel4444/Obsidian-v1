@@ -16,18 +16,18 @@ ping -c 1 bandit.labs.overthewire.org
 
 
 #### **CONEXION**
-- Una conexion es posible si el host tiene activa la opcion `PermitRootLogin yes`, la que esta dentro de la siguiente carpeta.
+1. Archivo de configuracion.
+- Una conexion es posible si el host tiene activa la opcion `PermitRootLogin yes/ PubkeyAuthentication yes/ PasswordAuthentication yes`, la que esta dentro de la siguiente carpeta.
 ```bash
 	vim /etc/ssh/sshd.config
 ``` 
-ACTIVACION:
+2. Comanodos de activacion/estado/reinicio. 
 ```bash
 	service ssd status
 	service ssd start
 	service ssd restart
 ``` 
-
-CREACION DE CLAVE SSH:
+3. Generacion de claves.
 - En la creacion de una clave ssh te da a elegir a cambiar la ubicacion de la misma y agregar una contraseña. 
 - Esta misma creara 2 claves, 1 privada otra 1 publica. Estan ubicadas en la carpeta `.ssh` del usuario.
 ```bash
@@ -36,6 +36,13 @@ CREACION DE CLAVE SSH:
 	# Ubucacion
 	/home/usuario/.ssh/claves
 ```
+4. Archivo de autorizacion.
+- Luego de generar las claves se tiene que crear el archivo llamado `authorized_keys` que contiene el contenido del archivo `id_rsa.pub`, este mismo tiene que estar en la carpeta `.ssh` junto con las demas claves del ==usuario host== que es el que abre las puertas para ingresar a su localhost.
+5. Usuario.
+- 
+
+
+
 
 
 #### **DIAGNOSTICO**

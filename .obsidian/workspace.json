@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2ff397c003bf15d8",
+        "id": "f2728518db09487e",
         "type": "tabs",
         "children": [
           {
-            "id": "db7087f94e6002ef",
+            "id": "8ce0924c889d3009",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,11 +139,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "db7087f94e6002ef",
+  "active": "8ce0924c889d3009",
   "lastOpenFiles": [
+    "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 16 find and cat.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 0 conexion ssh.md",
     "Chest/Courses/Folder_linux/S4vitar clase 17 primer sprip en bash.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/index.md",

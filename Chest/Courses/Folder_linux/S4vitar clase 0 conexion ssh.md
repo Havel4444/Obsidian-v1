@@ -15,7 +15,8 @@ ping -c 1 bandit.labs.overthewire.org
 3. **`bandit.labs.overthewire.org`:** Esta es la dirección a la que se está enviando el ping. En este caso, parece ser un nombre de dominio (`bandit.labs.overthewire.org`). El comando `ping` intentará determinar si puede alcanzar este dominio y cuánto tiempo lleva ida y vuelta el paquete.
 
 
-#### **CONEXION**
+#### **CONEXION ESTANDAR**
+0. ==Localhost==.
 1. Archivo de configuracion.
 - Una conexion es posible si el host tiene activa la opcion `PermitRootLogin yes/ PubkeyAuthentication yes/ PasswordAuthentication yes`, la que esta dentro de la siguiente carpeta.
 ```bash
@@ -37,11 +38,17 @@ ping -c 1 bandit.labs.overthewire.org
 	/home/usuario/.ssh/claves
 ```
 4. Archivo de autorizacion.
-- Luego de generar las claves se tiene que crear el archivo llamado `authorized_keys` que contiene el contenido del archivo `id_rsa.pub`, este mismo tiene que estar en la carpeta `.ssh` junto con las demas claves del ==usuario host== que es el que abre las puertas para ingresar a su localhost.
-5. Usuario.
-- 
+- Luego de generar las claves se tiene que crear el archivo llamado `authorized_keys` que contiene el contenido del archivo `id_rsa.pub`, este mismo tiene que estar en la carpeta `.ssh` junto con las demas claves del usuario host que es el que abre las puertas para ingresar a su localhost.
+5. ==Usuario==.
+- Todo usuario que quiera entrar en el localhost debera de tener en su carpete `.ssh` la clave privada `id_rsa` del localhost, para luego colocar el siguiente comando de acceso y la contraseña del la clave privada:
+```bash
+	# El usuario el 'root' y el nombre del equipo es 'localhost' en este caso.
+	ssh root@localhost
+``` 
 
 
+#### **CONEXION REGULAR**
+0. ==Usuario==
 
 
 

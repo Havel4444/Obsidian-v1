@@ -83,7 +83,12 @@ BASE64:
 
 #### **7z**
 - Comando universal para descomprimir.
-
+```bash
+	# Descomprimir
+	7z x archivo_comprimido
+	# Visualizar
+	7z l archivo_comprimido
+```
 
 
 

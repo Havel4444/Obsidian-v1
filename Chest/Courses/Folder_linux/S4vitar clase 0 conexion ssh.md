@@ -43,9 +43,9 @@ ping -c 1 bandit.labs.overthewire.org
 - Todo usuario que quiera entrar en el localhost debera de tener en su carpete `.ssh` la clave privada `id_rsa` del localhost, para luego colocar el siguiente comando de acceso y la contraseña del la clave privada:
 ```bash
 	# El usuario el 'root' y el nombre del equipo es 'localhost' en este caso.
-	ssh -i root@localhost
+	ssh -i id_rsa root@localhost -p 22
 ``` 
-
+- En caso de ser necesario 
 
 #### **CONEXION REGULAR**
 0. ==Usuario==

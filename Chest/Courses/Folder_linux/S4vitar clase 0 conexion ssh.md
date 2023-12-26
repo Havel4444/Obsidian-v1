@@ -40,7 +40,7 @@ ping -c 1 bandit.labs.overthewire.org
 4. Archivo de autorizacion.
 - Luego de generar las claves se tiene que crear el archivo llamado `authorized_keys` que contiene el contenido del archivo `id_rsa.pub`, este mismo tiene que estar en la carpeta `.ssh` junto con las demas claves del usuario host que es el que abre las puertas para ingresar a su localhost.
 5. ==Usuario==.
-- Todo usuario que quiera entrar en el localhost debera de tener en su carpete `.ssh` la clave privada `id_rsa` del localhost, para luego colocar el siguiente comando de acceso y la contraseña del la clave privada:
+- Todo usuario que quiera entrar en el localhost debera de tener en su carpete `.ssh` la clave privada `id_rsa` del localhost , para luego colocar el siguiente comando de acceso y la contraseña del la clave privada:
 ```bash
 	# El usuario el 'root' y el nombre del equipo es 'localhost' en este caso.
 	ssh -i id_rsa root@localhost -p 22

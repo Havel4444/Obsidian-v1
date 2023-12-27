@@ -72,8 +72,15 @@ LSOF:
 - Este es el comando principal que significa "List Open Files". Proporciona información detallada sobre los archivos que están abiertos por los procesos en el sistema.
 - El comando `lsof -i:22` muestra los procesos que están utilizando o tienen abierta una conexión en el puerto 22. En el contexto de conexiones de red, el puerto 22 generalmente se asocia con el servicio SSH (Secure Shell), que es un protocolo utilizado para acceder de forma segura a sistemas remotos.
 
-
-
+TCP:
+- La disponibilidad de un puerto puede ser verificado de la siguiente manera.
+```bash
+	# Comando. 
+	echo '' > /dev/tcp/127.0.0.1/22
+	# Verificacion, en caso de ser '0' quiere decir que esta habilitado en caso
+	# contrario sera un '1'.
+	echo $?
+```
 
 
 

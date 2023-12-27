@@ -36,7 +36,6 @@ ARRIBA Y ABAJO SIN FLECHAS:
 ## ARCHIVO
 - Comandos solo posibles en un #Archivo.
 
-
 #### **MANIPULACION**
 
 ARCHIVOS OCULTOS:
@@ -74,7 +73,9 @@ BASE64:
 
 #### **FILE**
 - **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
-
+```bash
+	file archivo.txt
+```
 
 
 
@@ -93,8 +94,61 @@ BASE64:
 
 
 
+## TERMINAL
+
+#### **FORZAR**
+- Mediante el comando `bash -c` es posible #ForzarComando a que cumplan con su accion.
+```bash
+	# Comando.
+	bash -c "comando" "comando utilzado para forzar"
+	# Ejemplo.
+	bash -c "echo '' > /dev/tcp/127.0.0.1/22" 2>/dev/null
+```
 
 
+
+
+## EDICION, CREACION Y ELIMINACION
+
+**ELIMIAR EL CONTENIDO .TXT:**
+	El comando #truncate elimina el contenia texto de un archivo .txt.
+```
+truncate -s 0 libro.txt
+``` 
+1. -s: Elijir el tamaño.
+2. 0: Tamaño a eliminar.
+
+
+
+
+# DESCOMPRECION
+
+Comandos para instalar y #descomprimir. 
+**.deb:**
+```
+# Instalador
+sudo dpkg -i nombre-del-archivo.deb
+sudo dpkg -i
+
+# Error por falta de dependencias
+sudo apt-get install -f
+```
+
+**tar.xz:**
+```
+tar -xJvf nombre-del-archivo.tar.xz
+tar -xJvf 
+```
+
+**7z:**
+```
+# Instalador
+sudo apt-get install p7zip-full
+
+# Descompresor
+7z x archivo.7z
+7z x 
+```
 
 
 

@@ -83,13 +83,12 @@ TCP:
 ```
 
 
-#### **TELNET**
+#### **CONEXION POR PUERTO**
 
+TELNET:
 - El comando `telnet localhost` se utiliza para iniciar una conexión Telnet a la máquina local (localhost) en el puerto predeterminado, que es el puerto 23. Telnet es un protocolo de red que permite la comunicación bidireccional entre dispositivos a través de una conexión de texto simple.
 - Cuando ejecutas `telnet localhost`, estás abriendo una sesión Telnet hacia tu propia máquina en la dirección IP de loopback (`127.0.0.1`). Esto puede tener varios propósitos:
 1. **Pruebas de Conectividad:** Puedes usar `telnet localhost` para verificar si el servicio Telnet está en ejecución en tu máquina y si puedes establecer una conexión exitosa. Esto puede ser útil para verificar la disponibilidad del servicio o para diagnosticar problemas de red.
-2. **Pruebas de Servicios Locales:** Al conectarte a `localhost` en un puerto específico, puedes verificar si un servicio que debería estar escuchando en ese puerto está en funcionamiento. Por ejemplo, si ejecutas `telnet localhost 80`, puedes verificar si un servidor web está en ejecución en el puerto 80.
-3. **Depuración:** Puede ser una herramienta útil para la depuración de servicios de red o para verificar la respuesta de un servicio a nivel de texto.
 - Es importante tener en cuenta que Telnet transmite datos sin cifrar, por lo que no se recomienda su uso en entornos no seguros, especialmente a través de redes no confiables, ya que la información enviada, incluyendo las contraseñas, podría ser interceptada fácilmente.
 - En lugar de Telnet, se recomienda utilizar SSH (Secure Shell) para conexiones remotas, ya que proporciona una capa de cifrado y seguridad significativamente mejor. Por ejemplo, para conectarte a la máquina local a través de SSH, podrías usar algo como `ssh localhost`.
 ```bash 

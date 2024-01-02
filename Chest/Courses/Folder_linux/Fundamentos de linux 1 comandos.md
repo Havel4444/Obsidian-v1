@@ -70,6 +70,17 @@ BASE64:
 	cat archivo | base64 -d
 ```
 
+DIFF:
+- Diferencia entre el archivo nuevo y viejo.
+```bash
+diff new_file old_file
+```
+
+CANTIDA DE LINEAS:
+```bash
+cat file.txt | wc -l
+```
+
 
 #### **FILE**
 - **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.

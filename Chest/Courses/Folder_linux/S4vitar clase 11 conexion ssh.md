@@ -83,22 +83,57 @@ TCP:
 ```
 
 
-#### **CONEXION POR PUERTO**
+#### **ENVIO DE DATOS**
 
 TELNET:
 - El comando `telnet localhost` se utiliza para iniciar una conexión Telnet a la máquina local (localhost) en el puerto predeterminado, que es el puerto 23. Telnet es un protocolo de red que permite la comunicación bidireccional entre dispositivos a través de una conexión de texto simple.
 - Cuando ejecutas `telnet localhost`, estás abriendo una sesión Telnet hacia tu propia máquina en la dirección IP de loopback (`127.0.0.1`). Esto puede tener varios propósitos:
 1. **Pruebas de Conectividad:** Puedes usar `telnet localhost` para verificar si el servicio Telnet está en ejecución en tu máquina y si puedes establecer una conexión exitosa. Esto puede ser útil para verificar la disponibilidad del servicio o para diagnosticar problemas de red.
-- Es importante tener en cuenta que Telnet transmite datos sin cifrar, por lo que no se recomienda su uso en entornos no seguros, especialmente a través de redes no confiables, ya que la información enviada, incluyendo las contraseñas, podría ser interceptada fácilmente.
 ```bash 
+	# Telnet es un programa que proporciona una interfaz de terminal para
+	# conectarse a servidores utilizando el protocolo Telnet. Se utiliza para
+	# establecer conexiones con otros sistemas en la red.
+    
+	# Localhost Es un nombre que se refiere a la dirección IP de loopback, que
+	# es `127.0.0.1`. En este contexto, significa que estás intentando
+	# conectarte a un servidor que se ejecuta en tu propia máquina.
 	telnet localhost 30000
 ```
 
 NC:
 - Manera alternativa del comando `telnet`.
 ```bash
+	# Este comando (`nc` o `netcat`) se utiliza para realizar conexiones de red.
+	# En este caso, está intentando establecer una conexión TCP con el servidor
+	# en el localhost (127.0.0.1) en el puerto 30000.
 	echo "Mensaje a enviar" | nc localhost 30000
-
 ```
+
+OPERACION CRIPTOCRAFICO CON OPENSSL:
+- `OpenSSL` es una herramienta y biblioteca de código abierto que proporciona implementaciones de los protocolos SSL (Secure Sockets Layer) y TLS (Transport Layer Security), así como de criptografía general. Su propósito principal es brindar funciones criptográficas y herramientas relacionadas para garantizar la seguridad de las comunicaciones en red y la protección de datos.
+- Algunos de los usos más comunes de `OpenSSL` incluyen:
+1. **Cifrado y Descifrado SSL/TLS:** OpenSSL es ampliamente utilizado para cifrar y descifrar las comunicaciones a través de SSL/TLS. Puede ser utilizado tanto como cliente como servidor, permitiendo la comunicación segura entre aplicaciones.
+```bash
+	# openssl s_client: Openssl es el comando principal de la herramienta
+	# OpenSSL, y `s_client` es una subcomando específica para actuar como un
+	# cliente SSL/TLS. Este subcomando permite realizar conexiones SSL/TLS y
+	# mostrar información detallada sobre la conexión.
+	openssl s_client -connect 127.0.0.1:30001
+```
+- En este caso existen puerto a los que se puede entrar solo de forma cifrada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

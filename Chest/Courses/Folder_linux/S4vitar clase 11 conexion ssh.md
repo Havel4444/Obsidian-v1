@@ -90,13 +90,15 @@ TELNET:
 - Cuando ejecutas `telnet localhost`, estás abriendo una sesión Telnet hacia tu propia máquina en la dirección IP de loopback (`127.0.0.1`). Esto puede tener varios propósitos:
 1. **Pruebas de Conectividad:** Puedes usar `telnet localhost` para verificar si el servicio Telnet está en ejecución en tu máquina y si puedes establecer una conexión exitosa. Esto puede ser útil para verificar la disponibilidad del servicio o para diagnosticar problemas de red.
 - Es importante tener en cuenta que Telnet transmite datos sin cifrar, por lo que no se recomienda su uso en entornos no seguros, especialmente a través de redes no confiables, ya que la información enviada, incluyendo las contraseñas, podría ser interceptada fácilmente.
-- En lugar de Telnet, se recomienda utilizar SSH (Secure Shell) para conexiones remotas, ya que proporciona una capa de cifrado y seguridad significativamente mejor. Por ejemplo, para conectarte a la máquina local a través de SSH, podrías usar algo como `ssh localhost`.
 ```bash 
 	telnet localhost 30000
 ```
 
+NC:
+- Manera alternativa del comando `telnet`.
+```bash
+	echo "Mensaje a enviar" | nc localhost 30000
 
-
-
+```
 
 

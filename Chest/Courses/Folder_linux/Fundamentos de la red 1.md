@@ -50,6 +50,9 @@ pactl load-module module-simple-protocol-tcp rate=44100 format=s16le channels=2 
 
 
 
+## TCP and UDP
+
+
 
 
 

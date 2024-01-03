@@ -123,6 +123,7 @@ nmap --open -T5 -v -n -p31000-32000
 ```
 
 
+
 El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`). Aquí está el desglose del comando:
 ```bash
 # El comando `nc -nlvp 5757` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`). Aquí está el desglose del comando:

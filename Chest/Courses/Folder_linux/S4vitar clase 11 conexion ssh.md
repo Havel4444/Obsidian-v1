@@ -1,9 +1,7 @@
 [[index]]
 [[index_linux]]
 
-## SSH
-- SSH, que significa "Secure Shell" (Shell Seguro), es un protocolo de red que permite a los usuarios acceder y gestionar de forma segura los sistemas remotos a través de una conexión cifrada. Es ampliamente utilizado en entornos de sistemas Unix y Linux para acceder a servidores de forma remota.
-
+## **SSH**
 
 #### **PING**
 - El comando `ping` se utiliza para enviar paquetes de solicitud de eco a una dirección IP o a un nombre de dominio y recibir respuestas. En el comando que proporcionaste:
@@ -63,6 +61,9 @@ ssh -i id_rsa root@localhost -p 22
 
 
 
+
+## **PUERTOS**
+
 #### **DIAGNOSTICO**
 
 LSOF:
@@ -111,6 +112,9 @@ openssl s_client -connect 127.0.0.1:30001
 
 
 #### **NMAP**
+- Escaneo de puertos, detección de sistemas operativos, mapeo de redes.
+
+REGISTRO DE PUERTOS:
 - El comando que proporcionaste utiliza Nmap, una herramienta de escaneo de red, para buscar y mostrar los puertos abiertos en un rango específico en una red. Aquí está el desglose del comando:
 ```bash
 nmap --open -T5 -v -n -p31000-32000
@@ -123,16 +127,31 @@ nmap --open -T5 -v -n -p31000-32000
 ```
 
 
+#### **NC**
+- Utilidad de red versátil que permite la transferencia de datos a través de conexiones TCP o UDP. Puede actuar como cliente o servidor. Establecimiento de conexiones de red, transferencia de archivos, creación de servidores de escucha.
 
-El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`). Aquí está el desglose del comando:
+EMISOR Y RECEPTOR:
+- El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`), teniendo de emisor a un archivo `suid`.
 ```bash
-# El comando `nc -nlvp 5757` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`). Aquí está el desglose del comando:
 nc -nlvp 5757
 # nc: Es el comando principal de Netcat, una utilidad de red que permite la lectura y escritura de datos en conexiones de red.
-# -n: No realiza la resolución de DNS para mostrar direcciones IP en lugar de nombres de host en las estadísticas.
+
+# -n: Se desactiva la resolución de DNS. En lugar de intentar traducir los nombres de host a direcciones IP, nc mostrará las direcciones IP directamente
+
 # -l: Indica que `nc` debe estar en modo de escucha, esperando conexiones entrantes en lugar de intentar conectarse a otro host.
 # -v: Modo verbose o detallado, que proporciona información más detallada sobre la actividad.
 # -p 5757: Especifica el número de puerto en el que `nc` escuchará las conexiones entrantes. En este caso, está configurado en el puerto 5757.
 ```
+
+
+
+
+
+
+
+
+
+
+
 
 

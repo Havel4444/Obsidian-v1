@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md"
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md"
               }
             }
           }
@@ -150,8 +150,8 @@
   "active": "8ce0924c889d3009",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 7 permisos especiales.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 7 permisos especiales.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 primer sprip en bash.md",

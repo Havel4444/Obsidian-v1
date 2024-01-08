@@ -30,14 +30,28 @@ Crear un #Repositorio y configurar #Git.
 5. git push -u origin main: Enviar el contenido de la carpeta local a github.com\/repositorio
 
 0. git branch: Mirar los troncos y el tronco en que estas.
-1. git branch _Tronco_: En caso de querer crear un tronco principal.
-2. git branch -d o -D: Eliminar una rama.
-3. git log: Commits.
+1. git branch -r: Mirar los troncos ocultos.
+2. git branch _Tronco_: En caso de querer crear un tronco principal.
+3. git branch -d o -D: Eliminar una rama.
+
+1. git log: Commits.
+2. git log -p: Ver la diferencia entre los commits.
 
 
-1. git checkout _rama01_: Cambiar de rama pero no estaras en ningun tronco. **Modo obserbador**.
-2. git checkout _nombreDelNuevoTronco_ asd1234: En caso de querer estar una una rama especifica y tambien estar en un tronco. En este caso **no estas en modo observador** y no que situado.
-4. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo. **Modo superior**.
+3. git checkout _rama01_: Cambiar de rama pero no estaras en ningun tronco. **Modo obserbador**.
+4. git checkout _nombreDelNuevoTronco_ asd1234: En caso de querer estar una una rama especifica y tambien estar en un tronco. En este caso **no estas en modo observador** y no que situado.
+5. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo. **Modo superior**.
+
+1. git tag: Muestra las etiquetas secretas.
+2. git show _tag_: Comando para ver las etiquetas.
+
+**PUERTO:**
+- Para poder cambiar el puerto predeterminado de un git clone es agregando el puerto despues del servidor/localhost.
+```bash
+ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+```
+
+
 
 
 

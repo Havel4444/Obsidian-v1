@@ -149,7 +149,13 @@ nc -nlvp 5757
 
 
 
-
+## **ACCESO MORE**
+- El acceso forzado a una maquina que tiene de shell `showtext` puede hacerce mediante los comando de reduccion de ventana para haci aplicar los siguientes comandos y entrar en modo bash:
+1. `v`:  Entrar en modo insertacion de comandos.
+2. `set`: Cambiar la shell `showtext` a `bash`.
+```bash
+:set shell=/bin/bash 
+```
 
 
 

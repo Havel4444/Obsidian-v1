@@ -29,11 +29,15 @@ Crear un #Repositorio y configurar #Git.
 4. git remote add origin git\@github.com :Havel4444/asd.git: Vincular github.com con la carpeta local.
 5. git push -u origin main: Enviar el contenido de la carpeta local a github.com\/repositorio
 
-6. git branch _Tronco_: En caso de querer crear un tronco principal.
-7. git branch -d o -D: Eliminar una rama.
-8. git log: Commits.
-9. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo.
-10. git checkout _rama01_: Cambiar de rama.
+0. git branch: Mirar los troncos y el tronco en que estas.
+1. git branch _Tronco_: En caso de querer crear un tronco principal.
+2. git branch -d o -D: Eliminar una rama.
+3. git log: Commits.
+
+
+1. git checkout _rama01_: Cambiar de rama pero no estaras en ningun tronco. **Modo obserbador**.
+2. git checkout _nombreDelNuevoTronco_ asd1234: En caso de querer estar una una rama especifica y tambien estar en un tronco. En este caso **no estas en modo observador** y no que situado.
+4. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo. **Modo superior**.
 
 
 

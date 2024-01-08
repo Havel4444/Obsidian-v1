@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xxd",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/Configuracion de linux 1.md"
+                "file": "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md"
               }
             }
           }
@@ -150,20 +150,20 @@
   "active": "8ce0924c889d3009",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/index_linux.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
+    "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
+    "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/index.md",
     "Chest/Courses/Folder_linux/index_git.md",
     "Chest/Courses/Folder_linux/Configuracion .dotfiles.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
     "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
     "Chest/Courses/Folder_linux/S4vitar clase 7 permisos especiales.md",
     "Chest/Courses/Folder_linux/Fundamentos de la red 1.md",
-    "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 primer sprip en bash.md",
     "Chest/Courses/Folder_linux/S4vitar clase 8 directorios.md",
     "Chest/Courses/Folder_linux/S4vitar clase 6 asignacion y creacion de permisos.md",
     "Chest/Courses/Folder_linux/S4vitar clase 5 lectura e interpretacin de permisos.md",
-    "Chest/Courses/Folder_linux/Fundamentos de linux 2 sistema.md",
     "Untitled.md",
     "Chest/Courses/Folder_linux/S4vitar clase 0 descompresor recursivo automático de archivos en Bash.md",
     "Untitled 3.md",

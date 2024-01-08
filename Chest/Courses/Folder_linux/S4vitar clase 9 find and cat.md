@@ -318,7 +318,7 @@ Ruiz
 
 
 #### **TR**
-- **`tr`:** El comando `tr` en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
+- **`tr`:** El comando #Tr en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
 
 SALTO DE LINEA:
 ```bash

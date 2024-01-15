@@ -20,7 +20,7 @@ sshpass -p 'contraseña' ssh usuario@maquina -p 'puerto'
 ```
 
 
-#### **CONEXION MEDIANTE ARCHIVO**
+#### **STATUS Y CONEXION MEDIANTE ARCHIVO**
 
 HOST:
 1. Archivo de configuracion.
@@ -45,12 +45,18 @@ ssh-keygen
 ```bash
 # Archivo de conexion ubicada en .ssh
 cp id_rsa.pub authorized_keys
+# Alternativa: Se creara automaticamente el archivo 'authorized_keys'. 
+ssh-copy-id -i id_rsa havel@localhost
 ```
-
+5. Conexion local.
+```bash
+# Conexion sin contraseña dentro del localhost.
+ssh havel2@localhost
+```
 
 USUARIO:
 - El usuario debera de tener en su carpeta `.ssh` la clave `id_rsa` del host al que quiera conectarse.
-- El archivo `id_rsa` debera de contener al usuario en los permisos de grupo para su acceso al host.
+- El archivo y/o carpeta de `id_rsa` debera contener permisos de acceso y ejecucion para el usuario. 
 - En caso de ser necesario puede agregarse otro puerto, pero si no, el que viene por preterminado es el `22`.
 ```bash
 ssh -i id_rsa root@localhost -p 22

@@ -5,7 +5,7 @@
 
 #### **PING**
 - El comando `ping` se utiliza para enviar paquetes de solicitud de eco a una dirección IP o a un nombre de dominio y recibir respuestas. En el comando que proporcionaste:
-```bash
+```
 ping -c 1 bandit.labs.overthewire.org
 ```
 1. **`ping`:** Este es el comando en sí mismo, que se utiliza para enviar paquetes de solicitud de eco a una dirección específica y recibir respuestas. Se utiliza comúnmente para verificar la conectividad de red y la disponibilidad de un host.
@@ -16,6 +16,7 @@ ping -c 1 bandit.labs.overthewire.org
 #### **CONEXION MEDIANTE CODIGO**
 - En este metodo la conexion es atraves de una contraseña, usuario, maquina y puerto. 
 ```bash
+#asdkfjl
 sshpass -p 'contraseña' ssh usuario@maquina -p 'puerto'
 ```
 
@@ -71,6 +72,15 @@ ssh -i id_rsa root@localhost -p 22
 ## **PUERTOS**
 
 #### **DIAGNOSTICO**
+
+P. ABIERTOS:
+- El comando `ss -lntp` muestra los puertos que estan abiertos.
+
+
+P. DISPONIBLES:
+
+
+
 
 LSOF:
 - Este es el comando principal que significa "List Open Files". Proporciona información detallada sobre los archivos que están abiertos por los procesos en el sistema.
@@ -162,23 +172,4 @@ nc -nlvp 5757
 ```bash
 :set shell=/bin/bash 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

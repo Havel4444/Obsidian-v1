@@ -2,14 +2,12 @@
 [[index_linux]]
 
 
-## FIND
-- #Find es un comando en sistemas Unix y Linux utilizado para buscar archivos y directorios en un sistema de archivos, según diversos criterios como nombre, tipo, tamaño y otros atributos.
-
+# FIND
 
 #### **USUARIO Y GRUPO**
 - Los #UsuariosYGrupos dentro de `find` pueden ser combinados con los siguientes comandos.
 
-USUARIO Y GRUPO:
+**Comandos de busqueda:**
 - Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```bash
 # Grupo
@@ -22,7 +20,7 @@ find / -user havel
 find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
-PERMISOS DE USUARIO Y GRUPO:
+**Permisos:**
 - Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
 ```bash
 # Lectura
@@ -47,9 +45,10 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 ```
 
 
-#### **PERMISO**
+#### **PERMISOS**
+- Permisos de acceso #StickyBit, #Suidi y #Sgid.
 
-STICKY BIT:
+**Sticky biy:**
 ```bash
 find / -perm -1000
 
@@ -57,41 +56,29 @@ find / -perm -1000
 find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
-SUID Y SGID:
+**Suid y sgid:**
 ```bash
 find / -perm -4000
 
-# Practica1:
-find / -user havel -perm -4000 2>/dev/null | xargs ls -l
-```
-- El doble permiso es posible por medio de los paréntesis que se utilizan para agrupar las expresiones -perm -4000 y -perm -2000 y el operador lógico -o indica que se deben buscar archivos que tengan permisos SUID, SGID o 20002.
-```bash
-	find / -type f \( -perm -4000 -o -perm -2000 \) 2>/dev/null | xargs ls -l
+# Practiva: El doble permiso es posible por medio de los paréntesis que se utilizan para agrupar las expresiones -perm -4000 y -perm -2000 y el operador lógico -o indica que se deben buscar archivos que tengan permisos SUID, SGID o 20002.
+find / -type f \( -perm -4000 -o -perm -2000 \) 2>/dev/null | xargs ls -l
 ```
 
-FIND + RECURSIVO:
-- El comando `/`
+**Permiso recursivo:**
 ```bash
 find / -perm /444
 ```
 
 
 #### **ASTERISCO**
-
-En el comando `find`, el #Asterisco (`*`) se utiliza como comodín para representar cualquier cantidad y combinación de caracteres en nombres de archivos o directorios durante una búsqueda.
-
-CONTENCION:
+- El #Asterisco se utiliza como comodín para representar cualquier cantidad y combinación de caracteres en nombres de archivos o directorios durante una búsqueda.
 - Busqueda por el nombre incompleto.
 ```bash
 find / -name *kitt* -type d
-
-# Practica: Nombre de algo mas fzf
-find / -name *kitt* 2>/dev/null | fzf
 ```
 
 #### **SIGNO DE PREGUNTA**
-
-VERSION:
+- El #SignoDePregunta ayuda a autocompletar la busqueda.
 ```bash
 find / -name python??? -type f 
 
@@ -106,17 +93,17 @@ find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
 #### **SIZE**
 - El comando #Size busca a/d por su peso y otros parametros.
   En el comando `find`, la opción `-size` se utiliza para buscar archivos según su tamaño. Aquí tienes algunos ejemplos simples de cómo usar `-size`:
-1. **Buscar archivos más grandes que un tamaño específico:**
+1. Buscar archivos más grandes que un tamaño específico.
 ```bash
 find / -type f -size +1M
 # Ejemplo con megabits
 find / -type f -size 1G
 ```
-1. **Buscar archivos más pequeños que un tamaño específico:**
+1. Buscar archivos más pequeños que un tamaño específico.
 ```bash
 find / -type f -size -100k
 ```
-1. **Buscar archivos de un tamaño específico:**
+1. Buscar archivos de un tamaño específico.
 ```bash
 find / -type f -size 500c
 ```
@@ -126,10 +113,10 @@ find / -type f -size 500c
 ________________________________________________________________________
 
 
-## XARGS
-- El comando xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
+#### XARGS
+- El comando #Xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
-PERMISOS:
+**Permisos:**
 ```bash
 find / -name *asd* -type f | xargs ls -l
 
@@ -140,15 +127,6 @@ find / -name *.txt -type d | xargs rm
 # Practica3: Permisos
 find /
 ```
-
-CAT:
-- Usando el comando `xargs` es posible abrir un archivo de texto pero antes se debe de usar `grep` para nombrarlo.
-```bash
-find . -type f | grep 'nombre\del\archivo'| xargs cat
-```
-
-ERRORES:
-- No puede estar acompañado del comando 'cut'.
 
 
 #### **AWK**

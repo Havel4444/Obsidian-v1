@@ -118,10 +118,6 @@ ________________________________________________________________________
 
 **Permisos:**
 ```bash
-find / -name *asd* -type f | xargs ls -l
-
-# Practica1:
-find / -name python* -type f 2>/dev/null | xargs ls -l
 # Practica2: Elimina todos los archivos que terminen en '.txt'
 find / -name *.txt -type d | xargs rm
 # Practica3: Permisos
@@ -130,9 +126,9 @@ find /
 
 
 #### **AWK**
-- #Awk es ideal para trabajar con ``COLUMNA`` de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
+- #Awk es ideal para trabajar con columnas de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
 
-ELIMINAR ESPACIOS INECESARIOS:
+**Eliminar espacion:**
 ```bash
 awk '{$1=$1}1'
 awk '{print $2}'
@@ -143,7 +139,7 @@ find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
 find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 ```
 
-SELECCION:
+**Seleccion:**
 1. Imprimir la segunda columna de un archivo CSV:
 ```bash
 cat archivo.csv | awk -F ',' '{print $2}'
@@ -159,6 +155,7 @@ awk -F '/' '{print $NF}' archivo.txt
 
 
 #### **GREP RECURSIVO** 
+- El #GrepRecursivo buesca en todas las carpetas y archivos que elija.
 
 CARACTER ESPECIAL -r:
 1. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos.

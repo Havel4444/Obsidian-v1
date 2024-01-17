@@ -76,6 +76,7 @@ ssh -i id_rsa root@localhost -p 22
 # **PUERTOS**
 
 #### **DIAGNOSTICO**
+- El #Puerto en un contenido ssh.
 
 Puertos abiertos:
 - El comando `ss -lntp` muestra los puertos que estan abiertos.

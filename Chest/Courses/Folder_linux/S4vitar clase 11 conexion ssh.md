@@ -4,7 +4,7 @@
 # SSH
 
 #### STATUS
-- #Ssh service status es un metodo de veficacion por terminal para ver el estado de la conexion ssh.
+- El #Ssh service status es un metodo de veficacion por terminal para ver el estado de la conexion ssh.
 ```sh
 service ssh start
 service ssh status
@@ -82,9 +82,18 @@ Puertos abiertos:
 - El comando `ss -lntp` muestra los puertos que estan abiertos.
 
 Puertos disponibles:
-- Comando para ver todos los disponibles del ordenador.
+1. Comando para ver todos los disponibles del ordenador.
 ```sh
 cat /proc/net/tcp
+# Salida: Puertos columna 3 
+#   0: 7A01A8C0:C082 856DC7B9:01BB 01 00000000:00000000 02:000003C2
+#   1: 7A01A8C0:A58A 168640AC:01BB 01 00000000:00000000 02:00000117 
+#   2: 7A01A8C0:94BE 93011A68:01BB 01 00000000:00000000 02:000003C2
+#   3: 7A01A8C0:C2D8 4EBA2FB5:01BB 08 00000000:00000000 02:00000517
+```
+2. Comando para pasar de heaxadecimal a decimal.
+```sh
+echo -e "CB1A\nAECA\nC2D4\nCB24" | while read line; do echo "Puerto: $line -> $(echo "obase=10; ibase=16; $line" | bc)"; done
 ```
 
 Lsof:
@@ -100,8 +109,35 @@ echo '' > /dev/tcp/127.0.0.1/22
 echo $?
 ```
 
+Registro de puertos:
+- El comando que proporcionaste utiliza Nmap, una herramienta de escaneo de red, para buscar y mostrar los puertos abiertos en un rango específico en una red. Aquí está el desglose del comando:
+```bash
+nmap --open -T5 -v -n -p31000-32000
+# nmap: El comando principal que inicia la herramienta Nmap.
+# --open: Esta opción indica a Nmap que solo muestre los puertos que están abiertos. Esto filtra la salida para mostrar solo los puertos que están actualmente accesibles.
+# -T5: Especifica el nivel de agresividad del escaneo. En este caso, se establece en 5, que es el nivel más alto (más rápido y más agresivo). Ten en cuenta que configurar un nivel de agresividad muy alto puede afectar la precisión del escaneo y aumentar la probabilidad de ser detectado.
+# -v: Habilita el modo detallado o verboso, proporcionando información más detallada sobre el progreso del escaneo.
+# -n: Desactiva la resolución de DNS, lo que significa que Nmap no intentará resolver las direcciones IP a nombres de host. Esto puede acelerar el escaneo y reducir la dependencia de la resolución DNS.
+# -p3100-32000: Define el rango de puertos que se escanearán. En este caso, se están escaneando los puertos desde el 3100 hasta el 32000.
+```
 
-#### **ENVIO DE DATOS**
+#### EMISOR Y RECEPTOR
+- El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`), teniendo de emisor a un archivo `suid`.
+
+- Ejemplo:
+```bash
+nc -nlvp 5757
+# nc: Es el comando principal de Netcat, una utilidad de red que permite la lectura y escritura de datos en conexiones de red.
+
+# -n: Se desactiva la resolución de DNS. En lugar de intentar traducir los nombres de host a direcciones IP, nc mostrará las direcciones IP directamente
+
+# -l: Indica que `nc` debe estar en modo de escucha, esperando conexiones entrantes en lugar de intentar conectarse a otro host.
+# -v: Modo verbose o detallado, que proporciona información más detallada sobre la actividad.
+# -p 5757: Especifica el número de puerto en el que `nc` escuchará las conexiones entrantes. En este caso, está configurado en el puerto 5757.
+```
+
+
+#### **ENVIO DE DATOS NO ENCRIPTADOS** 
 
 Telnet:
 - El comando `telnet localhost` se utiliza para iniciar una conexión Telnet a la máquina local (localhost) en el puerto predeterminado, que es el puerto 23. Telnet es un protocolo de red que permite la comunicación bidireccional entre dispositivos a través de una conexión de texto simple.
@@ -121,6 +157,9 @@ echo "Mensaje a enviar" | nc localhost 30000
 # Este comando (`nc` o `netcat`) se utiliza para realizar conexiones de red. En este caso, está intentando establecer una conexión TCP con el servidor en el localhost (127.0.0.1) en el puerto 30000.
 ```
 
+
+#### **ENVIO DE DATOS ENCRIPTADOS** 
+
 Openssl:
 - `OpenSSL` es una herramienta y biblioteca de código abierto que proporciona implementaciones de los protocolos SSL (Secure Sockets Layer) y TLS (Transport Layer Security), así como de criptografía general. Su propósito principal es brindar funciones criptográficas y herramientas relacionadas para garantizar la seguridad de las comunicaciones en red y la protección de datos.
 - Algunos de los usos más comunes de `OpenSSL` incluyen:
@@ -131,31 +170,11 @@ openssl s_client -connect 127.0.0.1:30001
 # openssl s_client: Openssl es el comando principal de la herramienta OpenSSL, y `s_client` es una subcomando específica para actuar como un cliente SSL/TLS. Este subcomando permite realizar conexiones SSL/TLS y mostrar información detallada sobre la conexión.
 ```
 
-Registro de puertos:
-- El comando que proporcionaste utiliza Nmap, una herramienta de escaneo de red, para buscar y mostrar los puertos abiertos en un rango específico en una red. Aquí está el desglose del comando:
-```bash
-nmap --open -T5 -v -n -p31000-32000
-# nmap: El comando principal que inicia la herramienta Nmap.
-# --open: Esta opción indica a Nmap que solo muestre los puertos que están abiertos. Esto filtra la salida para mostrar solo los puertos que están actualmente accesibles.
-# -T5: Especifica el nivel de agresividad del escaneo. En este caso, se establece en 5, que es el nivel más alto (más rápido y más agresivo). Ten en cuenta que configurar un nivel de agresividad muy alto puede afectar la precisión del escaneo y aumentar la probabilidad de ser detectado.
-# -v: Habilita el modo detallado o verboso, proporcionando información más detallada sobre el progreso del escaneo.
-# -n: Desactiva la resolución de DNS, lo que significa que Nmap no intentará resolver las direcciones IP a nombres de host. Esto puede acelerar el escaneo y reducir la dependencia de la resolución DNS.
-# -p3100-32000: Define el rango de puertos que se escanearán. En este caso, se están escaneando los puertos desde el 3100 hasta el 32000.
+Ncat:
+- Alternativa a `openssl`.
+```sh
+ncat --ssl localhost 30001
 ```
-
-Emisor y receptor:
-- El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`), teniendo de emisor a un archivo `suid`.
-```bash
-nc -nlvp 5757
-# nc: Es el comando principal de Netcat, una utilidad de red que permite la lectura y escritura de datos en conexiones de red.
-
-# -n: Se desactiva la resolución de DNS. En lugar de intentar traducir los nombres de host a direcciones IP, nc mostrará las direcciones IP directamente
-
-# -l: Indica que `nc` debe estar en modo de escucha, esperando conexiones entrantes en lugar de intentar conectarse a otro host.
-# -v: Modo verbose o detallado, que proporciona información más detallada sobre la actividad.
-# -p 5757: Especifica el número de puerto en el que `nc` escuchará las conexiones entrantes. En este caso, está configurado en el puerto 5757.
-```
-
 
 # SHELL
 

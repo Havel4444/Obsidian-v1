@@ -23,13 +23,17 @@ ping -c1 bandit.labs.overthewire.org
 
 
 #### **CONEXION SIN ARCHIVO**
-- En este metodo la conexion es atraves de una contraseña, usuario, maquina y puerto. 
+- La #ConexionSinArchivo en este metodo la conexion es atraves de una contraseña, usuario, maquina y puerto. 
+
+Ejemplo:
 ```sh
 sshpass -p 'contraseña' ssh usuario@maquina -p 'puerto'
 ```
 
 
 #### **CONEXION  CON ARCHIVO**
+- La #ConexionConArchivo en este contexto permite no tener que usar la contraseña en cada acceso.
+
 Host:
 1. Archivo de configuracion.
 - Activar la opcion "PermitRootLogin yes" para habilitar la conexion.
@@ -112,6 +116,7 @@ echo $?
 Registro de puertos:
 - El comando que proporcionaste utiliza Nmap, una herramienta de escaneo de red, para buscar y mostrar los puertos abiertos en un rango específico en una red. Aquí está el desglose del comando:
 ```bash
+# Metodo 1:
 nmap --open -T5 -v -n -p31000-32000
 # nmap: El comando principal que inicia la herramienta Nmap.
 # --open: Esta opción indica a Nmap que solo muestre los puertos que están abiertos. Esto filtra la salida para mostrar solo los puertos que están actualmente accesibles.
@@ -119,10 +124,27 @@ nmap --open -T5 -v -n -p31000-32000
 # -v: Habilita el modo detallado o verboso, proporcionando información más detallada sobre el progreso del escaneo.
 # -n: Desactiva la resolución de DNS, lo que significa que Nmap no intentará resolver las direcciones IP a nombres de host. Esto puede acelerar el escaneo y reducir la dependencia de la resolución DNS.
 # -p3100-32000: Define el rango de puertos que se escanearán. En este caso, se están escaneando los puertos desde el 3100 hasta el 32000.
+
+# Metodo 2:
+for port in $(seq 31000 32000); do
+        (echo '' > /dev/tcp/127.0.0.1/$port) 2>/dev/null && echo "[+] Puerto $port abierto"
+done;
 ```
 
+Direccion ip + puerto: Redireccion de entrada/salida.
+- En Linux, `/dev/tcp/localhost` no es un archivo o dispositivo físico en el sistema de archivos, sino un mecanismo especial proporcionado por el shell Bash para la redirección de entrada/salida. Cuando se utiliza en la forma `/dev/tcp/host/port`, se utiliza para abrir una conexión de red TCP en el host y el puerto especificados.
+- Ejemplo:
+```bash
+# Ejemplo 1: Verificacion de disponibilidad.
+echo '' > /dev/tcp/127.0.0.1/22 && echo "Puerto abierto"
+
+# Ejemplo 2: Conexion TCP.
+echo "GET / HTTP/1.1" > /dev/tcp/www.ejemplo.com/80
+```
+
+
 #### EMISOR Y RECEPTOR
-- El comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`), teniendo de emisor a un archivo `suid`.
+- El #EmisorYReceptor en el contexto del comando `nc -nlvp` se utiliza para iniciar un servidor de escucha (listener) en un puerto específico utilizando Netcat (`nc`), teniendo de emisor a un archivo `suid`.
 
 - Ejemplo:
 ```bash
@@ -140,7 +162,7 @@ nc -nlvp 5757
 #### **ENVIO DE DATOS NO ENCRIPTADOS** 
 
 Telnet:
-- El comando `telnet localhost` se utiliza para iniciar una conexión Telnet a la máquina local (localhost) en el puerto predeterminado, que es el puerto 23. Telnet es un protocolo de red que permite la comunicación bidireccional entre dispositivos a través de una conexión de texto simple.
+- El #EnvioDeDatosNoEncriptados en el contexto del comando `telnet localhost` se utiliza para iniciar una conexión Telnet a la máquina local (localhost) en el puerto predeterminado, que es el puerto 23. Telnet es un protocolo de red que permite la comunicación bidireccional entre dispositivos a través de una conexión de texto simple.
 - Cuando ejecutas `telnet localhost`, estás abriendo una sesión Telnet hacia tu propia máquina en la dirección IP de loopback (`127.0.0.1`). Esto puede tener varios propósitos:
 1. **Pruebas de Conectividad:** Puedes usar `telnet localhost` para verificar si el servicio Telnet está en ejecución en tu máquina y si puedes establecer una conexión exitosa. Esto puede ser útil para verificar la disponibilidad del servicio o para diagnosticar problemas de red.
 ```bash 
@@ -159,6 +181,7 @@ echo "Mensaje a enviar" | nc localhost 30000
 
 
 #### **ENVIO DE DATOS ENCRIPTADOS** 
+- El #EnvioDeDatosEncriptados en el contexto de `openssl` y `ncat`.
 
 Openssl:
 - `OpenSSL` es una herramienta y biblioteca de código abierto que proporciona implementaciones de los protocolos SSL (Secure Sockets Layer) y TLS (Transport Layer Security), así como de criptografía general. Su propósito principal es brindar funciones criptográficas y herramientas relacionadas para garantizar la seguridad de las comunicaciones en red y la protección de datos.

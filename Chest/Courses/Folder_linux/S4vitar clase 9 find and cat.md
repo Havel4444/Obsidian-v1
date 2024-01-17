@@ -5,9 +5,9 @@
 # FIND
 
 #### **USUARIO Y GRUPO**
-- Los #UsuariosYGrupos dentro de `find` pueden ser combinados con los siguientes comandos.
+- El #UsuarioYGrupo dentro de #Find pueden ser combinados con los siguientes comandos.
 
-**Comandos de busqueda:**
+Comandos de busqueda:
 - Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```bash
 # Grupo
@@ -20,7 +20,7 @@ find / -user havel
 find / -group root -type f -name python3.9* -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
-**Permisos:**
+Permisos:
 - Busca los archivos/directorios que contengan de grupo/usuario al grupo/usuario seleccionad `PERO` que tenga el permiso de lectura , escritura o ejecucion.
 ```bash
 # Lectura
@@ -46,9 +46,9 @@ find / -user havel -writable -type f 2>/dev/null | xargs ls -l | fzf
 
 
 #### **PERMISOS**
-- Permisos de acceso #StickyBit, #Suidi y #Sgid.
+- El #StickyBit, #Suidi y #Sgid son permisos de acceso.
 
-**Sticky biy:**
+Sticky biy*
 ```bash
 find / -perm -1000
 
@@ -56,7 +56,7 @@ find / -perm -1000
 find / -perm -1000 -ls 2>/dev/null | awk '{$1=$1}1'
 ```
 
-**Suid y sgid:**
+Suid y sgid:
 ```bash
 find / -perm -4000
 
@@ -64,7 +64,7 @@ find / -perm -4000
 find / -type f \( -perm -4000 -o -perm -2000 \) 2>/dev/null | xargs ls -l
 ```
 
-**Permiso recursivo:**
+Permiso recursivo:
 ```bash
 find / -perm /444
 ```
@@ -91,7 +91,7 @@ find / -group root -type f -name python??? -ls 2>/dev/null | awk '{$1=$1}1'
 
 
 #### **SIZE**
-- El comando #Size busca a/d por su peso y otros parametros.
+- El #Size busca a/d por su peso y otros parametros.
   En el comando `find`, la opción `-size` se utiliza para buscar archivos según su tamaño. Aquí tienes algunos ejemplos simples de cómo usar `-size`:
 1. Buscar archivos más grandes que un tamaño específico.
 ```bash
@@ -114,9 +114,9 @@ ________________________________________________________________________
 
 
 #### XARGS
-- El comando #Xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
+- El #Xargs se utiliza para construir y ejecutar comandos a partir de la entrada estándar. A menudo se usa para tomar la salida de otro comando y pasarla como argumentos a otro comando.
 
-**Permisos:**
+Permisos:
 ```bash
 # Practica2: Elimina todos los archivos que terminen en '.txt'
 find / -name *.txt -type d | xargs rm
@@ -126,9 +126,9 @@ find /
 
 
 #### **AWK**
-- #Awk es ideal para trabajar con columnas de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
+- El #Awk es ideal para trabajar con columnas de datos y realizar operaciones en base a patrones o campos específicos en líneas de texto. Puede realizar cálculos, filtrar datos, reorganizar la salida, entre otras tareas.
 
-**Eliminar espacion:**
+Eliminar espacion:
 ```bash
 awk '{$1=$1}1'
 awk '{print $2}'
@@ -139,7 +139,7 @@ find / -group havel -type f -name *python* -ls 2>/dev/null | awk '{$1=$1}1'
 find / -type f -name pato.txt 2>/dev/null | awk '{print $2}'
 ```
 
-**Seleccion:**
+Seleccion:
 1. Imprimir la segunda columna de un archivo CSV:
 ```bash
 cat archivo.csv | awk -F ',' '{print $2}'
@@ -157,7 +157,6 @@ awk -F '/' '{print $NF}' archivo.txt
 #### **GREP RECURSIVO** 
 - El #GrepRecursivo buesca en todas las carpetas y archivos que elija.
 
-CARACTER ESPECIAL -r:
 1. **`\w`:** Representa cualquier carácter de palabra, incluyendo letras (mayúsculas y minúsculas), números y guiones bajos.
 ```bash
 grep -r '\w' archivo.txt
@@ -183,14 +182,15 @@ grep -r '\s' archivo.txt
 grep -r '\S' archivo.txt
 ```
 
-IGNORAR:
+Ignorar:
 - Con el comando `-v` puedes resaltar o ignorar archivos o directorios y si se requiere hacerlo con mas de 1 unidad es posible con `-E`.
-```
+```sh
 find . -type f | grep -vE "archivo|directorio" 
 ```
 
 
 #### **GREP COMUN**
+- El #Grep es el uso  comun con o sin `find`.
 
 1. **`-w`:** Busca solo palabras completas, no subcadenas.
 ```bash
@@ -230,31 +230,28 @@ grep "patron" archivo.txt -A/-B/-C
 ```
 
 
-
-
-
 #### **SORT**
-- Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
+- El #Sort es un comando en sistemas Unix y Linux que se utiliza para ordenar líneas de texto en un archivo o datos provenientes de la entrada estándar. 
 
 
 #### **UNIQ**
-- Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
-LINEAS DUPLICADAS:
+- El #Uniq es un comando que se utiliza para eliminar líneas adyacentes duplicadas en un archivo o datos provenientes de la entrada estándar.
+Lineas duplicadas:
 ```bash
 cat archivo.txt | sort | uniq -d
 ```
-CONTAR LINEAS DUPLICADAS:
+Conteo de lineas duplicadas:
 ```bash
 cat archivo.txt | sort | uniq -c
 ```
-MOSTRAR LINEAS NO DUPLICADAS:
+Conteo de lineas no duplicadas:
 ```bash
 cat archivo.txt | sort | uniq -u
 ```
 
 
 #### **XXD**
-- El comando #Xxd en linux se utiliza para crear una vista hexadecimal de los datos. 
+- El #Xxd en linux se utiliza para crear una vista hexadecimal de los datos. 
 1. Crear una vista hexadecimal de un archivo.
 ```bash
 xdd archivo
@@ -269,9 +266,9 @@ xdd -r archivo > archivo_vacio
 
 
 #### **CUT**
-- #Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
+- El #Cut es especialmente útil cuando trabajas con archivos de texto delimitados por columnas, ya que te permite recortar y mostrar solo las partes específicas de cada línea.
 
-EJEMPLO:
+Ejemplo:
 1. Supongamos que tienes un archivo CSV (valores separados por comas) llamado `datos.csv` con el siguiente contenido:
 ```plaintext
 Nombre,Apellido,Edad
@@ -295,14 +292,14 @@ Ruiz
 
 
 #### **TR**
-- **`tr`:** El comando #Tr en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
+- El #Tr en sistemas Unix y Linux se utiliza para realizar la traducción de caracteres en una secuencia de texto, incluyendo la posibilidad de cambiar o eliminar saltos de línea.
 
-SALTO DE LINEA:
+Salto de linea:
 ```bash
 cat archivo | tr ' ' '\n' | head -n 4
 ```
 
-CIFRADO:
+Cifrado:
 - El ROT13 (Rotate by 13 places) es un cifrado de sustitución simple que rota (desplaza) cada letra del alfabeto en 13 lugares. Es un cifrado de tipo Caesar, y se utiliza comúnmente como una forma de ocultar o "encriptar" texto de una manera simple.
 - Existen paginas para hacer este proceso mas facil y rapido, se buscan con el nombre de "ROT12...".
 ```bash
@@ -312,27 +309,22 @@ echo 'texto' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
 
 
-#### **SED**
-- **`sed`:** El comando `sed` (editor de secuencias) en sistemas Unix y Linux se utiliza para realizar transformaciones de texto en un flujo de entrada o un archivo. Es comúnmente utilizado para buscar, reemplazar, insertar o eliminar texto en un archivo o flujo de datos.
+#### SED
+- El #Sed (editor de secuencias) en sistemas Unix y Linux se utiliza para realizar transformaciones de texto en un flujo de entrada o un archivo. Es comúnmente utilizado para buscar, reemplazar, insertar o eliminar texto en un archivo o flujo de datos.
 
-CAMBIO DE PALABRA:
+Cambio de palabra:
 ```bash
 echo "palabra" | sed 's/palabra/letra/'
 ```
-
-CAMBIO DE PALABRAS:
+Cambio de palabras:
 ```bash
 echo "palabra y la palabra" | sed 's/palabra/letra/g'
 ```
-
-MODIFICACION DE ARCHIVO:
+Modificacion de archivo:
 ```bash
 valor="$1"
 sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
 ```
-
-
-
 
 ## LINK
 ```bash

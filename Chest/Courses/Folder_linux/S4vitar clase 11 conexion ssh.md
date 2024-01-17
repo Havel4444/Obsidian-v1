@@ -148,14 +148,16 @@ echo "GET / HTTP/1.1" > /dev/tcp/www.ejemplo.com/80
 
 - Ejemplo:
 ```bash
-nc -nlvp 5757
+# Receptor
+netcat/nc -nlvp 77
 # nc: Es el comando principal de Netcat, una utilidad de red que permite la lectura y escritura de datos en conexiones de red.
-
 # -n: Se desactiva la resolución de DNS. En lugar de intentar traducir los nombres de host a direcciones IP, nc mostrará las direcciones IP directamente
-
 # -l: Indica que `nc` debe estar en modo de escucha, esperando conexiones entrantes en lugar de intentar conectarse a otro host.
 # -v: Modo verbose o detallado, que proporciona información más detallada sobre la actividad.
 # -p 5757: Especifica el número de puerto en el que `nc` escuchará las conexiones entrantes. En este caso, está configurado en el puerto 5757.
+
+# Emisor: En este caso como emisor tienes que seleccionar el ip a que enviar los datos, en caso de estar en una misma pc seria localhost o 127.0.0.1
+netcat/nc 192.168.1.122 77
 ```
 
 
@@ -172,7 +174,7 @@ telnet localhost 30000
 # Localhost Es un nombre que se refiere a la dirección IP de loopback, que es `127.0.0.1`. En este contexto, significa que estás intentando conectarte a un servidor que se ejecuta en tu propia máquina.
 ```
 
-Nc:
+Nc/netcat:
 - Manera alternativa del comando `telnet`.
 ```bash
 echo "Mensaje a enviar" | nc localhost 30000
@@ -207,4 +209,15 @@ ncat --ssl localhost 30001
 2. `set`: Cambiar la shell `showtext` a `bash`.
 ```bash
 :set shell=/bin/bash 
+```
+
+
+# LINK
+
+```sh
+netcat=
+https://blog.desdelinux.net/usando-netcat-algunos-comandos-practicos/
+
+
+
 ```

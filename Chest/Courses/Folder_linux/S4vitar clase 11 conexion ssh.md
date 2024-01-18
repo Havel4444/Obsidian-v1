@@ -204,12 +204,22 @@ ncat --ssl localhost 30001
 # SHELL
 
 #### ACCESO MORE
+- ¡A veces el tamaño sí que importa!, aislado a esto que hemos visto, el comando ‘**more**‘ lo que te permite es mostrar el resultado de la ejecución de un comando en la terminal de a una página a la vez. Esto es especialmente útil para casos en los que se ejecutan comandos que puedan llegar a causar un gran desplazamiento. Para pasar a la página siguiente, tienes que presionar la **barra espaciadora** en el teclado.
+- Puedes continuar presionando espacio hasta llegar al final del resultado o puedes presionar la tecla “**q**” directamente para salir.
 - El acceso forzado a una maquina que tiene de shell `showtext` puede hacerce mediante los comando de reduccion de ventana para haci aplicar los siguientes comandos y entrar en modo bash:
 1. `v`:  Entrar en modo insertacion de comandos.
 2. `set`: Cambiar la shell `showtext` a `bash`.
 ```bash
 :set shell=/bin/bash 
 ```
+
+Conexion/configuracion shell:
+- En Bash se pueden usar argumentos desde la línea de comandos, los cuales son enviados a los scripts como variables. Estos quedarían representados de la siguiente forma:
+`$0`: Representa el nombre del script que se invocó desde la terminal.
+`$1`: Es el primer argumento desde la línea de comandos.
+`$2`: Es el segundo argumento desde la línea de comandos y así sucesivamente.
+`$#`: Contiene el número de argumentos que son recibidos desde la línea de comandos.
+`$*`: Contiene todos los argumentos que son recibidos desde la línea de comandos, guardados todos en la misma variable.
 
 
 # LINK

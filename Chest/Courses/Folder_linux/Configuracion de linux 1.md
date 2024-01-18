@@ -30,13 +30,13 @@ Crear un #Repositorio y configurar #Git.
 5. git push -u origin main: Enviar el contenido de la carpeta local a github.com\/repositorio
 
 0. git branch: Mirar los troncos y el tronco en que estas.
-1. git branch -r: Mirar los troncos ocultos.
+1. git branch -r/-a: Mirar los troncos ocultos.
 2. git branch _Tronco_: En caso de querer crear un tronco principal.
 3. git branch -d o -D: Eliminar una rama.
 
 1. git log: Commits.
 2. git log -p: Ver la diferencia entre los commits.
-
+3. git show asd123: Alternativa a `git log -p` pero este selecciona a un commit.
 
 3. git checkout _rama01_: Cambiar de rama pero no estaras en ningun tronco. **Modo obserbador**.
 4. git checkout _nombreDelNuevoTronco_ asd1234: En caso de querer estar una una rama especifica y tambien estar en un tronco. En este caso **no estas en modo observador** y no que situado.

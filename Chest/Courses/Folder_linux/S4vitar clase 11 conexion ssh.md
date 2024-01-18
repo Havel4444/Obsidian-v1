@@ -113,7 +113,7 @@ echo '' > /dev/tcp/127.0.0.1/22
 echo $?
 ```
 
-Registro de puertos:
+Tcp registro de puertos:
 - El comando que proporcionaste utiliza Nmap, una herramienta de escaneo de red, para buscar y mostrar los puertos abiertos en un rango específico en una red. Aquí está el desglose del comando:
 ```bash
 # Metodo 1:

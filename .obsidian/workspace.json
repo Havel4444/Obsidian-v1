@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "direct",
+                "query": "directorio",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -149,11 +149,11 @@
   },
   "active": "8ce0924c889d3009",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
-    "Chest/Courses/Folder_linux/S4vitar clase 8 directorios.md",
     "Chest/Courses/Folder_linux/S4vitar clase 6 asignacion y creacion de permisos.md",
-    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar clase 9 find and cat.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 8 directorios.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 11 conexion ssh.md",
+    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 primer sprip en bash.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux 1 comandos.md",

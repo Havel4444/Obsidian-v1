@@ -82,6 +82,10 @@ cat /etc/passwd
 
 
 ## GRUPO
+- El #Group puede ser usado para ver en que grupos esta el usuario actual. Ejemplo:
+```sh
+groups 
+```
 
 **UBICACION:**
 	El archivo que contiene a cada #Grupo.

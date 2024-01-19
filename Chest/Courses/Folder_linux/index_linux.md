@@ -18,10 +18,13 @@
 [[S4vitar clase 8 directorios]]
 
 [[S4vitar clase 9 find and cat]]
-[[S4vitar clase 10 primer sprip en bash]]
+[[S4vitar clase 10 script en bash]]
 
 [[S4vitar clase 11 conexion ssh]]
 
+
+## PRIMER SCRIPT
+[[S4vitar scrip de busqueda]]
 
 
 

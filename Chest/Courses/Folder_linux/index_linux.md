@@ -2,7 +2,6 @@
 
 ## INTRO A LINUX
 [[Configuracion de linux 1]]
-[[Fundamentos de linux 1 comandos]]
 
 ## INTRO A LINUX C/S4VITAR
 [[S4vitar clase 1 introduccion a linux]]
@@ -16,11 +15,11 @@
 [[S4vitar clase 7 permisos especiales]]
 
 [[S4vitar clase 8 directorios]]
-
-[[S4vitar clase 9 find and cat]]
 [[S4vitar clase 10 script en bash]]
 
-[[S4vitar clase 11 conexion ssh]]
+[[Fundamentos de linux comandos]]
+[[S4vitar clase find and cat]]
+[[S4vitar clase conexion ssh]]
 
 
 ## PRIMER SCRIPT

@@ -16,9 +16,6 @@ FZF PARA VISULIZAR:
 ls | xargs du -h | sort -h |fzf --tac
 ```
 
-
-
-
 ## XCLIP
 
 COPIAR LO SELECCIONADO:

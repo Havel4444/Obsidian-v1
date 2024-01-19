@@ -30,68 +30,61 @@ ARRIBA Y ABAJO SIN FLECHAS:
 
 
 
-## ARCHIVO
-- Comandos solo posibles en un #Archivo.
+# ARCHIVO
 
-#### **MANIPULACION**
+#### DESCRIPCION
+- Los #Archivos tienen diversos comandos aplicados en estos mismos.
 
-ARCHIVOS OCULTOS:
-- El archivo #Hidden es un contenedor de texto que puede ocultar a/d solo de manera visual.
+Archivos ocultos:
+- Un contenedor de texto que puede ocultar a/d solo de manera visual.
 ```bash
 touch .hidden
 ```
 
-ELIMIAR EL CONTENIDO .TXT:
-- El comando #truncate elimina el contenia texto de un archivo .txt.
+Eliminar el contenido de un texto:
+- El comando de eliminacion del contenido de texto de un archivo .txt.
 ```bash
 truncate -s 0 libro.txt
+# -s: Selector de lineas a eliminar.
 ``` 
-1. -s: Elijir el tamaño.
-2. 0: Tamaño a eliminar.
 
-ARCHIVOS CON ESPACIO:
+Archivos con espacios:
 - Para crear un de texto que contenga espacios, puedes utilizar la siguiente sintaxis en la terminal y para acceder:
 ```bash
 cat 'nombre del archivo con espacios'
 ```
 
-ARCHIVOS CON SIGNOS:
-- -: Estos archivos pueden ser abiertos como un ejecutable.
+Archivos con signos:
+- Estos archivos pueden ser abiertos como un ejecutable.
 ```bash
 cat ./-
 ```
 
-BASE64:
+Base64:
 - Un archivo `base64` puede ser codificado por este mismo comando y descodificado:
 ```bash
 	cat archivo | base64 -d
 ```
 
-DIFF:
+Diff: 
 - Diferencia entre el archivo nuevo y viejo.
 ```bash
 diff new_file old_file
 ```
 
-CANTIDA DE LINEAS:
+Conteo de lineas:
 ```bash
 cat file.txt | wc -l
 ```
 
-
-#### **FILE**
-- **`file`:** El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
+File:
+- El comando `file` en sistemas Unix y Linux se utiliza para determinar el tipo de archivo mediante la inspección de su contenido y otros atributos. Proporciona información sobre el formato y la naturaleza del archivo.
 ```bash
 	file archivo.txt
 ```
 
-
-
-## DIRECTORIO
-- Comandos solo posibles en un #Directorio.
-
-#### **7z**
-- Comando universal para descomprimir.
+Descompresor universal:
+- Comando `7z` para descomprimir.
 ```bash
 	# Descomprimir
 	7z x archivo_comprimido
@@ -102,37 +95,41 @@ cat file.txt | wc -l
 
 
 
-## TERMINAL
+# TERMINAL
+#### DESCRIPCION
+- La #terminal tiene comando disponibles 
 
-#### **FORZAR**
-- Mediante el comando `bash -c` es posible #ForzarComando a que cumplan con su accion.
+Forzar:
+- Mediante el comando `bash -c` y `()` es posible forzar a realizar un comando.
 ```bash
-	# Comando.
-	bash -c "comando" "comando utilzado para forzar"
-	# Ejemplo.
-	bash -c "echo '' > /dev/tcp/127.0.0.1/22" 2>/dev/null
+# Comando 1
+bash -c "comando" "comando utilzado para forzar"
+
+# Comando 2
+(find -type f) 2>/dev/null 
+
+# Ejemplo.
+bash -c "echo '' > /dev/tcp/127.0.0.1/22" 2>/dev/null
 ```
-
-
-
-
-## EDICION, CREACION Y ELIMINACION
-
-**ELIMIAR EL CONTENIDO .TXT:**
-	El comando #truncate elimina el contenia texto de un archivo .txt.
-```
-truncate -s 0 libro.txt
-``` 
-1. -s: Elijir el tamaño.
-2. 0: Tamaño a eliminar.
 
 
 
 
 # DESCOMPRECION
 
-Comandos para instalar y #descomprimir. 
-**.deb:**
+#### DEFINICION
+- El #Descomprimir es posible mediante diferentes metodos.
+
+Descompresor universal:
+- Comando `7z` para descomprimir.
+```bash
+	# Descomprimir
+	7z x archivo_comprimido
+	# Visualizar
+	7z l archivo_comprimido
+```
+
+Dpkg:
 ```
 # Instalador
 sudo dpkg -i nombre-del-archivo.deb
@@ -142,28 +139,8 @@ sudo dpkg -i
 sudo apt-get install -f
 ```
 
-**tar.xz:**
+Tar.xz:
 ```
 tar -xJvf nombre-del-archivo.tar.xz
 tar -xJvf 
 ```
-
-**7z:**
-```
-# Instalador
-sudo apt-get install p7zip-full
-
-# Descompresor
-7z x archivo.7z
-7z x 
-```
-
-
-
-
-
-
-
-
-
-

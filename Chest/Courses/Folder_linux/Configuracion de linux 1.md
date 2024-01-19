@@ -2,9 +2,12 @@
 [[index_linux]]
 
 
-## DEBIAN
+# DEBIAN
 
-**COMANDOS:**
+#### DESCRIPCION
+- Mi #Debian data configuracion.
+
+Movimiento en la teminal:
 	Descativar la funcion de bloqueo de pantalla para la combinacion de taclas al movimiento en una terminal.
 ```
 gsettings set org.gnome.desktop.screensaver lock-enabled false
@@ -18,7 +21,6 @@ Si esto no funciona, también puedes intentar desactivar la opción de bloqueo d
 
 Bat:
 - El `batcat` superior y mejor que usar `cat`,  acontinuacion como instalarlo.
-
 Paso a paso:
 1. inslador en debian.
 ```sh
@@ -39,10 +41,12 @@ echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
 ```
 
 
-## GIT
+# GIT
 
-**COMANDOS:**
-Crear un #Repositorio y configurar #Git.
+#### DEFINICION
+- Con #Git es posible guarda y visualizar datos en github.
+
+Comandos principales:
 1. git init: Dentro de la carpeta elegida, en el momento se creara una rama fantasma.
 2. git commit -m 'f1'.
 3. git branch -M main: Elegir como tronco a la rama fantasma. 
@@ -56,16 +60,16 @@ Crear un #Repositorio y configurar #Git.
 
 1. git log: Commits.
 2. git log -p: Ver la diferencia entre los commits.
-3. git show asd123: Alternativa a `git log -p` pero este selecciona a un commit.
+3. git show asd123: Alternativa a git log -p pero este selecciona a un commit.
 
 3. git checkout _rama01_: Cambiar de rama pero no estaras en ningun tronco. **Modo obserbador**.
 4. git checkout _nombreDelNuevoTronco_ asd1234: En caso de querer estar una una rama especifica y tambien estar en un tronco. En este caso **no estas en modo observador** y no que situado.
-5. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo. **Modo superior**.
+5. git reset --hard _18df14jl144_: Volver a un commit antiguo borrando los commits creados despues de este mismo. Modo superior.
 
 1. git tag: Muestra las etiquetas secretas.
 2. git show _tag_: Comando para ver las etiquetas.
 
-**PUERTO:**
+Puerto: 
 - Para poder cambiar el puerto predeterminado de un git clone es agregando el puerto despues del servidor/localhost.
 ```bash
 ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
@@ -74,13 +78,14 @@ ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
 
 
 
-
-
 # VIM
 
-**VIMRC ROOT:**
-	Archivo padre de _.vimrc_, Ubicado en /usr/share/vim/vimrc.
-```
+#### DESCRIPCION
+- #Vim tiene archivos de configuracion tanto para el usuario normal como para root.
+
+Configuracion vim-root:
+- Archivo padre de _.vimrc_, Ubicado en /usr/share/vim/vimrc.
+```sh
 syntax on
 set tabstop=4
 filetype on
@@ -91,42 +96,47 @@ set list
 
 
 
-## INSTALL
+# INSTALL
 
-Programas a #Instalar.
+##### DESCRIPCION
+- #Instalar los siguientes programas en debian.
 
-**TRANSLATE**
-```
+Translate:
+```sh
 sudo apt install translate-shell -y
 ```
 
-==**ZOXIDE**==
+Zoxide:
 1. instalar git.
-```
+```sh
 sudo apt install curl git
 ```
-2. Descargar la #Zoxide.
-```
+2. Descargar la zoxide.
+```sh
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsouza/zoxide/master/install.sh | bash
 ```
-3. Instalar #Fzf y #Z, se configuran automaticamente en .bashrc
-```
+3. Instalar fzf y z, se configuran automaticamente en .bashrc
+```sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 4. Ejecutar source.
-```
+```sh
 source ~/.bashrc
 ```
 
-**BACKGROUND:**
-	El cambio de un #FondoDePantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es #Mate, asi que `primero se tiene que averiguar este mismo`.
 
+#### ENTORNO
+- El #Entorno donde se instalaran themas y se configuraran archivos.
+
+Background:
+-  El cambio de un fondo de pantalla en linux tiene que ver principalmente con el gesto de ventas que en el caso de debian es Mate, asi que primero se tiene que averiguar este mismo.
+Paso a paso:
 1. Descarga desde web.
 ```
 wget http://urlimagen.png
 ```
-2. Instalar #Gsettings.
+2. Instalar Gsettings.
 ```
 sudo apt-get install gsettings-desktop-schemas
 ```
@@ -135,15 +145,15 @@ sudo apt-get install gsettings-desktop-schemas
 gsettings set org.mate.background picture-filename '/home/havel/Pictures/
 ```
 
-**TEMA:**
-	Los #Temas de en este caso Debian 11 con gestor de ventanas MATE y un GNOME2 puedes ser descargados de la siguiente pagina.
+Tema entorno:
+- Los Temas de en este caso Debian 11 con gestor de ventanas MATE y un GNOME2 puedes ser descargados de la siguiente pagina.
 ```
 https://www.mate-look.org/browse?cat=135&ord=rating
 ```
-**INSTALACION:**
+Instalacion:
 1. Descargar y descomprimir el archivo
 2. Copiar y pegar en la siguiente ruta.
-```
+```sh
 # Ruta del tema
 cd /usr/share/themes/
 # Ruta del icono
@@ -153,9 +163,9 @@ cd /usr/share/icons/
 sudo cp -r ~/downloads/tema ./
 ```
 
-**TEMA INICIO:**
-	Configuracion e instalacion de #Grub.
-```
+Tema entorno del inicio:
+- Configuracion e instalacion de Grub.
+```sh
 # Ubicacion 1
 /usr/share/grub/themes
 # Ubicacion 2
@@ -168,76 +178,71 @@ sudo ./uninstall.sh
 sudo rm -rf grub2-themes
 ```
 
-**REDSHIFT:**
-```
+Redshift:
+```sh
 sudo apt install redshift
 ```
 
 
+#### TEMA DE KITTY Y BASH
+- Instalar #OhMyBash y juntarlo con #KyttyTheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
 
-
-## THEME
-
-Instalar #OhMyBash y juntarlo con #KyttyTheme mas zoxide principalmente mejora en su totalidad el aspecto y las funciones de `ZOXIDE`.
-
-**KITTY-THEMES:**
-	El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer. Eliminar el archivo _theme.conf_ para cambiar a otro tema y ejecutar el siguiete comando con el tema elegido.
-```
+Kitty themes:
+- El siguiente link explica como cambiar el especto de la terminal kitty. Theme elejido: Brogrammer. Eliminar el archivo _theme.conf_ para cambiar a otro tema y ejecutar el siguiete comando con el tema elegido.
+```sh
+# Tema elegido Earthsong.
 https://github.com/dexpota/kitty-themes
 
 # Comando a ejecutar en la carpeta kitty
 ln -s ./kitty-themes/themes/TEMA.conf ~/.config/kitty/theme.conf
 ```
-Tema elegido Earthsong.
 
-
-**OH MY BASH:**
-	En el siguiente video explicara como instalar oh my bash, esto solo cambiara lo relacionado a la `FUENTE`. `GUARDAR LA CONFIGURACION .BASHRC` porque sera borrado luego de instalar esto.
-```
+Oh my bash:
+- En el siguiente video explicara como instalar oh my bash, esto solo cambiara lo relacionado a la `FUENTE`. `GUARDAR LA CONFIGURACION .BASHRC` porque sera borrado luego de instalar esto.
+```sh
 https://www.youtube.com/watch?v=qi5Vzw5AU9M&ab_channel=ContandoBits
 
 # Pagina de temas
+# Theme elegido: Tema elegido mairan.
 https://github.com/ohmybash/oh-my-bash/wiki/Themes
 ```
-Tema elegido mairan.
 
 
 
 
-## TECLADO KEYBOARD SHORTCUTS
+# KYBOARD SHORTCUT
 
-Configuracion mediante #KeyboardShortcuts.
+#### DESCRIPCION
+- Configuracion mediante #KeyboardShortcuts.
 
-**VENTANA:**
-	Cambio del movimiento de ventana `MOD4+LEFT` y `MOD4+RIGHT`. 
-```
+Ventana:
+- Cambio del movimiento de ventana `MOD4+LEFT` y `MOD4+RIGHT`. 
+```sh
 # Mover ventana a la izquierda.
 Tile window to east(right) side of screen = Mod4+,
 # Mover ventana a la derecha.
 Tile window to west(left) side of screen = Mod4+.
 ```
 
-
-**ESCRITORIO:**
+Escritorio:
 1. Mover las ventanas entre los workspaces 1,2,3 o 4.
-```
+```sh
 Move window to workspace 1 = Alt+Mod4+H
 Move window to workspace 2 = Alt+Mod4+J
 Move window to workspace 3 = Alt+Mod4+K
 Move window to workspace 4 = Alt+Mod4+L
 ```
 2. Moverte entre workspaces.
-```
+```sh
 Switch to workspace 1 = Shift+Alt+!
 Switch to workspace 2 = Shift+Alt+@
 Switch to workspace 3 = Shift+Alt+#
 Switch to workspace 4 = Shift+Alt+$
 ```
 
-
-**SONIDO:**
-	Subir,bajar,mutear y pausar.
-```
+Sonido:
+- Subir,bajar,mutear y pausar.
+```sh
 Volume up = Shift+Ctrl+I
 Volume down = Shift+Ctrl+U
 Volume mute = Shift+Ctrl+O
@@ -247,10 +252,13 @@ Volume play = Shift+Ctrl+Y
 
 
 
-## ETHERNET
+# ETHERNET
 
-**ERROR DE CONEXION**
-	La conexion de internet me diante clable al router en parrot trae, en algunos cosos, un error en la configuracion de #ControladoreDeRed, para solucionarlos en `PARROT SECURITY OS` con `DEBIAN 11` estan estos siguientes pasos:
+#### DESCRIPCION
+- #Ethernet configuracion.
+
+Error de conexion:
+- La conexion de internet me diante clable al router en parrot trae, en algunos cosos, un error en la configuracion de #ControladoreDeRed, para solucionarlos en `PARROT SECURITY OS` con `DEBIAN 11` estan estos siguientes pasos:
 1. Verificar si el controlador esta cargado.
 ```
 # Modo automatico
@@ -287,17 +295,20 @@ sudo update-initramfs -u
 
 
 
-## ALIAS
+# ALIAS
 
-**BASHRC**
-	El #Bashrc es un archivo que no aparece junto a la instalacion de linux, una de sus funciones es `crear alias` y su comando de creacion es el siguiente:
+#### DESCRIPCION
+- #Alias encontrados en `.bashrc`.
+
+Bashrc:
+- El #Bashrc es un archivo que no aparece junto a la instalacion de linux, una de sus funciones es `crear alias` y su comando de creacion es el siguiente:
 ```
 touch .bashrc
 ```
 
-**FUNCION SHELL EN BASHRC:**
-	El uso del #AliasConComandos redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
-```
+Funsion shell en bashrc:
+- El uso del #AliasConComandos redirigir la salida de error estándar a un archivo, es mejor utilizar una función de shell en lugar de un alias. Puedes agregar la siguiente función a tu archivo .bashrc:
+```sh
 # En este ejemplo, reemplaza "comando_a_ejecutar" con el comando real que deseas ejecutar. Luego, cuando ejecutes iner, se ejecutará el comando especificado y cualquier mensaje de error se redirigirá al archivo "error.txt" en el escritorio.
 ALIAS() {
     comando_a_ejecutar "$@" 2> /home/havel/Desktop/error.txt
@@ -342,10 +353,13 @@ sudo apt-get install p7zip-full
 ```
 
 
-## YOUTUBE
+# YOUTUBE
 
-**SURFINGKEYS:**
-```bash
+#### DESCRIPCION
+- #Surfingkeys 
+
+Comandos en modo avanzado:
+```sh
 api.unmap('j');
 api.unmap('k');
 api.unmap('l');
@@ -367,13 +381,12 @@ api.unmap('0');
 
 
 
-## CTRL + J
+# ENTER UNIVERSAL
 
 **DEFINICION:**
-	Combinacion de teclas para ejecutar enter, en todo el sistema.
+- #CtrlJ es la combinacion de teclas para ejecutar enter, en todo el sistema.
 
-**PASO A PASO:**
-
+Paso a paso version 1:
 1. Puedes usar `xdotool` directamente en lugar de `xbindkeys` para manejar la combinación de teclas "Ctrl + J". Primero, asegurémonos de que `xdotool` esté instalado:
 ```bash
 sudo apt-get install xdotool
@@ -409,8 +422,7 @@ xbindkeys
 7. Ahora, cuando presiones "Ctrl + J", debería ejecutarse el script y simular la pulsación de "Enter". Asegúrate de que no haya otras configuraciones de teclas conflictivas en tu sistema.
 
 
-## CTRL + J V2
-
+Paso a paso version 2:
 1. Creamos un script adicional llamado `setup_xdotool_behave.sh`:
 ```bash
 #!/bin/bash
@@ -441,10 +453,13 @@ xdotool behave $(xdotool getactivewindow) key ctrl+j exec /ruta/completa/del/scr
 
 
 
-## INTERFAS GRUB
+# INTERFAS GRUB
 
-**PASO A PASO:**
-	Para solucionar esto y poder ver todas las distrubiciones, puedes intentar habilitar `os-prober` y ejecutar nuevamente `update-grub`. Aquí están los pasos que puedes seguir:
+#### DEFINICION
+- #Grub.
+ 
+Paso a paso:
+- Para solucionar esto y poder ver todas las distrubiciones, puedes intentar habilitar `os-prober` y ejecutar nuevamente `update-grub`. Aquí están los pasos que puedes seguir:
 1. Abre el archivo de configuración de GRUB en un editor de texto. Puedes usar `nano` u otro editor de tu elección:
    ```bash
    sudo vim /etc/default/grub
@@ -458,11 +473,7 @@ xdotool behave $(xdotool getactivewindow) key ctrl+j exec /ruta/completa/del/scr
    ```bash
    sudo update-grub
    ```
-&&
-	Esto debería permitir que `os-prober` busque otros sistemas operativos instalados en tu sistema, incluido Windows, y los agregue al menú GRUB. Después de realizar estos pasos, reinicia tu computadora y verifica si ahora ves la opción para iniciar Windows en el menú GRUB.
-
-
-
+- Esto debería permitir que `os-prober` busque otros sistemas operativos instalados en tu sistema, incluido Windows, y los agregue al menú GRUB. Después de realizar estos pasos, reinicia tu computadora y verifica si ahora ves la opción para iniciar Windows en el menú GRUB.
 
 
 

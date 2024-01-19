@@ -18,8 +18,8 @@
 [[S4vitar clase 10 script en bash]]
 
 [[Fundamentos de linux comandos]]
-[[S4vitar clase find and cat]]
-[[S4vitar clase conexion ssh]]
+[[S4vitar coleccion find and grep]]
+[[S4vitar conexion ssh]]
 
 
 ## PRIMER SCRIPT

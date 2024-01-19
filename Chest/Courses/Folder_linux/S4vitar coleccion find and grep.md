@@ -326,7 +326,10 @@ valor="$1"
 sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
 ```
 
-## LINK
+
+
+
+#### LINK
 ```bash
 # Comando find
 https://www.ionos.es/digitalguide/servidores/configuracion/comando-linux-find/

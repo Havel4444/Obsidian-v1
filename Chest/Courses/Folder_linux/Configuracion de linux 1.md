@@ -16,7 +16,27 @@ Si esto no funciona, también puedes intentar desactivar la opción de bloqueo d
 4. Desplázate hacia abajo hasta “Bloqueo de pantalla” y haz clic en él.
 5. Desactiva la opción “Bloquear” para desactivar la función de bloqueo de pantalla.
 
+Bat:
+- El `batcat` superior y mejor que usar `cat`,  acontinuacion como instalarlo.
 
+Paso a paso:
+1. inslador en debian.
+```sh
+sudo apt install bat
+```
+2. Creacion de las carpetas.
+```sh
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+3. Asignar la carpetas.
+```sh
+export PATH=$PATH:/usr/local/bin
+```
+4. Colocar en `.bashrc` para tenerlo de manera permanente.
+```sh
+echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
+```
 
 
 ## GIT

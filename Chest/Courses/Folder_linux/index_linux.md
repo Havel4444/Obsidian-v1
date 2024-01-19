@@ -24,7 +24,7 @@
 
 
 ## PRIMER SCRIPT
-[[S4vitar scrip de busqueda]]
+[[S4vitar script de busqueda]]
 
 
 

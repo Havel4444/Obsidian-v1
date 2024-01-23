@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#find",
+                "query": "#tr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -147,13 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07d445fc82c7fc3b",
+  "active": "8ce0924c889d3009",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/S4vitar clase 6 asignacion y creacion de permisos.md",
+    "Chest/Courses/Folder_linux/Fundamentos de linux comandos.md",
     "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+    "Chest/Courses/Folder_linux/S4vitar clase 6 asignacion y creacion de permisos.md",
     "S4vitar script de busqueda.md",
     "Chest/Courses/Folder_linux/index_linux.md",
-    "Chest/Courses/Folder_linux/Fundamentos de linux comandos.md",
     "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar conexion ssh.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 script en bash.md",

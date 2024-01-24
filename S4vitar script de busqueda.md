@@ -25,3 +25,18 @@ curl -s -X GET https://htbmachines.github.io/ | batcat
 # <script>: Aquí se carga un script llamado `bundle.js` desde la raíz del servidor (`/bundle.js`). Los scripts se utilizan para agregar funcionalidad dinámica a la página.
 # <body>: Esta es la sección del cuerpo del HTML, donde se coloca el contenido visible de la página. En este caso, parece estar vacío (`<main id="root"></main>`), y el contenido real puede generarse dinámicamente mediante JavaScript.
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

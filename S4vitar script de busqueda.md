@@ -6,7 +6,7 @@
 Base de datos:
 - En este caso se usara la base de datos de una pagina que contiene informacion de maquinas. 
 
-Paso a paso:
+Paso a paso parte 1: verificacion de archivo.
 1. Solicitud http.
 ```sh
 # El siguiente comando es el metodo comun para recupera datos de un servidor.
@@ -32,8 +32,17 @@ curl -s -X GET https://htbmachines.github.io/bundle.js | js-beautify > maquinas
 # Visualizacion:
 bat -l js maquinas
 ```
-2. !
+2. Script sh.
+```sh
 
+
+
+
+
+
+
+
+```
 
 
 

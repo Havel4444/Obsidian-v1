@@ -48,7 +48,7 @@ bat -l js maquinas
 
 
 
-
+## 2 PARAMETRO
 1. **Inicialización de la variable `opcionO`:**
    - `opcionO=""`: En este caso, `opcionO` es una cadena de texto, y la inicializamos con una cadena vacía (`""`). No es necesario utilizar `declare -i` ya que `opcionO` no se utilizará como un número entero.
 
@@ -57,7 +57,10 @@ bat -l js maquinas
 
 En resumen, `opcionO=""` inicializa la variable como una cadena vacía, y `o) opcionO=$OPTARG;;` asigna el valor del argumento de la opción `-o` a la variable `opcionO`. En este caso, asumimos que la distribución especificada será un valor de texto, no un número entero, por lo que no necesitamos declarar `opcionO` como un número entero.
 
-
+## GREP VACIO
 El comando `grep ''` selecciona todo lo disponible de un archivo, en otro caso `cat archivo | grep -wi "name" -A10 | grep ""` el ultimo grep selecciona toda la salida del primer grep haciendo que el ultimo grep sea como un opcion omitida.
+
+
+## ERROR: 2 SUBparametros EN UNA VARIABLE
 
 

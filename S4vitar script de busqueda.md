@@ -63,4 +63,8 @@ El comando `grep ''` selecciona todo lo disponible de un archivo, en otro caso `
 
 ## ERROR: 2 SUBparametros EN UNA VARIABLE
 
+## COMANDO: ARCHIVO SIN ACENTOS
+```sh
+sed 's/á/a/g; s/é/e/g; s/í/i/g; s/ó/o/g; s/ú/u/g; s/ü/u/g; s/Á/A/g; s/É/E/g; s/Í/I/g; s/Ó/O/g; s/Ú/U/g; s/Ü/U/g' machines > machines_sin_acentos
+```
 

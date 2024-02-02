@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#sed",
+                "query": "grep comun",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8ce0924c889d3009",
+  "active": "07d445fc82c7fc3b",
   "lastOpenFiles": [
     "S4vitar script de busqueda.md",
     "Chest/Courses/Folder_linux/index_linux.md",

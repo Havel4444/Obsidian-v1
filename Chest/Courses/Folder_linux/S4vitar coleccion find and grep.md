@@ -10,6 +10,9 @@
 Comandos de busqueda:
 - Busca los archivos/directorios que contengan de grupo/usuario al usuario seleccionado y dirige los errores al tacho.
 ```bash
+# Sin sub-carpetas: No buscara en subcarpetas.
+find . -maxdepth 1 -type f -not -name "search*"
+
 # Grupo
 find / -group havel 
 

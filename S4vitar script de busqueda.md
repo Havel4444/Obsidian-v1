@@ -2,7 +2,7 @@
 [[index_linux]]
 
 # ASD
-
+#ScriptBash
 Base de datos:
 - En este caso se usara la base de datos de una pagina que contiene informacion de maquinas. 
 
@@ -67,4 +67,40 @@ El comando `grep ''` selecciona todo lo disponible de un archivo, en otro caso `
 ```sh
 sed 's/á/a/g; s/é/e/g; s/í/i/g; s/ó/o/g; s/ú/u/g; s/ü/u/g; s/Á/A/g; s/É/E/g; s/Í/I/g; s/Ó/O/g; s/Ú/U/g; s/Ü/U/g' machines > machines_sin_acentos
 ```
+
+## COMANDO AWK
+- Busqueda por filas ignorando las mayusculas y minusculas.
+```sh
+cat machines | awk "BEGIN{IGNORECASE=1} /name: \"nombreDeMaquina\"/,/resuelta: /"
+```
+
+## IGNORAR CARACTER ESPECIL PARA UN STRING
+- Con el slash `\` es posible  ignorar los caracteres especiales para convertirlos en cadenas de texto.
+```sh
+cat archivo | grep "apodo \'pato\'"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

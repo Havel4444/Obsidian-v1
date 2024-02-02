@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+                "file": "S4vitar script de busqueda.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "grep comun",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+                "file": "S4vitar script de busqueda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+                "file": "S4vitar script de busqueda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md"
+                "file": "S4vitar script de busqueda.md"
               }
             }
           }
@@ -147,11 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07d445fc82c7fc3b",
+  "active": "8ce0924c889d3009",
   "lastOpenFiles": [
-    "S4vitar script de busqueda.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+    "S4vitar script de busqueda.md",
     "Chest/Courses/Folder_linux/S4vitar conexion ssh.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 script en bash.md",
     "Chest/Courses/Folder_linux/Fundamentos de linux comandos.md",

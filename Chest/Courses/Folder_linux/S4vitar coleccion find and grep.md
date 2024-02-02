@@ -327,7 +327,11 @@ sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
 ```
 
 
-
+## CADENA
+- Cuando se quiera buscar una cadena de texto usando `grep` que contiene `""` lo recomendables es acompañar las comillas con el simbolo slash.
+```sh
+cat archivo | grep -wi "name: \'atom\'"
+```
 
 #### LINK
 ```bash

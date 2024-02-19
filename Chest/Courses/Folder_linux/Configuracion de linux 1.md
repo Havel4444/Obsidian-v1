@@ -77,6 +77,88 @@ ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
 
 
 
+# NEOVIM
+### DESCRIPCION
+- #Nvim version mejorada de vim.
+
+### INSTALACION
+1. Instala las dependencias necesarias para compilar Neovim:
+```bash
+sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
+```
+2. Clona el repositorio de Neovim desde GitHub:
+```bash
+git clone https://github.com/neovim/neovim.git
+```
+3. Entra al directorio del repositorio de Neovim:
+```bash
+cd neovim
+```
+4. Compila e instala Neovim:
+```bash
+make CMAKE_BUILD_TYPE=Release
+sudo make install
+```
+
+### CONFIGURACION
+- Si obtienes el mensaje "No such file or directory" al intentar ejecutar `nvim --version`, parece que Neovim no se ha instalado correctamente en tu sistema o no se ha agregado al PATH. Esto podría deberse a un problema durante el proceso de compilación o instalación.
+- Para solucionar esto, primero intentemos verificar si Neovim se instaló correctamente y está presente en el directorio de instalación. Puedes hacerlo listando el contenido del directorio `/usr/local/bin/`, que es donde suele instalarse Neovim después de compilarlo e instalarlo manualmente. Ejecuta el siguiente comando para verificar si Neovim está presente:
+```bash
+ls /usr/local/bin/nvim
+```
+- Si ves el archivo `nvim` en la lista de salida, significa que Neovim se instaló correctamente en tu sistema. En ese caso, podemos solucionar el problema agregando `/usr/local/bin/` al PATH de tu sistema. Puedes hacerlo agregando la siguiente línea al final de tu archivo `.bashrc` o `.bash_profile`:
+```bash
+export PATH="/usr/local/bin:$PATH"
+```
+
+### ARCHIVO
+- Para configurar Neovim con las opciones que has proporcionado, puedes crear o editar el archivo de configuración `init.vim` (o `init.lua` si estás utilizando la configuración en Lua) en el directorio `~/.config/nvim/`. Aquí tienes los pasos para hacerlo:
+1. Abre o crea el archivo de configuración `init.vim`:
+```bash
+nvim ~/.config/nvim/init.vim
+```
+2. Copia y pega las opciones de configuración que has proporcionado en el archivo `init.vim`.
+- Tu archivo `init.vim` podría verse así:
+```vim
+" Habilitar resaltado de sintaxis
+syntax on
+
+" Establecer el tamaño de la tabulación
+set tabstop=4
+
+" Habilitar la detección de tipo de archivo
+filetype on
+
+" Mostrar la regla en la parte inferior
+set ruler
+
+" Comando para copiar al portapapeles
+command Cp :'<,'>w !xclip -selection clipboard
+
+" Habilitar la visualización de caracteres especiales
+set list
+
+" Mostrar números de línea
+set nu
+
+" Mostrar números relativos
+set relativenumber
+
+" Deshabilitar la regla
+set noruler
+
+" Deshabilitar la visualización de caracteres especiales
+set nolist
+
+" Establecer el portapapeles como unnamedplus (para copiar al portapapeles)
+set clipboard=unnamedplus
+
+" Establecer el esquema de colores
+colorscheme desert
+```
+3. Guarda el archivo y ciérralo.
+
+
 
 # VIM
 

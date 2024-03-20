@@ -23,9 +23,11 @@
             "id": "dcde97bde7acb00b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.11"
+                "file": "Chest/Courses/Folder_linux/S4vitar conexion ssh.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -160,8 +162,8 @@
   },
   "active": "dcde97bde7acb00b",
   "lastOpenFiles": [
-    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",
+    "Chest/Courses/Folder_linux/Configuracion de linux 1.md",
     "Chest/Courses/Folder_linux/S4vitar conexion ssh.md",
     "Chest/Courses/Folder_linux/index_linux.md",
     "Chest/Courses/Folder_linux/S4vitar clase 10 script en bash.md",

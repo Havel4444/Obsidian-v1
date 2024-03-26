@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#grep",
+                "query": "#sed",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -160,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcde97bde7acb00b",
+  "active": "07d445fc82c7fc3b",
   "lastOpenFiles": [
     "Chest/Courses/Folder_linux/S4vitar conexion ssh.md",
     "Chest/Courses/Folder_linux/S4vitar coleccion find and grep.md",

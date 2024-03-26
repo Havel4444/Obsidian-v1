@@ -321,14 +321,50 @@ echo "palabra" | sed 's/palabra/letra/'
 ```
 Cambio de palabras:
 ```bash
+# Metodo 1 
 echo "palabra y la palabra" | sed 's/palabra/letra/g'
+# Metodo 2 
+echo "palabrasas palabra" | sed 's/palabra/arbol/g' -> arbolsas arbol
+# Metodo 3 
+echo "palabrasas palabra" | sed 's/palabra.*/letra/g' -> letra letra
+# Metodo 4
+echo "macancosapo sapo" | sed 's/^sapo.*/letra/g' -> macancosapo letra
 ```
-Modificacion de archivo:
+Cambio de palabras por un patron:
+```bash
+# Metodo 1
+echo "palabra y la palabra" | sed 's/^palabra de carton con madera$/letra/g'
+# Metodo 2 
+echo "palabra y la palabra" | sed 's/^palabra.*madera$/letra/g'
+```
+Modificacion directa de archivo:
 ```bash
 valor="$1"
 sed -i "s/palabra.*/palabra_nueva $valor/" "$ruta"
 ```
 
+Palabra unica y oracion:
+- Para usar `sed` y cambiar una palabra específica asegurándote de que solo se modifiquen las instancias que comiencen y terminen con esa palabra exacta, sin afectar a las variantes que tengan caracteres adicionales antes o después, puedes hacer uso de las expresiones regulares, particularmente del uso de límites de palabra (`\b`), que indican el inicio o el final de una palabra.
+- En tu caso, si deseas reemplazar la palabra "pato" por otra, digamos "gato", pero no quieres cambiar palabras como "patos_t", puedes usar el siguiente comando `sed`:
+```bash
+# Ejmplo: palabra
+sed 's/\bpato\b/gato/g' archivo.txt
+# Ejmplo: oracion
+sed 's/\bpato asado a la parrilla\b/cerdo ahumando al horno/g' archivo.txt
+```
+1. `sed`: Invoca el editor de flujo.
+2. `'s/\bpato\b/gato/g'`: Es la expresión que le dice a `sed` lo que vas a hacer.
+3. `s`: Indica que vamos a sustituir.
+4. `\b`: Es un límite de palabra, asegurando que "pato" esté aislado como una palabra completa.
+5. `pato`: Es la palabra que queremos reemplazar.
+6. `gato`: Es la palabra por la cual queremos reemplazar "pato".
+7. `g`: Es un indicador global, lo que significa que todas las instancias en una línea serán reemplazadas.
+8. `archivo.txt`: Es el nombre del archivo en el que deseas realizar el reemplazo.
+- Este comando buscará en `archivo.txt` todas las instancias de "pato" que sean palabras completas y las reemplazará por "gato", dejando intactas variantes como "patos_t" debido al uso de `\b`, que asegura que solo se modifiquen las palabras exactas "pato".
+- Si quieres hacer los cambios directamente en el archivo (editarlo en lugar), puedes usar la opción `-i` con `sed` en sistemas basados en GNU (como Linux):
+```bash
+sed -i 's/\bpato\b/gato/g' archivo.txt
+```
 
 ## CADENA
 - Cuando se quiera buscar una cadena de texto usando `grep` que contiene `""` lo recomendables es acompañar las comillas con el simbolo slash.
